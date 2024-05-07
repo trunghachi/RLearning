@@ -70,11 +70,11 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 
 ## Các khái niệm liên quan đến ung thư da
 
-1. **BCC (Basal Cell Carcinoma)**: Ung thư tế bào gốc là loại phổ biến nhất và ít gây nguy hiểm nhất. Nó thường bắt nguồn từ tế bào ở lớp dưới cùng của da (tế bào gốc) và thường xuất hiện ở các khu vực da thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt. BCC thường mọc chậm và ít gây tổn thương, nhưng có thể gây ra vấn đề nếu không được điều trị kịp thời.
+1. **BCC (Basal Cell Carcinoma)**: Ung thư tế bào đáy là loại phổ biến nhất và ít gây nguy hiểm nhất. Nó thường bắt nguồn từ tế bào ở lớp dưới cùng của da (tế bào đáy) và thường xuất hiện ở các khu vực da thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt. BCC thường mọc chậm và ít gây tổn thương, nhưng có thể gây ra vấn đề nếu không được điều trị kịp thời.
 
-2. **SCC (Squamous Cell Carcinoma)**: Ung thư biểu mô lớp cấp cao là một dạng khác của ung thư da phổ biến. Nó bắt nguồn từ tế bào biểu mô lớp cấp cao của da, thường xuất hiện ở các khu vực da mà thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt, tai, cổ và tay. SCC có khả năng lan rộng nhanh hơn so với BCC và có thể gây ra tổn thương nghiêm trọng nếu không được điều trị.
+2. **SCC (Squamous Cell Carcinoma)**: Ung thư biểu mô tế bào vảy là một dạng khác của ung thư da phổ biến. Nó bắt nguồn từ tế bào biểu mô lớp vảy của da, thường xuất hiện ở các khu vực da mà thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt, tai, cổ và tay. SCC có khả năng lan rộng nhanh hơn so với BCC và có thể gây ra tổn thương nghiêm trọng nếu không được điều trị.
 
-3. **Melanoma**: Melanoma là loại ung thư da nguy hiểm nhất và phát triển từ tế bào melanocytes, loại tế bào chứa melanin, chịu trách nhiệm cho sắc tố da. Melanoma thường xuất hiện dưới dạng nốt chân chim, dấu mốc, hoặc vùng da mới, và có thể xuất hiện ở bất kỳ vị trí nào trên cơ thể. Nếu không phát hiện và điều trị kịp thời, melanoma có thể lan rộng nhanh chóng và gây tử vong.
+3. **Melanoma**: Ung thư hắc tố da. Melanoma là loại ung thư da nguy hiểm nhất và phát triển từ tế bào melanocytes, loại tế bào chứa melanin, chịu trách nhiệm cho sắc tố da. Melanoma thường xuất hiện dưới dạng nốt chân chim, dấu mốc, hoặc vùng da mới, và có thể xuất hiện ở bất kỳ vị trí nào trên cơ thể. Nếu không phát hiện và điều trị kịp thời, melanoma có thể lan rộng nhanh chóng và gây tử vong.
 
 ## Nguyên nhân của ung thư da
 
