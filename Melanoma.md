@@ -75,3 +75,19 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 2. **SCC (Squamous Cell Carcinoma)**: Ung thư biểu mô lớp cấp cao là một dạng khác của ung thư da phổ biến. Nó bắt nguồn từ tế bào biểu mô lớp cấp cao của da, thường xuất hiện ở các khu vực da mà thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt, tai, cổ và tay. SCC có khả năng lan rộng nhanh hơn so với BCC và có thể gây ra tổn thương nghiêm trọng nếu không được điều trị.
 
 3. **Melanoma**: Melanoma là loại ung thư da nguy hiểm nhất và phát triển từ tế bào melanocytes, loại tế bào chứa melanin, chịu trách nhiệm cho sắc tố da. Melanoma thường xuất hiện dưới dạng nốt chân chim, dấu mốc, hoặc vùng da mới, và có thể xuất hiện ở bất kỳ vị trí nào trên cơ thể. Nếu không phát hiện và điều trị kịp thời, melanoma có thể lan rộng nhanh chóng và gây tử vong.
+
+## Nguyên nhân của ung thư da
+
+Ung thư da xuất phát từ sự biến đổi gen trong tế bào da, gây ra sự tăng sinh không kiểm soát của các tế bào này. Mặc dù chưa rõ nguyên nhân cụ thể và cách thức nó tiến triển, nhưng dưới đây là một vài tác nhân:
+
+1. **Tác động của ánh nắng mặt trời**: Tác động của tia cực tím (UV) từ ánh nắng mặt trời là nguyên nhân chính gây ra ung thư da. Tia UV có khả năng gây tổn thương và làm biến đổi DNA trong tế bào da, đặc biệt là tế bào melanocytes, gây ra sự phát triển không kiểm soát của chúng.
+
+2. **Yếu tố di truyền**: Người có nguy cơ cao hơn mắc ung thư da nếu có người thân trong gia đình mắc bệnh này. Một số biến thể gen cũng có thể tăng nguy cơ mắc ung thư da.
+
+3. **Yếu tố môi trường**: Tiếp xúc với các chất hóa học độc hại như các chất gây ô nhiễm, hóa chất trong thuốc trừ sâu hoặc hóa chất công nghiệp cũng có thể làm tăng nguy cơ mắc ung thư da.
+
+4. **Thuốc gây độc hại**: Một số loại thuốc có thể tăng nguy cơ mắc ung thư da, đặc biệt là thuốc chống ung thư có chứa các thành phần gây tổn thương cho DNA.
+
+5. **Yếu tố miễn dịch**: Hệ thống miễn dịch suy yếu có thể làm giảm khả năng của cơ thể chống lại tế bào ung thư, làm tăng nguy cơ mắc bệnh.
+
+6. **Thuốc gây tổn thương cho da**: Việc sử dụng tia cực tím nhân tạo (như tanning beds) hoặc thủy ngân trong các loại kem chống nắng không đúng cách cũng có thể gây tổn thương cho da và tăng nguy cơ mắc ung thư da.
