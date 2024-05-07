@@ -1,4 +1,21 @@
 # Tế bào
+## [Giải phẫu da](https://www.stanfordchildrens.org/en/topic/default?id=anatomy-of-the-skin-85-P01336)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/f860f7fb-c1b3-4489-b0c7-0366abc806ae)
+
+
+1. **Biểu bì (Epidermis)**: Lớp bề ngoài của da, chịu trách nhiệm bảo vệ da khỏi các yếu tố môi trường và vi khuẩn. Bao gồm một số lớp con:
+   - **Lớp sừng (Stratum Corneum)**: Lớp trên cùng được tạo bởi các tế bào da chết được nhúng trong các lipid.
+   - **Lớp trong suốt (Stratum Lucidum)**: Chỉ có ở da dày, chứa các tế bào trong suốt, phẳng.
+   - **Lớp hạt (Stratum Granulosum)**: Bao gồm các tế bào hạt chứa hạt keratin và lipid.
+   - **Lớp gai (Stratum Spinosum)**: Chứa một số lớp tế bào hình gai tham gia vào việc chia tách và sản xuất keratin.
+   - **Lớp cơ bản (Stratum Basale hoặc Stratum Germinativum)**: Lớp sâu nhất với tế bào keratinocytes phân chia hoạt động, cũng chứa melanocytes, tế bào Merkel và tế bào gốc.
+
+2. **Da thịt (Dermis)**: Nằm dưới biểu bì, cung cấp hỗ trợ cấu trúc, đàn hồi và dinh dưỡng cho da. Bao gồm:
+   - **Da đỉnh (Papillary Dermis)**: Lớp trên cùng với các núi đá mở rộng vào biểu bì, chứa mạch máu, dây thần kinh và mô liên kết.
+   - **Da lưới (Reticular Dermis)**: Lớp sâu và dày hơn với sợi collagen và elastin, mạch máu, nang lông, tuyến dầu và mồ hôi, và dây thần kinh.
+
+3. **Da dưới (Mô dưới da - Subcutaneous Tissue)**: Lớp sâu nhất, bao gồm mô mỡ, mạch máu và dây thần kinh, cung cấp cách nhiệt, đệm và lưu trữ năng lượng.
+
 
 ## Một số loại tế bào da
 
