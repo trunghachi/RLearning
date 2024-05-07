@@ -32,44 +32,46 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
    - Tế bào B: Loại tế bào miễn dịch sản xuất kháng thể để chống lại vi khuẩn và virus.
    - Tế bào dendritic plasmacytoid: Loại tế bào dendritic chuyên trách trong việc nhận biết và kích hoạt hệ thống miễn dịch.
 
-2. **BCC (basal cell carcinoma)**: Ung thư tế bào gốc.
-   - Ung thư tế bào gốc: Loại ung thư phát triển từ tế bào da gốc trong lớp biểu bì.
-
-3. **CAF (cancer-associated fibroblast)**: Tế bào sợi liên quan đến ung thư.
+2. **CAF (cancer-associated fibroblast)**: Tế bào sợi liên quan đến ung thư.
    - Tế bào sợi liên quan đến ung thư: Tế bào sợi trong mô xung quanh khối u ung thư, có thể góp phần vào sự phát triển và di căn của ung thư.
 
-4. **Endo (endothelial)**: Tế bào nội mạc.
+3. **Endo (endothelial)**: Tế bào nội mạc.
    - Tế bào nội mạc: Tế bào tạo thành lớp mạch máu và mạch lymph, có vai trò quan trọng trong sự lưu thông máu và cung cấp chất dinh dưỡng.
 
-5. **FFPE (formalin-fixed, paraffin-embedded)**: Mẫu được cố định bằng formalin, nhúng vào parafin.
+4. **FFPE (formalin-fixed, paraffin-embedded)**: Mẫu được cố định bằng formalin, nhúng vào parafin.
    - FFPE là một phương pháp tiền xử lý mẫu sinh học, bao gồm việc cố định mẫu bằng formalin và nhúng vào parafin để bảo quản cho việc nghiên cứu sau này.
 
-6. **KC (keratinocyte)**: Tế bào da nha.
+5. **KC (keratinocyte)**: Tế bào da nha.
    - Tế bào da nha: Loại tế bào phổ biến nhất trong lớp biểu bì của da, sản xuất keratin và đóng vai trò quan trọng trong việc tạo ra lớp bảo vệ của da.
 
-7. **LC (Langerhans cells)**: Tế bào Langerhans.
+6. **LC (Langerhans cells)**: Tế bào Langerhans.
    - Tế bào Langerhans: Loại tế bào dendritic có vai trò trong hệ thống miễn dịch, nhận biết và bắt giữ các yếu tố gây vi khuẩn và virus.
 
-8. **LEC (lymphatic endothelial cells)**: Tế bào nội mạc lymph.
+7. **LEC (lymphatic endothelial cells)**: Tế bào nội mạc lymph.
    - Tế bào nội mạc lymph: Tế bào tạo thành mạng lưới mạch lymph, có vai trò trong việc lưu thông chất lỏng lymph và tham gia vào hệ thống miễn dịch.
 
-9. **Mac (macrophage)**: Tế bào vi khuẩn.
+8. **Mac (macrophage)**: Tế bào vi khuẩn.
    - Tế bào vi khuẩn: Loại tế bào miễn dịch có khả năng ăn và tiêu diệt vi khuẩn, tế bào ung thư và tế bào bị tổn thương.
 
-10. **Mela. (melanocyte)**: Tế bào melanin.
+9. **Mela. (melanocyte)**: Tế bào melanin.
     - Tế bào melanin: Loại tế bào chịu trách nhiệm sản xuất melanin, chất sắc tố cho màu da.
 
-11. **Mono (monocyte)**: Tế bào monô.
+10. **Mono (monocyte)**: Tế bào monô.
     - Tế bào monô: Tế bào miễn dịch có khả năng chuyển hóa thành tế bào macrophage hoặc dendritic cell khi di chuyển vào các cơ bản ung thư hoặc nhiễm trùng.
 
-12. **Pilo. (pilosebaceous)**: Liên quan đến tuyến dầu và lông.
+11. **Pilo. (pilosebaceous)**: Liên quan đến tuyến dầu và lông.
     - Pilosebaceous: Tính chất liên quan đến tuyến dầu và lông của da.
 
-13. **SCC (squamous cell carcinoma)**: Ung thư tế bào đáy.
-    - Ung thư tế bào đáy: Loại ung thư phát triển từ tế bào đáy trong lớp biểu bì.
-
-14. **T (T cell)**: Tế bào T.
+12. **T (T cell)**: Tế bào T.
     - Tế bào T: Loại tế bào miễn dịch chơi vai trò quan trọng trong việc nhận diện và tiêu diệt các tế bào ung thư và vi khuẩn nội mạch.
 
-15. **TBEC (tumour blood vessel endothelial cells)**: Tế bào nội mạch mạch máu của khối u.
+13. **TBEC (tumour blood vessel endothelial cells)**: Tế bào nội mạch mạch máu của khối u.
     - Tế bào nội mạch mạch máu của khối u: Tế bào nội mạch tạo thành mạch máu của khối u, có thể có ảnh hưởng đến sự phát triển và di căn của khối u.
+
+## Các khái niệm liên quan đến ung thư da
+
+1. **BCC (Basal Cell Carcinoma)**: Ung thư tế bào gốc là loại phổ biến nhất và ít gây nguy hiểm nhất. Nó thường bắt nguồn từ tế bào ở lớp dưới cùng của da (tế bào gốc) và thường xuất hiện ở các khu vực da thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt. BCC thường mọc chậm và ít gây tổn thương, nhưng có thể gây ra vấn đề nếu không được điều trị kịp thời.
+
+2. **SCC (Squamous Cell Carcinoma)**: Ung thư biểu mô lớp cấp cao là một dạng khác của ung thư da phổ biến. Nó bắt nguồn từ tế bào biểu mô lớp cấp cao của da, thường xuất hiện ở các khu vực da mà thường xuyên tiếp xúc với ánh nắng mặt trời, như khuôn mặt, tai, cổ và tay. SCC có khả năng lan rộng nhanh hơn so với BCC và có thể gây ra tổn thương nghiêm trọng nếu không được điều trị.
+
+3. **Melanoma**: Melanoma là loại ung thư da nguy hiểm nhất và phát triển từ tế bào melanocytes, loại tế bào chứa melanin, chịu trách nhiệm cho sắc tố da. Melanoma thường xuất hiện dưới dạng nốt chân chim, dấu mốc, hoặc vùng da mới, và có thể xuất hiện ở bất kỳ vị trí nào trên cơ thể. Nếu không phát hiện và điều trị kịp thời, melanoma có thể lan rộng nhanh chóng và gây tử vong.
