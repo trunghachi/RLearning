@@ -16,6 +16,15 @@
 
 3. **Da dưới (Mô dưới da - Subcutaneous Tissue)**: Lớp sâu nhất, bao gồm mô mỡ, mạch máu và dây thần kinh, cung cấp cách nhiệt, đệm và lưu trữ năng lượng.
 
+Một số cơ quan liên quan đến da và hệ thống mạch máu:
+
+1. **Capillaries (Mạch nhỏ)**: Đây là các mạch máu nhỏ nhất trong hệ thống mạch máu, có đường kính rất nhỏ, cho phép sự trao đổi chất diễn ra giữa máu và mô xung quanh, bao gồm cả da.
+
+2. **Sweat gland (Tuyến mồ hôi)**: Đây là các tuyến tiết mồ hôi nằm dưới da, sản xuất mồ hôi để giúp làm mát cơ thể và điều chỉnh nhiệt độ cơ thể.
+
+3. **Sebaceous gland (Tuyến dầu)**: Đây là các tuyến tiết dầu nằm dưới da, sản xuất dầu (mỡ) để bôi trơn và bảo vệ da, cũng như giữ ẩm cho da.
+
+4. **Arteriole (Động mạch nhỏ)**: Đây là các mạch máu động, có đường kính nhỏ hơn các động mạch chính, cung cấp máu tới các mô và cơ quan trong cơ thể, bao gồm cả da. Arteriole cũng giúp điều chỉnh lưu lượng máu tới các phần cơ thể khác nhau dựa trên nhu cầu của cơ thể.
 
 ## Một số loại tế bào da
 
