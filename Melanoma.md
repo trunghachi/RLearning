@@ -55,7 +55,7 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 8. **Mac (macrophage)**: Tế bào vi khuẩn.
    - Tế bào vi khuẩn: Loại tế bào miễn dịch có khả năng ăn và tiêu diệt vi khuẩn, tế bào ung thư và tế bào bị tổn thương.
 
-9. **Mela. (melanocyte)**: Loại tế bào chịu trách nhiệm sản xuất melanin, chất sắc tố cho màu da, tóc và mắt
+9. **Mela. (melanocyte)**: Loại tế bào chịu trách nhiệm sản xuất melanin, chất sắc tố cho màu da, tóc và mắt (Có hai loại melanin chính trong cơ thể chúng ta: eumelanin (màu nâu đen) và pheomelanin (màu đỏ cam)). Ngoài ra melamin còn có vai trò hấp thụ tia UV làm giảm tác động của UV lên DNA. Khi da tiếp xúc với ánh sáng mặt trời nó sẽ bị kích hoạt để tăng sản xuất melanin.
 
 10. **Mono (monocyte)**: Tế bào monô.
     - Tế bào monô: Tế bào miễn dịch có khả năng chuyển hóa thành tế bào macrophage hoặc dendritic cell khi di chuyển vào các cơ bản ung thư hoặc nhiễm trùng.
