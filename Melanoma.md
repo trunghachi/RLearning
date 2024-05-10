@@ -33,21 +33,23 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
    - Tế bào B: Loại tế bào miễn dịch sản xuất kháng thể để chống lại vi khuẩn và virus.
    - Tế bào dendritic plasmacytoid: Loại tế bào dendritic chuyên trách trong việc nhận biết và kích hoạt hệ thống miễn dịch.
 
-2. **CAF (cancer-associated fibroblast)**: Tế bào sợi liên quan đến ung thư.
-   - Tế bào sợi liên quan đến ung thư: Tế bào sợi trong mô xung quanh khối u ung thư, có thể góp phần vào sự phát triển và di căn của ung thư.
+2. **CAF (cancer-associated fibroblast)**: Tế bào sợi trong mô xung quanh khối u ung thư, có thể góp phần vào sự phát triển và di căn của ung thư.
 
-3. **Endo (endothelial)**: Tế bào nội mạc.
-   - Tế bào nội mạc: Tế bào tạo thành lớp mạch máu và mạch lymph, có vai trò quan trọng trong sự lưu thông máu và trao đổi chất.
+3. **Endo (endothelial)**: Tế bào nội mạc. Tế bào tạo thành lớp mạch máu và mạch lymph, có vai trò quan trọng trong sự lưu thông máu và trao đổi chất.
 
 5. **KC (keratinocyte)**: Tế bào da, Loại tế bào phổ biến nhất trong lớp biểu bì của da, sản xuất keratin và đóng vai trò quan trọng trong việc tạo ra lớp bảo vệ của da. chúng có thể phân loại thành các loại KCs khác ở bên dưới.
   
 1. **KCB (Basal KCs)**: Là các tế bào keratinocyte ở lớp cơ bản của da, thường là tế bào đầu tiên trong chu trình tái tạo da và có vai trò quan trọng trong việc duy trì cấu trúc và chức năng của da.
-2. **KCC (Cycling KCs)**: Là các tế bào keratinocyte đang trong quá trình tuần hoàn, thường là các tế bào gốc đang chia tách để tạo ra các tế bào da mới.
-3. **KCD (Differentiating KCs)**: Là các tế bào KC đang chuyển hoá (từ tế bào gốc thành tế bào chuyên chở Keratin).
-4. **KCO (Other KCs)**: Là các tế bào keratinocyte khác ngoài Basal KCs và Cycling KCs, có thể là các dạng khác của tế bào da chuyên chở keratin.
 
-6. **LC (Langerhans cells)**: Tế bào Langerhans.
-   - Tế bào Langerhans: Loại tế bào dendritic có vai trò trong hệ thống miễn dịch, nhận biết và bắt giữ các yếu tố gây vi khuẩn và virus.
+3. **KCC (Cycling KCs)**: Là các tế bào keratinocyte đang trong quá trình tuần hoàn, thường là các tế bào gốc đang chia tách để tạo ra các tế bào da mới.
+
+4. **KCD (Differentiating KCs)**: Là các tế bào KC đang chuyển hoá (từ tế bào gốc thành tế bào chuyên chở Keratin).
+
+5. **KCO (Other KCs)**: Là các tế bào keratinocyte khác ngoài Basal KCs và Cycling KCs, có thể là các dạng khác của tế bào da chuyên chở keratin.
+
+6. **LC (Langerhans cells)**: Tế bào Langerhans, là loại tế bào dendritic có vai trò trong hệ thống miễn dịch, nhận biết và bắt giữ các yếu tố gây vi khuẩn và virus.
+
+1. **Dendritic cells**: một loại tế bào trình bày kháng nguyên (còn được gọi là tế bào phụ trợ) của hệ thống miễn dịch động vật có vú. Chức năng chính của chúng là xử lý vật liệu kháng nguyên và trình bày nó trên bề mặt tế bào cho các tế bào T của hệ thống miễn dịch. Tế bào dendritic có mặt ở các mô tiếp xúc với môi trường bên ngoài của cơ thể, như da (nơi có một loại tế bào dendritic đặc biệt gọi là tế bào Langerhans) và niêm mạc bên trong của mũi, phổi, dạ dày và ruột. Chúng cũng có thể được tìm thấy trong trạng thái chưa trưởng thành và trưởng thành trong máu. Khi được kích hoạt, chúng di chuyển đến các hạch bạch huyết, nơi chúng tương tác với các tế bào T và B để khởi xướng và hình thành phản ứng miễn dịch thích nghi.
 
 7. **LEC (lymphatic endothelial cells)**: Tế bào nội mạc lymph.
    - Tế bào nội mạc lymph: Tế bào tạo thành mạng lưới mạch lymph, có vai trò trong việc lưu thông chất lỏng lymph và tham gia vào hệ thống miễn dịch.
