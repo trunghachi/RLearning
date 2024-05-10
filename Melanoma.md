@@ -81,7 +81,13 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 
 3. **Melanoma**: Ung thư hắc tố da. Melanoma là loại ung thư da nguy hiểm nhất và phát triển từ tế bào melanocytes, loại tế bào chứa melanin, chịu trách nhiệm cho sắc tố da. Melanoma thường xuất hiện dưới dạng nốt chân chim, dấu mốc, hoặc vùng da mới, và có thể xuất hiện ở bất kỳ vị trí nào trên cơ thể. Nếu không phát hiện và điều trị kịp thời, melanoma có thể lan rộng nhanh chóng và gây tử vong.
 
-4. **FFPE (formalin-fixed, paraffin-embedded)**: Mẫu được cố định bằng formalin, nhúng vào parafin.
+4. **TME - The Tumor Microenvironment** Môi trường khối u (TME) trong ung thư hắc tố có những đặc điểm riêng biệt giữa lõi khối u và mép khối u. Lõi thường thiếu oxy và thiếu chất dinh dưỡng, dẫn đến một kiểu gen ung thư hung hãn hơn. Ngược lại, mép là nơi khối u tương tác với các mô xung quanh và thường là địa điểm xâm nhập của các tế bào miễn dịch.
+
+5. **EMT - The Epithelial-to-Mesenchymal Transition**: Quá trình chuyển đổi từ tế bào biểu mô sang tế bào mô liên kết (EMT) được thấy rõ ràng hơn ở các khối u di căn so với khối u gốc. Quá trình này trao cho các tế bào ung thư khả năng di chuyển và xâm nhập cao hơn, giúp chúng lan rộng đến các vị trí xa. Trong ung thư hắc tố di căn, các tế bào ở mép dẫn đầu của khối u có khả năng cao hơn để trải qua EMT, góp phần vào khả năng xâm nhập và hình thành các khối u mới.
+
+6. **Cancer clones**: Sự đa dạng của các clone ung thư trong ung thư hắc tố có thể được phát hiện thông qua phân tích Biến đổi Số Lượng Bản Sao (CNV). CNV là những thay đổi trong ADN của các tế bào dẫn đến việc các tế bào có số lượng bản sao bất thường của một hoặc nhiều phần ADN. 
+
+7. **FFPE (formalin-fixed, paraffin-embedded)**: Mẫu được cố định bằng formalin, nhúng vào parafin.
    - FFPE là một phương pháp tiền xử lý mẫu sinh học, bao gồm việc cố định mẫu bằng formalin và nhúng vào parafin để bảo quản cho việc nghiên cứu sau này.
 
 
