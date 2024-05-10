@@ -55,12 +55,14 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 7. **LEC (lymphatic endothelial cells)**: Tế bào nội mạc lymph.
    - Tế bào nội mạc lymph: Tế bào tạo thành mạng lưới mạch lymph, có vai trò trong việc lưu thông chất lỏng lymph và tham gia vào hệ thống miễn dịch.
 
-8. **Mac (macrophage)**: Tế bào vi khuẩn.
-   - Tế bào vi khuẩn: Loại tế bào miễn dịch có khả năng ăn và tiêu diệt vi khuẩn, tế bào ung thư và tế bào bị tổn thương.
+8. **Mac (macrophages)**: Đại thực bào. Tế bào bạch cầu có khả năng ăn và tiêu diệt vi khuẩn, tế bào ung thư và chữa lành tế bào bị tổn thương.
+   - **Đại thực bào M1**: Chúng thường được kích hoạt bởi các yếu tố như IFN-gamma và sản phẩm của vi khuẩn. Đại thực bào M1 sản xuất các cytokine viêm như IL-1β, TNF-α, và IL-6, và chúng có khả năng tiêu diệt vi khuẩn và tế bào ung thư.
+   - **Đại thực bào M2**: Được kích hoạt bởi IL-4 và IL-13, đại thực bào M2 giúp chữa lành vết thương, sản xuất các yếu tố tăng trưởng và cytokine chống viêm như IL-10. Chúng cũng tham gia vào việc giảm viêm và kích thích sự tái tạo mô. 
+   
 
-9. **Mela. (melanocyte)**: Loại tế bào chịu trách nhiệm sản xuất melanin, chất sắc tố cho màu da, tóc và mắt (Có hai loại melanin chính trong cơ thể chúng ta: eumelanin (màu nâu đen) và pheomelanin (màu đỏ cam)). Ngoài ra melamin còn có vai trò hấp thụ tia UV làm giảm tác động của UV lên DNA. Khi da tiếp xúc với ánh sáng mặt trời nó sẽ bị kích hoạt để tăng sản xuất melanin.
+10. **Mela. (melanocyte)**: Loại tế bào chịu trách nhiệm sản xuất melanin, chất sắc tố cho màu da, tóc và mắt (Có hai loại melanin chính trong cơ thể chúng ta: eumelanin (màu nâu đen) và pheomelanin (màu đỏ cam)). Ngoài ra melamin còn có vai trò hấp thụ tia UV làm giảm tác động của UV lên DNA. Khi da tiếp xúc với ánh sáng mặt trời nó sẽ bị kích hoạt để tăng sản xuất melanin.
 
-10. **Mono (monocyte)**: Tế bào monô.
+11. **Mono (monocyte)**: Tế bào monô.
     - Tế bào monô: Tế bào miễn dịch có khả năng chuyển hóa thành tế bào macrophage hoặc dendritic cell khi di chuyển vào các cơ bản ung thư hoặc nhiễm trùng.
 
 1. **My (myeloid cells)**: Là một nhóm các tế bào bao gồm tế bào bạch cầu, tế bào bạch cầu, tế bào dendritic và một số loại tế bào khác, chủ yếu có vai trò trong hệ thống miễn dịch.
