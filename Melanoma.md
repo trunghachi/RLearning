@@ -27,7 +27,8 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 4. **Arteriole (Động mạch nhỏ)**: Đây là các mạch máu động, có đường kính nhỏ hơn các động mạch chính, cung cấp máu tới các mô và cơ quan trong cơ thể, bao gồm cả da. Arteriole cũng giúp điều chỉnh lưu lượng máu tới các phần cơ thể khác nhau dựa trên nhu cầu của cơ thể.
 
 ## Một số loại tế bào da
-
+1. **F (Fibroblasts)**: Là tế bào sợi liên kết, có nhiệm vụ sản xuất protein cần thiết cho sự phát triển và duy trì của mô liên kết trong cơ thể, chúng xuất hiện cả ở mô da.
+   
 1. **B + PDC (B cells and plasmacytoid dendritic cells)**: Tế bào B và tế bào dendritic plasmacytoid.
    - Tế bào B: Loại tế bào miễn dịch sản xuất kháng thể để chống lại vi khuẩn và virus.
    - Tế bào dendritic plasmacytoid: Loại tế bào dendritic chuyên trách trong việc nhận biết và kích hoạt hệ thống miễn dịch.
@@ -36,7 +37,7 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
    - Tế bào sợi liên quan đến ung thư: Tế bào sợi trong mô xung quanh khối u ung thư, có thể góp phần vào sự phát triển và di căn của ung thư.
 
 3. **Endo (endothelial)**: Tế bào nội mạc.
-   - Tế bào nội mạc: Tế bào tạo thành lớp mạch máu và mạch lymph, có vai trò quan trọng trong sự lưu thông máu và cung cấp chất dinh dưỡng.
+   - Tế bào nội mạc: Tế bào tạo thành lớp mạch máu và mạch lymph, có vai trò quan trọng trong sự lưu thông máu và trao đổi chất.
 
 4. **FFPE (formalin-fixed, paraffin-embedded)**: Mẫu được cố định bằng formalin, nhúng vào parafin.
    - FFPE là một phương pháp tiền xử lý mẫu sinh học, bao gồm việc cố định mẫu bằng formalin và nhúng vào parafin để bảo quản cho việc nghiên cứu sau này.
