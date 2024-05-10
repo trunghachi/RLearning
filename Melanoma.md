@@ -23,8 +23,9 @@ Một số cơ quan liên quan đến da và hệ thống mạch máu:
 2. **Sweat gland (Tuyến mồ hôi)**: Đây là các tuyến tiết mồ hôi nằm dưới da, sản xuất mồ hôi để giúp làm mát cơ thể và điều chỉnh nhiệt độ cơ thể.
 
 3. **Sebaceous gland (Tuyến dầu)**: Đây là các tuyến tiết dầu nằm dưới da, sản xuất dầu (mỡ) để bôi trơn và bảo vệ da, cũng như giữ ẩm cho da.
+4. **Hair follicles**: nang lông
 
-4. **Arteriole (Động mạch nhỏ)**: Đây là các mạch máu động, có đường kính nhỏ hơn các động mạch chính, cung cấp máu tới các mô và cơ quan trong cơ thể, bao gồm cả da. Arteriole cũng giúp điều chỉnh lưu lượng máu tới các phần cơ thể khác nhau dựa trên nhu cầu của cơ thể.
+5. **Arteriole (Động mạch nhỏ)**: Đây là các mạch máu động, có đường kính nhỏ hơn các động mạch chính, cung cấp máu tới các mô và cơ quan trong cơ thể, bao gồm cả da. Arteriole cũng giúp điều chỉnh lưu lượng máu tới các phần cơ thể khác nhau dựa trên nhu cầu của cơ thể.
 
 ## Một số loại tế bào da
 1. **F (Fibroblasts)**: Là tế bào sợi liên kết, có nhiệm vụ sản xuất protein cần thiết cho sự phát triển và duy trì của mô liên kết trong cơ thể, chúng xuất hiện cả ở mô da.
