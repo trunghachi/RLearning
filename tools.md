@@ -14,6 +14,7 @@
 9. [](https://github.com/OxWearables/ssl-wearables): Multi-task self-supervised learning for wearables
 1. [UniFMIR](https://www.nature.com/articles/s41592-024-02244-3): Pretraining a foundation model for generalizable fluorescence microscopy-based image restoration
 1. [UNI](https://www.nature.com/articles/s41591-024-02857-3): Towards a general-purpose foundation model for computational pathology https://github.com/mahmoodlab/UNI
+2. [TORCH](https://www.nature.com/articles/s41591-024-02915-w): Prediction of tumor origin in cancers of unknown primary origin with cytology-based deep learning
 
 
 # Constrastive learning:
