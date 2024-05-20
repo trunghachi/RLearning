@@ -13,6 +13,8 @@
 8. [BioChatter](https://biochatter.org/): A framework for deploying, testing, and evaluating conversational AI models in the biomedical domain.
 9. [](https://github.com/OxWearables/ssl-wearables): Multi-task self-supervised learning for wearables
 1. [UniFMIR](https://www.nature.com/articles/s41592-024-02244-3): Pretraining a foundation model for generalizable fluorescence microscopy-based image restoration
+1. [UNI](https://www.nature.com/articles/s41591-024-02857-3): Towards a general-purpose foundation model for computational pathology https://github.com/mahmoodlab/UNI
+
 
 # Constrastive learning:
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
@@ -22,7 +24,9 @@
 4. [Spacial-ConGR](https://www.sciencedirect.com/science/article/pii/S200103702400120X):  A contrastive learning approach to integrate spatial transcriptomics and histological images https://github.com/YuLin-code/Spatial-ConGR
 5. [SCLSC](https://github.com/yaozhong/SCLSC): Predicting cell types with supervised contrastive learning on cells and their types
 6. [MSI](https://github.com/LabLaskin/MSI-self-supervised-clustering): Contrastive learning model to find co-localisation of m/z peaks in MALDI data
+7. [CONCH](https://www.nature.com/articles/s41591-024-02856-4): A visual-language foundation model for computational pathology 
 # LLMs and Generative AI:
 1. [LLM Visualization](https://bbycroft.net/llm)
 # Other learning materials:
 1. [Tutorial on Diffusion Models for Imaging and Vision](https://arxiv.org/pdf/2403.18103)
+2. [Melanoma](https://emedicine.medscape.com/article/1295718-overview?form=fpf)
