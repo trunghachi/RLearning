@@ -9,3 +9,6 @@
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
 1. [](https://www.science.org/doi/10.1126/sciadv.adk4670): Self-supervised learning of T cell receptor sequences exposes core properties for T cell membership
 2. [scDiffusion](https://github.com/EperLuo/scDiffusion): conditional generation of high-quality single-cell data using diffusion model
+3. [Proust](https://www.biorxiv.org/content/10.1101/2024.02.02.578662v1): graph-based using spatially resolved transcriptomics and immunofluorescence images https://github.com/JianingYao/proust
+4. [Spacial-ConGR](https://www.sciencedirect.com/science/article/pii/S200103702400120X):  A contrastive learning approach to integrate spatial transcriptomics and histological images https://github.com/YuLin-code/Spatial-ConGR
+5. [SCLSC](https://github.com/yaozhong/SCLSC): Predicting cell types with supervised contrastive learning on cells and their types
