@@ -1,14 +1,19 @@
-# Plot: 
+# Plot and tools:
 1. [circlize](https://github.com/jokergoo/circlize): circular visualization in R: 
 2. [PyGWalker](https://kanaries.net/pygwalker): turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
+3. [BioCypher](https://biocypher.org/): BioCypher is the simplest way to create an AI-enabled knowledge graph for biomedical (or other) tasks.
 # New models:
 1. [RUDOLFV](https://arxiv.org/pdf/2401.04079): A foundation model by pathologists for pathologists
 2. [HistoSSLscaling](https://github.com/owkin/HistoSSLscaling): Scaling Self-Supervised Learning for Histopathology with Masked Image Modeling
-3. [DEPLOY](https://zenodo.org/records/10888478)): An integrated deep learning model for predicting DNA methylation and tumor types from H&E images
+3. [DEPLOY](https://zenodo.org/records/10888478): An integrated deep learning model for predicting DNA methylation and tumor types from H&E images
 4. [CODA](https://github.com/ashleylk/CODA): 3D genomic mapping reveals multifocality of human pancreatic precancers
 5. [Pythia-160m model and Cell2Sentence](https://huggingface.co/vandijklab/pythia-160m-c2s)
 6. [review](https://www.apoorva-srinivasan.com/plms/): a review on protein language models
-7. [His2Cell](https://github.com/Weiqin-Zhao/Hist2Cell): a Vision Graph-Transformer framework that accurately predicts fine-grained cell type abundances directly from histology images.
+7. [His2Cell](https://github.com/Weiqin-Zhao/Hist2Cell): a Vision Graph-Transformer framework that accurately predicts fine-grained cell type abundances directly from histology images. https://www.biorxiv.org/content/10.1101/2024.02.17.580852v1.full.pdf
+8. [BioChatter](https://biochatter.org/): A framework for deploying, testing, and evaluating conversational AI models in the biomedical domain.
+9. [](https://github.com/OxWearables/ssl-wearables): Multi-task self-supervised learning for wearables
+1. [UniFMIR](https://www.nature.com/articles/s41592-024-02244-3): Pretraining a foundation model for generalizable fluorescence microscopy-based image restoration
+
 # Constrastive learning:
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
 1. [T-cells](https://www.science.org/doi/10.1126/sciadv.adk4670): Self-supervised learning of T cell receptor sequences exposes core properties for T cell membership
@@ -17,3 +22,7 @@
 4. [Spacial-ConGR](https://www.sciencedirect.com/science/article/pii/S200103702400120X):  A contrastive learning approach to integrate spatial transcriptomics and histological images https://github.com/YuLin-code/Spatial-ConGR
 5. [SCLSC](https://github.com/yaozhong/SCLSC): Predicting cell types with supervised contrastive learning on cells and their types
 6. [MSI](https://github.com/LabLaskin/MSI-self-supervised-clustering): Contrastive learning model to find co-localisation of m/z peaks in MALDI data
+# LLMs and Generative AI:
+1. [LLM Visualization](https://bbycroft.net/llm)
+# Other learning materials:
+1. [Tutorial on Diffusion Models for Imaging and Vision](https://arxiv.org/pdf/2403.18103)
