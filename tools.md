@@ -25,7 +25,14 @@
 4. [Spacial-ConGR](https://www.sciencedirect.com/science/article/pii/S200103702400120X):  A contrastive learning approach to integrate spatial transcriptomics and histological images https://github.com/YuLin-code/Spatial-ConGR
 5. [SCLSC](https://github.com/yaozhong/SCLSC): Predicting cell types with supervised contrastive learning on cells and their types
 6. [MSI](https://github.com/LabLaskin/MSI-self-supervised-clustering): Contrastive learning model to find co-localisation of m/z peaks in MALDI data
-7. [CONCH](https://www.nature.com/articles/s41591-024-02856-4): A visual-language foundation model for computational pathology 
+7. [CONCH](https://www.nature.com/articles/s41591-024-02856-4): A visual-language foundation model for computational pathology
+8. [VOLTA](https://www.nature.com/articles/s41467-024-48062-1): an enVironment-aware cOntrastive ceLl represenTation leArning for histopathology. https://github.com/AIMLab-UBC/VOLTA
+9. [ResNet*](https://www.cell.com/heliyon/pdf/S2405-8440(24)00125-7.pdf): Enhancing breast cancer classification via histopathological image analysis: Leveraging self-supervised contrastive learning and transfer learning.
+10. [DCLGAN](https://www.nature.com/articles/s41598-024-52833-7): Dual contrastive learning based image-to-image translation of unstained skin tissue into virtually stained H&E images
+11. [SCLSC](https://www.nature.com/articles/s41598-023-50185-2): Predicting cell types with supervised contrastive learning on cells and their types.
+12. [Constrastive-sc](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04210-8): Contrastive self-supervised clustering of scRNA-seq data
+
+
 # LLMs and Generative AI:
 1. [LLM Visualization](https://bbycroft.net/llm)
 # Other learning materials:
