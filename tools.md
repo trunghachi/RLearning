@@ -4,7 +4,7 @@
 # New models:
 1. [RUDOLFV](https://arxiv.org/pdf/2401.04079): A foundation model by pathologists for pathologists
 2. [HistoSSLscaling](https://github.com/owkin/HistoSSLscaling): Scaling Self-Supervised Learning for Histopathology with Masked Image Modeling
-3. [DEPLOY]([https://github.com/yaozhong/SCLSC?tab=readme-ov-file](https://zenodo.org/records/10888478)): An integrated deep learning model for predicting DNA methylation and tumor types from H&E images
+3. [DEPLOY](https://zenodo.org/records/10888478)): An integrated deep learning model for predicting DNA methylation and tumor types from H&E images
 4. [CODA](https://github.com/ashleylk/CODA): 3D genomic mapping reveals multifocality of human pancreatic precancers
 5. [Pythia-160m model and Cell2Sentence](https://huggingface.co/vandijklab/pythia-160m-c2s)
 6. [review](https://www.apoorva-srinivasan.com/plms/): a review on protein language models
