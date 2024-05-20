@@ -15,7 +15,7 @@
 1. [UniFMIR](https://www.nature.com/articles/s41592-024-02244-3): Pretraining a foundation model for generalizable fluorescence microscopy-based image restoration
 1. [UNI](https://www.nature.com/articles/s41591-024-02857-3): Towards a general-purpose foundation model for computational pathology https://github.com/mahmoodlab/UNI
 2. [TORCH](https://www.nature.com/articles/s41591-024-02915-w): Prediction of tumor origin in cancers of unknown primary origin with cytology-based deep learning
-1. [SimCLR tutorial notebook](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial17/SimCLR.html)
+
 
 # Constrastive learning:
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
@@ -31,7 +31,7 @@
 10. [DCLGAN](https://www.nature.com/articles/s41598-024-52833-7): Dual contrastive learning based image-to-image translation of unstained skin tissue into virtually stained H&E images
 11. [SCLSC](https://www.nature.com/articles/s41598-023-50185-2): Predicting cell types with supervised contrastive learning on cells and their types.
 12. [Constrastive-sc](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04210-8): Contrastive self-supervised clustering of scRNA-seq data
-
+1. [SimCLR tutorial notebook](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial17/SimCLR.html)
 
 # LLMs and Generative AI:
 1. [LLM Visualization](https://bbycroft.net/llm)
