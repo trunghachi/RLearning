@@ -3,7 +3,8 @@
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long nanopore sequencing reads 
 
 
-- **Transposon** (còn được gọi là **phần tử di động**) là một chuỗi **ADN** có khả năng tự di chuyển hoặc tự chèn chính nó vào một vị trí mới trong **genôm**. Chúng có thể gây ra các hiệu ứng như tạo hoặc đảo ngược đột biến và thay đổi kích thước của genôm.
+### Transposon ###
+Transposon(còn được gọi là **phần tử di động**) là một chuỗi **ADN** có khả năng tự di chuyển hoặc tự chèn chính nó vào một vị trí mới trong **genôm**. Chúng có thể gây ra các hiệu ứng như tạo hoặc đảo ngược đột biến và thay đổi kích thước của genôm.
 
 Có hai loại transposon chính:
 
