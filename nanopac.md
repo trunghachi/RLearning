@@ -20,6 +20,48 @@ Có hai loại transposon chính:
 1. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA 
 1. **25–35 kilobase reads)** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
 
+1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo 
+
+## Tóm tắt một quy trình phân tích gene:
+Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
+
+1. **Thu thập mẫu (Sample Collection)**:
+   - **Mô tả**: Lấy mẫu DNA từ máu, nước bọt hoặc mô khác.
+   - **Công cụ**: 
+   - **Thời gian**: Vài phút đến vài giờ, tùy thuộc vào loại mẫu và quy trình thu thập.
+  
+2. **Chiết xuất DNA (DNA Extraction)**:
+   - **Mô tả**: Tách DNA ra khỏi các thành phần khác trong mẫu.
+   - **Thời gian**: Vài giờ đến một ngày.
+
+3. **Chuẩn bị thư viện (Library Preparation)**:
+   - **Mô tả**: Chuẩn bị các đoạn DNA để giải trình tự, bao gồm các bước như phân mảnh DNA, thêm adapter và đánh dấu.
+   - **Công cụ**: 
+   - **Thời gian**: Vài giờ đến một ngày.
+
+4. **Giải trình tự (Sequencing)**:
+   - **Mô tả**: Sử dụng các thiết bị như PromethION để đọc các đoạn DNA.
+   - **Công cụ**: 
+   - **Thời gian**: Vài giờ đến vài ngày, tùy thuộc vào độ sâu và độ dài đoạn đọc mong muốn.
+
+5. **Lắp ráp de novo (De Novo Assembly)**:
+   - **Mô tả**: Sử dụng các công cụ như Flye để lắp ráp các đoạn đọc thô thành các contig.
+   - **Công cụ**: 
+   - **Thời gian**: Khoảng hai ngày để lắp ráp và đánh bóng một bộ gen người.
+
+6. **Đánh bóng bổ sung (Additional Polishing)**:
+   - **Mô tả**: Thực hiện một vòng đánh bóng bổ sung với Medaka để cải thiện chất lượng contig.
+   - **Công cụ**: 
+   - **Thời gian**: Vài giờ đến một ngày.
+
+7. **Phân tích và diễn giải (Analysis and Interpretation)**:
+   - **Mô tả**: Phân tích các contig đã được đánh bóng để xác định các đặc điểm di truyền và biến thể.
+   - **Công cụ**: 
+   - **Thời gian**: Vài ngày đến vài tuần, tùy thuộc vào mục đích và độ phức tạp của phân tích.
+
+**Tổng thời gian**: Quá trình từ thu thập mẫu đến có được bộ gen hoàn chỉnh mất khoảng 1-2 tuần, tùy thuộc vào điều kiện cụ thể và độ phức tạp của từng bước.
+
+
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
