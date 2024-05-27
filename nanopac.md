@@ -22,7 +22,7 @@ Có hai loại transposon chính:
 
 1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo 
 
-## Tóm tắt một quy trình phân tích gene:
+## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
 
 1. **Thu thập mẫu (Sample Collection)**:
@@ -30,33 +30,34 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
    - **Công cụ**: 
    - **Thời gian**: Vài phút đến vài giờ, tùy thuộc vào loại mẫu và quy trình thu thập.
   
-2. **Chiết xuất DNA (DNA Extraction)**:
+2. **Chiết xuất DNA (DNA Extraction - obtaining high molecular-weight DNA)**:
    - **Mô tả**: Tách DNA ra khỏi các thành phần khác trong mẫu.
+   - **Công cụ**: NEB Monarch HMW DNA Extraction Kit.  QIAGEN Puregene Blood Kit,
    - **Thời gian**: Vài giờ đến một ngày.
 
-3. **Chuẩn bị thư viện (Library Preparation)**:
+3. **Chuẩn bị thư viện (Library Preparation - selecting a kit)**:
    - **Mô tả**: Chuẩn bị các đoạn DNA để giải trình tự, bao gồm các bước như phân mảnh DNA, thêm adapter và đánh dấu.
-   - **Công cụ**: 
+   - **Công cụ**: Ultra-Long DNA Sequencing Kit, Ligation Sequencing Kit, Short Fragment Eliminator Expansion Kit, Diagenode Megaruptor 3 (for shearing)
    - **Thời gian**: Vài giờ đến một ngày.
 
 4. **Giải trình tự (Sequencing)**:
    - **Mô tả**: Sử dụng các thiết bị như PromethION để đọc các đoạn DNA.
-   - **Công cụ**: 
+   - **Công cụ**:  Ultra-Long DNA Sequencing KitPromethION, Ligation Sequencing Kit, [Flow Cell Wash Kit](https://store.nanoporetech.com/flow-cell-wash.html) (để rửa sạch, loại bỏ các mẫu sót, duy trì hiệu suất, tái sử dụng, kéo dài tuổi thọ của các  các flow cells).
    - **Thời gian**: Vài giờ đến vài ngày, tùy thuộc vào độ sâu và độ dài đoạn đọc mong muốn.
 
 5. **Lắp ráp de novo (De Novo Assembly)**:
    - **Mô tả**: Sử dụng các công cụ như Flye để lắp ráp các đoạn đọc thô thành các contig.
-   - **Công cụ**: 
+   - **Công cụ**: [Flye](https://github.com/fenderglass/Flye),  on-board PromethION [compute](https://nanoporetech.com/products/analyse).
    - **Thời gian**: Khoảng hai ngày để lắp ráp và đánh bóng một bộ gen người.
 
 6. **Đánh bóng bổ sung (Additional Polishing)**:
    - **Mô tả**: Thực hiện một vòng đánh bóng bổ sung với Medaka để cải thiện chất lượng contig.
-   - **Công cụ**: 
+   - **Công cụ**: [Medaka]( https://github.com/nanoporetech/medaka),
    - **Thời gian**: Vài giờ đến một ngày.
 
 7. **Phân tích và diễn giải (Analysis and Interpretation)**:
    - **Mô tả**: Phân tích các contig đã được đánh bóng để xác định các đặc điểm di truyền và biến thể.
-   - **Công cụ**: 
+   - **Công cụ**: Có rất nhiều công cụ, tuỳ thuộc bài toán, cơ bản có: Công cụ phát hiện biến dị và chèn/xoá (GATK, FreeBayes, SAMTools for SNPs, indels); Công cụ so sánh và chức năng gene (BLAST, BLAT, và Bowtie2); phân tích chủ đề và biểu đồ (R, Python); Cơ sở dữ liệu tham chiếu (GenBank, RefSeq, và ENSEMBL for reference), và tài nguyên phân tích  GO (Gene Ontology) và KEGG (Kyoto Encyclopedia of Genes and Genomes).
    - **Thời gian**: Vài ngày đến vài tuần, tùy thuộc vào mục đích và độ phức tạp của phân tích.
 
 **Tổng thời gian**: Quá trình từ thu thập mẫu đến có được bộ gen hoàn chỉnh mất khoảng 1-2 tuần, tùy thuộc vào điều kiện cụ thể và độ phức tạp của từng bước.
