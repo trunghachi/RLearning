@@ -163,6 +163,8 @@ bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
 #SBATCH --partition=general        # Sử dụng phân vùng "general"
 #SBATCH --account=a_nguyen_quan    # Sử dụng tài khoản "a_nguyen_quan" để tính toán tài nguyên sử dụng
 
+module load bedtools/2.30.0-gcc-11.3.0
+source ~/.bashrc
 
 # cd /scratch/project/stseq/Trung/hifiasm
 cd /QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/VN_01_00_0007/20220803_Sequel64123_0067/Merged/
