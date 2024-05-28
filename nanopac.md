@@ -21,10 +21,9 @@ Có hai loại transposon chính:
 1. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA 
 1. **25–35 kilobase reads)** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
 
-1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo 
-
+1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo.
+2. **Haplotigs**: là các contig đại diện cho các biến thể hợp tử (haplotype) trong một bộ gen lưỡng bội. Khi xây dựng các bộ gen từ dữ liệu đọc dài thế hệ thứ ba (third-gen sequencing), việc phân loại các contig theo haplotype có thể gặp khó khăn, đặc biệt khi độ đa dạng di truyền cao đến mức không thể nhận ra sự tương đồng giữa các haplotype trong quá trình lắp ráp. Kết quả là việc lặp lại khu vực thay vì kết hợp thành các biến thể hợp tử, và điều này có thể gây ra vấn đề trong phân tích tiếp theo, ví dụ như phát hiện biến thể hoặc xây dựng lại haplotype từ bộ gen lưỡng bội với các contig hợp tử không ghép cặp.
 1. **Scaffolds**: Được tạo ra bằng cách ghép nối các contigs lại với nhau dựa trên thông tin overlap giữa chúng hoặc thông tin từ các kỹ thuật bổ sung như mate-pair sequencing. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
-
 2. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
    
 ## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
