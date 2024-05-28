@@ -80,15 +80,24 @@ Một lệnh cơ bản với hifiasm như sau:
 ./hifiasm -o NA12878.asm -t 32 NA12878.fq.gz
 ```
 
-Đối với ví dụ này, các contig chính được ghi vào NA12878.asm.bp.p_ctg.gfa. Since v0.15, hifiasm also produces two sets of partially phased contigs at NA12878.asm.bp.hap?.p_ctg.gfa. This pair of files can be thought to represent the two haplotypes in a diploid genome, though with occasional switch errors.
+Đối với ví dụ này, các contig chính được ghi vào `NA12878.asm.bp.p_ctg.gfa`. Từ phiên bản v0.15, hifiasm cũng tạo ra 2 tập các contigs được một phần vào `NA12878.asm.bp.hap?.p_ctg.gfa`. Cặp tệp này có thể được coi là đại diện cho hai haplotype trong một genôm lưỡng bội, mặc dù có những lỗi chuyển đổi thỉnh thoảng xảy ra. Tần suất của các lỗi chuyển đổi được xác định bởi độ dị hợp tử của mẫu nhập vào.
 
-Trong lần chạy đầu tiên, hifiasm lưu các reads đã sửa và trùng lặp vào đĩa dưới dạng NA12878.asm.*.bin. Nó sử dụng lại kết quả đã lưu để tránh tính toán trùng lặp all-vs-all mất nhiều thời gian vào lần sau. Bạn có thể chỉ định ```-i``` để bỏ qua các trùng lặp đã tính toán trước và làm lại việc trùng lặp từ các raw reads. Bạn cũng có thể xuất các reads đã sửa lỗi dưới dạng FASTA và reads trùng lặp trong PAF với:
+Trong lần chạy đầu tiên, hifiasm lưu các reads đã sửa và trùng lặp vào đĩa dưới dạng NA12878.asm.*.bin. Nó sử dụng lại kết quả đã lưu để tránh tính toán trùng lặp all-vs-all mất nhiều thời gian vào lần sau. Bạn có thể chỉ định `-i` để bỏ qua các trùng lặp đã tính toán trước và làm lại việc trùng lặp từ các raw reads. Bạn cũng có thể xuất các reads đã sửa lỗi dưới dạng FASTA và reads trùng lặp trong PAF với:
+
+Đối với các mẫu có tỷ lệ dị hợp tử cao, một vấn đề phổ biến là một bộ contig phân đoạn một phần lớn hơn nhiều so với bộ kia. Để khắc phục vấn đề này, vui lòng thiết lập giá trị nhỏ hơn cho `-s` (mặc định: 0.55). Một khả năng khác là hifiasm nhận diện sai ngưỡng phủ sóng cho các đọc đồng hợp tử. Trong trường hợp này, vui lòng thiết lập `--hom-cov` cho phủ sóng đồng hợp tử.
 
 ```
 hifiasm -o NA12878.asm -t 32 --write-paf --write-ec /dev/null
 ```
 Hifiasm mặc định loại bỏ sự trùng lặp của haplotig (purges haplotig). Đối với các bộ gen thuần chủng (inbred) hoặc đồng hợp tử (homozygous), bạn có thể tắt việc loại bỏ với tùy chọn `-0l0`. Các bản đọc HiFi cũ có thể chứa các chuỗi adapter ngắn ở hai đầu của bản đọc. Bạn có thể chỉ định `-z20` để cắt cả hai đầu của bản đọc bởi 20bp. Đối với các bộ gen nhỏ, sử dụng `-f0` để vô hiệu hóa bộ lọc bloom ban đầu mà chiếm 16GB bộ nhớ ở đầu. Đối với các bộ gen lớn hơn nhiều so với con người, áp dụng `-f38` hoặc thậm chí `-f39` được ưa chuộng để tiết kiệm bộ nhớ trên việc đếm k-mer.
 
+### Produce primary/alternate assemblies
+To get primary/alternate assemblies, the option `--primary` should be set:
+
+```
+hifiasm -o NA12878.asm --primary -t 32 NA12878.fq.gz
+```
+The primary contigs and the alternate contigs are written to `NA12878.asm.p_ctg.gfa` and `NA12878.asm.a_ctg.gfa`, respectively. For inbred or homozygous genomes, the primary/alternate assemblies can be also produced by `-l0`. Similarly, turning `-s` or `--hom-cov` should be helpful if the primary assembly is too large.
 ### Hi-C integration
 ```
 hifiasm -o NA12878.asm -t32 --h1 read1.fq.gz --h2 read2.fq.gz HiFi-reads.fq.gz
