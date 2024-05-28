@@ -87,7 +87,7 @@ Trong lần chạy đầu tiên, hifiasm lưu các reads đã sửa và trùng l
 ```
 hifiasm -o NA12878.asm -t 32 --write-paf --write-ec /dev/null
 ```
-Hifiasm mặc định loại bỏ sự trùng lặp của haplotig (purges haplotig). Đối với các bộ gen thuần chủng (inbred) hoặc đồng hợp tử (homozygous), bạn có thể tắt việc loại bỏ với tùy chọn -l0. Các bản đọc HiFi cũ có thể chứa các chuỗi adapter ngắn ở hai đầu của bản đọc. Bạn có thể chỉ định -z20 để cắt cả hai đầu của bản đọc bởi 20bp. Đối với các bộ gen nhỏ, sử dụng -f0 để vô hiệu hóa bộ lọc bloom ban đầu mà chiếm 16GB bộ nhớ ở đầu. Đối với các bộ gen lớn hơn nhiều so với con người, áp dụng -f38 hoặc thậm chí -f39 được ưa chuộng để tiết kiệm bộ nhớ trên việc đếm k-mer.
+Hifiasm mặc định loại bỏ sự trùng lặp của haplotig (purges haplotig). Đối với các bộ gen thuần chủng (inbred) hoặc đồng hợp tử (homozygous), bạn có thể tắt việc loại bỏ với tùy chọn `-0l0`. Các bản đọc HiFi cũ có thể chứa các chuỗi adapter ngắn ở hai đầu của bản đọc. Bạn có thể chỉ định `-z20` để cắt cả hai đầu của bản đọc bởi 20bp. Đối với các bộ gen nhỏ, sử dụng `-f0` để vô hiệu hóa bộ lọc bloom ban đầu mà chiếm 16GB bộ nhớ ở đầu. Đối với các bộ gen lớn hơn nhiều so với con người, áp dụng `-f38` hoặc thậm chí `-f39` được ưa chuộng để tiết kiệm bộ nhớ trên việc đếm k-mer.
 
 ### Hi-C integration
 ```
