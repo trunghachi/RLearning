@@ -122,3 +122,8 @@ hoặc:
 ```
 conda install 0c bioconda hifiasm
 ```
+#### Sử dụng:
+Có 3 quy trình khác nhau tuỳ vào dữ liệu đầu vào: 
+* **HiFi-only Assembly** - Assembling HiFi reads without additional data types
+* **Trio-binning Assembly** - Producing fully phased assemblies with HiFi and trio-binning data
+* **Hi-C Integrated Assembly** - Producing fully phased assemblies with HiFi and Hi-C data
