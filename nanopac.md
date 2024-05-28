@@ -1,4 +1,4 @@
-
+em
 # 1. Một số khái niệm cơ bản:
 1. **Transposon**:
    
@@ -136,3 +136,42 @@ Có 3 quy trình khác nhau tuỳ vào dữ liệu đầu vào:
 * **HiFi-only Assembly** - Assembling HiFi reads without additional data types
 * **Trio-binning Assembly** - Producing fully phased assemblies with HiFi and trio-binning data
 * **Hi-C Integrated Assembly** - Producing fully phased assemblies with HiFi and Hi-C data
+
+```
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -c 16
+#SBATCH --mem=250GB
+#SBATCH -o out_%x_%j.txt
+#SBATCH -e error_%x_%j.txt
+#SBATCH --job-name=recall
+#SBATCH --time=50:00:00
+#SBATCH --partition=general
+#SBATCH --account=a_nguyen_quan
+
+module load miniconda3/4.12.0
+source ~/.bashrc
+source activate pacbio
+
+cd /scratch/project/stseq/Prakrithi/Methylation
+samtools merge s0007.bam with_5mC.bam 4d_5mc.bam
+pbmm2 index Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38.mmi
+pbmm2 align Homo_sapiens_assembly38.mmi s0007.bam s0007_aligned.bam
+
+samtools sort s0007_aligned.bam -o s0007_aligned_sorted.bam
+samtools index s0007_aligned_sorted.bam
+samtools view -bh s0007_aligned_sorted.bam "chr21" > chr21.bam
+
+# run these two commands once to install cpgtools
+wget https://github.com/PacificBiosciences/pb-CpG-tools/releases/download/v2.3.2/pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu.tar.gz
+
+#CpGtools
+pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu/bin/aligned_bam_to_cpg_scores \
+  --bam s0007_aligned_sorted.bam \
+  --output-prefix s0007.hg38.pbmm2 \
+  --model pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu/models/pileup_calling_model.v1.tflite \
+  --threads 16
+
+```
