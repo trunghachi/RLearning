@@ -24,6 +24,8 @@ Có hai loại transposon chính:
 1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo 
 
 1. **Scaffolds**: Được tạo ra bằng cách ghép nối các contigs lại với nhau dựa trên thông tin overlap giữa chúng hoặc thông tin từ các kỹ thuật bổ sung như mate-pair sequencing. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+
+2. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
    
 ## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
@@ -71,3 +73,10 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
 
 # 2. Pacbio
+## Hifiasm
+Hifiasm là một trình tổng hợp de novo nhanh chóng cho các bản đọc PacBio HiFi với phân giải haplotype. Nó có thể tổng hợp một bộ gen người trong vài giờ và tổng hợp một bộ gen cây sequoia California khoảng 30Gb trong vài ngày. Hifiasm phát ra các bộ phận tổng hợp một phần có chất lượng cạnh tranh với các trình tổng hợp tốt nhất. Khi có dữ liệu đọc ngắn của cha mẹ hoặc dữ liệu Hi-C, nó tạo ra các bộ tổng hợp có phân giải haplotype tốt nhất cho đến nay. Nó giúp đơn giản hoá quy trình tổng hợp, rút ngắn thời gian, không cần các trình đánh bóng như pilon hay racon. 
+
+Ví dụ
+```
+./hifiasm -o NA12878.asm -t 32 NA12878.fq.gz
+```
