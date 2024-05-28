@@ -80,3 +80,11 @@ Ví dụ
 ```
 ./hifiasm -o NA12878.asm -t 32 NA12878.fq.gz
 ```
+
+Đối với ví dụ này, các contig chính được ghi vào NA12878.asm.bp.p_ctg.gfa. Since v0.15, hifiasm also produces two sets of partially phased contigs at NA12878.asm.bp.hap?.p_ctg.gfa. This pair of files can be thought to represent the two haplotypes in a diploid genome, though with occasional switch errors.
+
+Trong lần chạy đầu tiên, hifiasm lưu các reads đã sửa và trùng lặp vào đĩa dưới dạng NA12878.asm.*.bin. Nó sử dụng lại kết quả đã lưu để tránh tính toán trùng lặp all-vs-all mất nhiều thời gian vào lần sau. Bạn có thể chỉ định ```-i``` để bỏ qua các trùng lặp đã tính toán trước và làm lại việc trùng lặp từ các raw reads. Bạn cũng có thể xuất các reads đã sửa lỗi dưới dạng FASTA và reads trùng lặp trong PAF với:
+
+```
+hifiasm -o NA12878.asm -t 32 --write-paf --write-ec /dev/null
+```
