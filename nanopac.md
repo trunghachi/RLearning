@@ -143,47 +143,29 @@ Có 3 quy trình khác nhau tuỳ vào dữ liệu đầu vào:
 1. **Bước 1**: Chuyển đổi file `.bam` sang `.fq` nếu cần thiết, sử dụng `bedtools` hoặc `samtools`
 ```
 module load bedtools/2.30.0-gcc-11.3.0
-module active
 bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
+
+# samtools fastq -@ $(nproc) -o output.fq input.bam
 ```
 
 2. Chạy hifi-assemby
 
 ```
 #!/bin/bash
-#SBATCH -N 1
-#SBATCH -n 1
-#SBATCH -c 16
-#SBATCH --mem=250GB
-#SBATCH -o out_%x_%j.txt
-#SBATCH -e error_%x_%j.txt
-#SBATCH --job-name=recall
-#SBATCH --time=50:00:00
-#SBATCH --partition=general
-#SBATCH --account=a_nguyen_quan
+#SBATCH -N 1                       # Yêu cầu 1 node
+#SBATCH -n 1                       # Yêu cầu 1 task
+#SBATCH -c 16                      # Yêu cầu 16 CPU cores cho mỗi task
+#SBATCH --mem=250GB                # Yêu cầu 250GB bộ nhớ RAM
+#SBATCH -o out_%x_%j.txt           # Xuất file log ra file có tên out_<tên công việc>_<ID công việc>.txt
+#SBATCH -e error_%x_%j.txt         # Xuất file lỗi ra file có tên error_<tên công việc>_<ID công việc>.txt
+#SBATCH --job-name=asm          # Đặt tên công việc là "asm"
+#SBATCH --time=50:00:00            # Thời gian chạy tối đa là 50 giờ
+#SBATCH --partition=general        # Sử dụng phân vùng "general"
+#SBATCH --account=a_nguyen_quan    # Sử dụng tài khoản "a_nguyen_quan" để tính toán tài nguyên sử dụng
 
-module load miniconda3/4.12.0
-source ~/.bashrc
-source activate pacbio
 
-cd /scratch/project/stseq/Prakrithi/Methylation
-samtools merge s0007.bam with_5mC.bam 4d_5mc.bam
-pbmm2 index Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38.mmi
-pbmm2 align Homo_sapiens_assembly38.mmi s0007.bam s0007_aligned.bam
-
-samtools sort s0007_aligned.bam -o s0007_aligned_sorted.bam
-samtools index s0007_aligned_sorted.bam
-samtools view -bh s0007_aligned_sorted.bam "chr21" > chr21.bam
-
-# run these two commands once to install cpgtools
-wget https://github.com/PacificBiosciences/pb-CpG-tools/releases/download/v2.3.2/pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu.tar.gz
-tar -xzf pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu.tar.gz
-
-#CpGtools
-pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu/bin/aligned_bam_to_cpg_scores \
-  --bam s0007_aligned_sorted.bam \
-  --output-prefix s0007.hg38.pbmm2 \
-  --model pb-CpG-tools-v2.3.2-x86_64-unknown-linux-gnu/models/pileup_calling_model.v1.tflite \
-  --threads 16
+# cd /scratch/project/stseq/Trung/hifiasm
+cd /QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/VN_01_00_0007/20220803_Sequel64123_0067/Merged/
+/scratch/project/stseq/Trung/hifiasm/hifiasm -o VN0007.hifi_reads.asm -t 32 VN0007.hifi_reads.fq
 
 ```
