@@ -122,7 +122,7 @@ For the trio-binning telomere-to-telomere assembly；
 hifiasm -o NA12878.asm -t32 --ul ul.fq.gz -1 pat.yak -2 mat.yak HiFi-reads.fq.gz
 ```
 ### Tổng hợp quy trình sử dụng với dữ liệu Nanopore và Pacbio
-#### cài đặt: 
+#### cài đặt hifasm: 
 ```
 git clone https://github.com/chhylp123/hifiasm
 cd hifiasm && make
@@ -136,6 +136,18 @@ Có 3 quy trình khác nhau tuỳ vào dữ liệu đầu vào:
 * **HiFi-only Assembly** - Assembling HiFi reads without additional data types
 * **Trio-binning Assembly** - Producing fully phased assemblies with HiFi and trio-binning data
 * **Hi-C Integrated Assembly** - Producing fully phased assemblies with HiFi and Hi-C data
+
+#### Assembly với dữ liệu Pacbio 
+`/QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/` 
+
+1. **Bước 1**: Chuyển đổi file `.bam` sang `.fq` nếu cần thiết, sử dụng `bedtools` hoặc `samtools`
+```
+module load bedtools/2.30.0-gcc-11.3.0
+module active
+bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
+```
+
+2. Chạy hifi-assemby
 
 ```
 #!/bin/bash
