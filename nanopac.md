@@ -15,16 +15,16 @@ Có hai loại transposon chính:
       - Chúng di chuyển bằng cách sao chép chuỗi transposon và chèn bản sao của nó vào vị trí đích trong genôm.
       - Trong loại transposition này, có một bản sao mới của transposon và cả donor lẫn recipient DNA đều có một chuỗi transposon sau khi di chuyển.
    
-   * **Transposase**  là một enzyme quan trọng trong quá trình di chuyển của transposon. Nó giúp thực hiện việc cắt và chèn chuỗi transposon vào genome.
+* **Transposase**  là một enzyme quan trọng trong quá trình di chuyển của transposon. Nó giúp thực hiện việc cắt và chèn chuỗi transposon vào genome.
+  
 1. **depth of 20x** : Trong ngữ cảnh của việc giải trình tự gen, “độ sâu tối thiểu 20x” nghĩa là mỗi vị trí trên bộ gen được đọc trung bình 20 lần. Điều này giúp tăng độ tin cậy của việc xác định các nucleotide tại mỗi vị trí và giảm thiểu sai sót. Độ sâu giải trình tự càng cao, khả năng phát hiện biến thể gen càng chính xác
-
-1. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA 
-1. **25–35 kilobase reads** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
-
-1. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo.
-2. **Haplotigs**: là các contig đại diện cho các biến thể hợp tử (haplotype) trong một bộ gen lưỡng bội. Khi xây dựng các bộ gen từ dữ liệu đọc dài thế hệ thứ ba (third-gen sequencing), việc phân loại các contig theo haplotype có thể gặp khó khăn, đặc biệt khi độ đa dạng di truyền cao đến mức không thể nhận ra sự tương đồng giữa các haplotype trong quá trình lắp ráp. Kết quả là việc lặp lại khu vực thay vì kết hợp thành các biến thể hợp tử, và điều này có thể gây ra vấn đề trong phân tích tiếp theo, ví dụ như phát hiện biến thể hoặc xây dựng lại haplotype từ bộ gen lưỡng bội với các contig hợp tử không ghép cặp.
-1. **Scaffolds**: Được tạo ra bằng cách ghép nối các contigs lại với nhau dựa trên thông tin overlap giữa chúng hoặc thông tin từ các kỹ thuật bổ sung như mate-pair sequencing. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
-2. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
+2. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA
+3. **25–35 kilobase reads** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
+4. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo.
+5. **Unitig**: là một chuỗi liên tục của các đoạn DNA không bị gián đoạn bởi các khe hoặc lỗ. Nó được tạo ra bằng cách kết hợp các đoạn đọc (reads) từ dữ liệu ngắn hoặc dài thành một chuỗi duy nhất. Unitig thường là một phần của một **contig** hoặc **scaffold** trong quá trình lắp ráp genome.
+6. **Haplotigs**: là các contig đại diện cho các biến thể hợp tử (haplotype) trong một bộ gen lưỡng bội. Khi xây dựng các bộ gen từ dữ liệu đọc dài thế hệ thứ ba (third-gen sequencing), việc phân loại các contig theo haplotype có thể gặp khó khăn, đặc biệt khi độ đa dạng di truyền cao đến mức không thể nhận ra sự tương đồng giữa các haplotype trong quá trình lắp ráp. Kết quả là việc lặp lại khu vực thay vì kết hợp thành các biến thể hợp tử, và điều này có thể gây ra vấn đề trong phân tích tiếp theo, ví dụ như phát hiện biến thể hoặc xây dựng lại haplotype từ bộ gen lưỡng bội với các contig hợp tử không ghép cặp.
+7. **Scaffolds**: Được tạo ra bằng cách ghép nối các contigs lại với nhau dựa trên thông tin overlap giữa chúng hoặc thông tin từ các kỹ thuật bổ sung như mate-pair sequencing. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+8. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
    
 ## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
@@ -74,8 +74,8 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 # 2. Pacbio
 ## Hifiasm
 Hifiasm là một trình tổng hợp de novo nhanh chóng cho các bản đọc PacBio HiFi với phân giải haplotype. Nó có thể tổng hợp một bộ gen người trong vài giờ và tổng hợp một bộ gen cây sequoia California khoảng 30Gb trong vài ngày. Hifiasm phát ra các bộ phận tổng hợp một phần có chất lượng cạnh tranh với các trình tổng hợp tốt nhất. Khi có dữ liệu đọc ngắn của cha mẹ hoặc dữ liệu Hi-C, nó tạo ra các bộ tổng hợp có phân giải haplotype tốt nhất cho đến nay. Nó giúp đơn giản hoá quy trình tổng hợp, rút ngắn thời gian, không cần các trình đánh bóng như pilon hay racon. 
-
-Ví dụ
+### Sử dụng hifiasm
+Một lệnh cơ bản với hifiasm như sau:
 ```
 ./hifiasm -o NA12878.asm -t 32 NA12878.fq.gz
 ```
@@ -86,4 +86,39 @@ Trong lần chạy đầu tiên, hifiasm lưu các reads đã sửa và trùng l
 
 ```
 hifiasm -o NA12878.asm -t 32 --write-paf --write-ec /dev/null
+```
+Hifiasm mặc định loại bỏ sự trùng lặp của haplotig (purges haplotig). Đối với các bộ gen thuần chủng (inbred) hoặc đồng hợp tử (homozygous), bạn có thể tắt việc loại bỏ với tùy chọn -l0. Các bản đọc HiFi cũ có thể chứa các chuỗi adapter ngắn ở hai đầu của bản đọc. Bạn có thể chỉ định -z20 để cắt cả hai đầu của bản đọc bởi 20bp. Đối với các bộ gen nhỏ, sử dụng -f0 để vô hiệu hóa bộ lọc bloom ban đầu mà chiếm 16GB bộ nhớ ở đầu. Đối với các bộ gen lớn hơn nhiều so với con người, áp dụng -f38 hoặc thậm chí -f39 được ưa chuộng để tiết kiệm bộ nhớ trên việc đếm k-mer.
+
+### Hi-C integration
+```
+hifiasm -o NA12878.asm -t32 --h1 read1.fq.gz --h2 read2.fq.gz HiFi-reads.fq.gz
+```
+Trong chế độ này, mỗi contig được cho là một haplotig, theo định nghĩa chỉ đến từ một hợp tử cha mẹ duy nhất.
+
+Hiện tại Hifiasm không thực hiện việc ghép nối. Bạn cần chạy một trình ghép nối độc lập như SALSA hoặc 3D-DNA để ghép nối các haplotig đã được phân loại.
+
+### Trio binning
+
+### Ultra-long ONT integration
+Hifiasm could integrate ultra-long ONT reads to produce the telomere-to-telomere assembly:
+```
+hifiasm -o NA12878.asm -t32 --ul ul.fq.gz HiFi-reads.fq.gz
+```
+For the single-sample telomere-to-telomere assembly with Hi-C reads:
+```
+hifiasm -o NA12878.asm -t32 --ul ul.fq.gz --h1 read1.fq.gz --h2 read2.fq.gz HiFi-reads.fq.gz
+```
+For the trio-binning telomere-to-telomere assembly；
+```
+hifiasm -o NA12878.asm -t32 --ul ul.fq.gz -1 pat.yak -2 mat.yak HiFi-reads.fq.gz
+```
+### Tổng hợp quy trình sử dụng với dữ liệu Nanopore và Pacbio
+#### cài đặt: 
+```
+git clone https://github.com/chhylp123/hifiasm
+cd hifiasm && make
+```
+hoặc:
+```
+conda install 0c bioconda hifiasm
 ```
