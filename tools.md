@@ -16,10 +16,6 @@
 1. [UNI](https://www.nature.com/articles/s41591-024-02857-3): Towards a general-purpose foundation model for computational pathology https://github.com/mahmoodlab/UNI
 2. [TORCH](https://www.nature.com/articles/s41591-024-02915-w): Prediction of tumor origin in cancers of unknown primary origin with cytology-based deep learning
 
-$$
-x = \frac{{-b \pm \sqrt{{b^2 - 4ac}}}}{{2a}}
-$$
-
 # Constrastive learning:
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
 1. [T-cells](https://www.science.org/doi/10.1126/sciadv.adk4670): Self-supervised learning of T cell receptor sequences exposes core properties for T cell membership
@@ -36,7 +32,12 @@ $$
 12. [Constrastive-sc](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04210-8): Contrastive self-supervised clustering of scRNA-seq data
 1. [SimCLR tutorial notebook](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial17/SimCLR.html)
 1. [spatiAlign](https://github.com/STOmics/Spatialign): An Unsupervised Contrastive Learning Model for Data Integration of Spatially Resolved Transcriptomics
+1. [SSTCL](https://ieeexplore.ieee.org/document/10247346): Self-Supervised Triplet Contrastive Learning for Classifying Endometrial Histopathological Images
+2. [scMSI](https://github.com/ChengmingZhang-CAS/scMSI-master): Contrastively generative self-expression model for single-cell and spatial multimodal data
+3. [Proust](https://github.com/JianingYao/proust): Spatial domain detection using contrastive self-supervised learning for spatial multi-omics technologies
+4. [Breast-Cancer-Detection](https://github.com/matinamehdizadeh/Breast-Cancer-Detection): Classification of Breast Cancer Histopathology Images using a Modified Supervised Contrastive Learning Method
 
+ 
 # LLMs and Generative AI:
 1. [LLM Visualization](https://bbycroft.net/llm)
 # Other learning materials:
