@@ -32,6 +32,7 @@
 11. [SCLSC](https://www.nature.com/articles/s41598-023-50185-2): Predicting cell types with supervised contrastive learning on cells and their types.
 12. [Constrastive-sc](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04210-8): Contrastive self-supervised clustering of scRNA-seq data
 1. [SimCLR tutorial notebook](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial17/SimCLR.html)
+1. [spatiAlign](https://github.com/STOmics/Spatialign): An Unsupervised Contrastive Learning Model for Data Integration of Spatially Resolved Transcriptomics
 
 # LLMs and Generative AI:
 1. [LLM Visualization](https://bbycroft.net/llm)
