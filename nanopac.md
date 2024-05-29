@@ -148,7 +148,7 @@ bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
 # samtools fastq -@ $(nproc) -o output.fq input.bam
 ```
 
-2. Chạy hifi-assemby
+2. **Assembly with hifiasm**
 
 ```
 #!/bin/bash
