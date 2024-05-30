@@ -70,6 +70,8 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
+## Công cụ
+To assemble a human genome, we recommend the third-party de novo assembly tool [Flye](https://github.com/fenderglass/Flye). This analysis package represents a complete pipeline, taking raw nanopore reads as input, and producing polished contigs as output. We also advise one round of additional polishing of the assembly with [Medeka](https://github.com/nanoporetech/medaka).
 
 # 2. Pacbio
 ## Hifiasm
@@ -121,7 +123,7 @@ For the trio-binning telomere-to-telomere assembly；
 ```
 hifiasm -o NA12878.asm -t32 --ul ul.fq.gz -1 pat.yak -2 mat.yak HiFi-reads.fq.gz
 ```
-### Tổng hợp quy trình sử dụng với dữ liệu Nanopore và Pacbio
+### Quy trình assembly với dữ liệu Pacbio
 #### cài đặt hifasm: 
 ```
 git clone https://github.com/chhylp123/hifiasm
