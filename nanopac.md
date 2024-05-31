@@ -180,3 +180,19 @@ bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
 ```
 
 ```
+
+## [Quast](https://github.com/ablab/quast): Genome assembly evaluation tool
+**Metrics based only on contigs**:
+* Number of large contigs (i.e., longer than 500 bp) and total length of them.
+* Length of the largest contig.
+* N50 (length of a contig, such that all the contigs of at least the same length together cover at least 50% of the assembly).
+* Number of predicted genes, discovered either by GeneMark.hmm (for prokaryotes), GeneMark-ES or GlimmerHMM (for eukaryotes), or MetaGeneMark (for metagenomes).
+
+**When a reference is given**:
+* Numbers of misassemblies of different kinds (inversions, relocations, translocations, interspecies translocations (metaQUAST only) or local).
+* Number and total length of unaligned contigs.
+* Numbers of mismatches and indels, over the assembly and per 100 kb.
+* Genome fraction %, assembled part of the reference.
+* Duplication ratio, the total number of aligned bases in the assembly divided by the total number of those in the reference. If the assembly contains many contigs that cover the same regions, its duplication ratio will significantly exceed 1. This occurs due to multiple reasons, including overestimating repeat multiplicities and overlaps between contigs.
+* Number of genes in the assembly, completely or partially covered, based on a user-provided list of gene positions in the reference.
+* NGA50, a reference-aware version of N50 metric. It is calculated using aligned blocks instead of contigs. Such blocks are obtained after removing unaligned regions, and then splitting contigs at misassembly breakpoints. Thus, NGA50 is the length of a block, such that all the blocks of at least the same length together cover at least 50% of the reference.
