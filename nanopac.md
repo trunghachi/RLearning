@@ -182,6 +182,12 @@ bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
 ```
 
 ## [Quast](https://github.com/ablab/quast): Genome assembly evaluation tool
+**Install**:
+```
+git clone https://github.com/ablab/quast.git
+# /sw/auto/rocky8c/epyc3/software/Miniconda3/23.9.0-0/lib/python3.11/site-packages/
+```
+
 **Usage**:
 ```
 ./quast.py test_data/contigs_1.fasta \
