@@ -182,6 +182,32 @@ bedtools bamtofastq -i VN0007.hifi_reads.bam -fq VN0007.hifi_reads.fq
 ```
 
 ## [Quast](https://github.com/ablab/quast): Genome assembly evaluation tool
+**Usage**:
+```
+./quast.py test_data/contigs_1.fasta \
+           test_data/contigs_2.fasta \
+        -r test_data/reference.fasta.gz \
+        -g test_data/genes.txt \
+        -1 test_data/reads1.fastq.gz -2 test_data/reads2.fastq.gz \
+        -o quast_test_output
+```
+**Output**:
+```
+report.txt      summary table
+report.tsv      tab-separated version, for parsing, or for spreadsheets (Google Docs, Excel, etc)  
+report.tex      Latex version
+report.pdf      PDF version, includes all tables and plots for some statistics
+report.html     everything in an interactive HTML file
+icarus.html     Icarus main menu with links to interactive viewers
+contigs_reports/        [only if a reference genome is provided]
+  misassemblies_report  detailed report on misassemblies
+  unaligned_report      detailed report on unaligned and partially unaligned contigs
+k_mer_stats/            [only if --k-mer-stats is specified]
+  kmers_report          detailed report on k-mer-based metrics
+reads_stats/            [only if reads are provided]
+  reads_report          detailed report on mapped reads statistics
+```
+
 **Metrics based only on contigs**:
 * Number of large contigs (i.e., longer than 500 bp) and total length of them.
 * Length of the largest contig.
