@@ -1,7 +1,6 @@
-em
-# 1. Một số khái niệm cơ bản:
+# 1. Một số khái niệm cơ bản lắp ráp pha (phased assembly):
+
 1. **Transposon**:
-   
 Transposon(còn được gọi là **phần tử di động**) là một chuỗi **ADN** có khả năng tự di chuyển hoặc tự chèn chính nó vào một vị trí mới trong **genome** (genome là tập hợp toàn bộ thông tin di truyền - bao gồm cả DNA, genes, và nhiễm sắc thể, 
 trong khi nhiễm sắc thể là các đơn vị cấu tạo của genome chứa các gen cụ thể). Chúng có thể gây ra các hiệu ứng như tạo hoặc đảo ngược đột biến và thay đổi kích thước của genôm.
 
@@ -20,11 +19,26 @@ Có hai loại transposon chính:
 1. **depth of 20x** : Trong ngữ cảnh của việc giải trình tự gen, “độ sâu tối thiểu 20x” nghĩa là mỗi vị trí trên bộ gen được đọc trung bình 20 lần. Điều này giúp tăng độ tin cậy của việc xác định các nucleotide tại mỗi vị trí và giảm thiểu sai sót. Độ sâu giải trình tự càng cao, khả năng phát hiện biến thể gen càng chính xác
 2. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA
 3. **25–35 kilobase reads** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
-4. **contig**: contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo.
-5. **Unitig**: là một chuỗi liên tục của các đoạn DNA không bị gián đoạn bởi các khe hoặc lỗ. Nó được tạo ra bằng cách kết hợp các đoạn đọc (reads) từ dữ liệu ngắn hoặc dài thành một chuỗi duy nhất. Unitig thường là một phần của một **contig** hoặc **scaffold** trong quá trình lắp ráp genome.
-6. **Haplotigs**: là các contig đại diện cho các biến thể hợp tử (haplotype) trong một bộ gen lưỡng bội. Khi xây dựng các bộ gen từ dữ liệu đọc dài thế hệ thứ ba (third-gen sequencing), việc phân loại các contig theo haplotype có thể gặp khó khăn, đặc biệt khi độ đa dạng di truyền cao đến mức không thể nhận ra sự tương đồng giữa các haplotype trong quá trình lắp ráp. Kết quả là việc lặp lại khu vực thay vì kết hợp thành các biến thể hợp tử, và điều này có thể gây ra vấn đề trong phân tích tiếp theo, ví dụ như phát hiện biến thể hoặc xây dựng lại haplotype từ bộ gen lưỡng bội với các contig hợp tử không ghép cặp.
-7. **Scaffolds**: Được tạo ra bằng cách ghép nối các contigs lại với nhau dựa trên thông tin overlap giữa chúng hoặc thông tin từ các kỹ thuật bổ sung như mate-pair sequencing. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+
+
+Xem thêm các nội dung khác tại [Heng Li's blog](https://lh3.github.io/)
+1. **Contig** - contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo. Một contig không chứa các đoạn dài của trình tự không xác định (còn gọi là _khoảng trống lắp ráp - gaps_).
+1. **Scaffolds** (đôi khi gọi là _supercontig_): Được tạo ra bằng cách ghép nối các contigs lại với nhau bởi các _gaps có kích thước không chính xác_ (thông tin overlap giữa chúng) hoặc thông tin từ các kỹ thuật bổ sung như _mate-pair sequencing_. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+1. **Assembly**: một tập hợp các contig hoặc scaffold. Một lắp ráp là hoàn chỉnh haploid hoặc đơn giản là hoàn chỉnh nếu nó đại diện cho một bộ gen haploid đầy đủ.
+1. **Haplotig**: một contig đến từ cùng một haplotype. Trong một lắp ráp chưa phân pha, một contig có thể kết hợp các alen từ các haplotype khác nhau của bố mẹ trong một bộ gen diploid hoặc polyploid.
+1. **Unitig**: là một chuỗi liên tục của các đoạn DNA không bị gián đoạn bởi các khe hoặc lỗ. Nó được tạo ra bằng cách kết hợp các đoạn đọc (reads) từ dữ liệu ngắn hoặc dài thành một chuỗi duy nhất. Unitig thường là một phần của một **contig** hoặc **scaffold** trong quá trình lắp ráp genome.
+1. **Haplotigs**: là các contig đại diện cho các biến thể hợp tử (haplotype) trong một bộ gen lưỡng bội. Khi xây dựng các bộ gen từ dữ liệu đọc dài thế hệ thứ ba (third-gen sequencing), việc phân loại các contig theo haplotype có thể gặp khó khăn, đặc biệt khi độ đa dạng di truyền cao đến mức không thể nhận ra sự tương đồng giữa các haplotype trong quá trình lắp ráp. Kết quả là việc lặp lại khu vực thay vì kết hợp thành các biến thể hợp tử, và điều này có thể gây ra vấn đề trong phân tích tiếp theo, ví dụ như phát hiện biến thể hoặc xây dựng lại haplotype từ bộ gen lưỡng bội với các contig hợp tử không ghép cặp.
+1. **switch error** - Lỗi chuyển đổi: sự thay đổi từ alen của một bố mẹ sang alen của bố mẹ khác trên một contig (xem hình bên dưới). Thuật ngữ này đã được sử dụng để đo độ chính xác phân pha dựa trên tham chiếu trong hai thập kỷ. Một haplotig được cho là không có lỗi chuyển đổi.
+1. **Lỗi yak hamming**: một alen không nằm trên haplotype được hỗ trợ nhiều nhất của một contig (xem hình bên dưới). Mục đích chính của nó là để kiểm tra mức độ gần gũi của một contig với một haplotig. Định nghĩa này khá phức tạp. Thuật ngữ này có lẽ được sử dụng lần đầu tiên bởi Porubsky et al (2017) trong bối cảnh phân pha dựa trên tham chiếu. Tuy nhiên, áp dụng nó cho các contig không phải là dễ dàng. Định nghĩa yak không được chấp nhận rộng rãi. Tỷ lệ lỗi hamming có lẽ ít quan trọng hơn trong thực tế (Richard Durbin, giao tiếp cá nhân).
+
+## Các loại lắp ráp pha.
+1. **Lắp ráp nén**: một lắp ráp hoàn chỉnh với các alen của bố mẹ chuyển ngẫu nhiên trong một contig. Hầu hết các trình lắp ráp thông thường tạo ra các lắp ráp bị nén. Một lắp ráp bị nén cũng được gọi là lắp ráp squashed hoặc lắp ráp conensus.
+1. **Collapsed assembly - Lắp ráp chính**: một lắp ráp hoàn chỉnh với các đoạn dài của khối pha. Khái niệm này đã được GRC sử dụng. Các lắp ráp BAC-to-BAC đều có thể được coi là các lắp ráp chính. Falcon-unzip có lẽ là trình đầu tiên tạo ra các lắp ráp như vậy cho dữ liệu whole-genome shotgun.
+1. **Alternate assembly - Lắp ráp thay thế**: một lắp ráp không hoàn chỉnh gồm các haplotig trong các vùng dị hợp tử. Một lắp ráp thay thế luôn đi kèm với một lắp ráp chính. Nó không hữu ích một mình vì nó bị phân mảnh và không hoàn chỉnh.
+1. **Partially phased assembly - Lắp ráp phân pha một phần**: các bộ lắp ráp hoàn chỉnh với các đoạn dài của khối pha, đại diện cho toàn bộ bộ gen diploid/polyploid.
+1. **Haplotype-resolved assembly**: các bộ lắp ráp hoàn chỉnh gồm các haplotig, đại diện cho toàn bộ bộ gen diploid/polyploid. Khái niệm này đã được sử dụng không nhất quán trong các ấn phẩm mà không có định nghĩa rõ ràng.
 8. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
+
    
 ## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
