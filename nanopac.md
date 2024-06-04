@@ -306,44 +306,20 @@ L75             35
 # indels per 100 kbp 0.5
 ```
 
-1. **# contigs**:
-   - Số lượng contig trong bộ lắp ráp. Contig là các đoạn DNA liên tục mà không có khoảng trống không xác định.
-
-2. **Largest contig**:
-   - Chiều dài của contig lớn nhất trong bộ lắp ráp, tính bằng base pair (bp).
-
-3. **Total length**:
-   - Tổng chiều dài của tất cả các contig trong bộ lắp ráp, tính bằng base pair (bp).
-
-4. **Reference length**:
-   - Chiều dài của bộ gen tham chiếu. Đây là chiều dài của bộ gen mà bạn đang so sánh với bộ lắp ráp của mình.
-
-5. **GC (%)**:
-   - Tỷ lệ phần trăm của các base guanine (G) và cytosine (C) trong bộ lắp ráp.
-
-6. **N50**:
-   - Chiều dài của contig ngắn nhất trong nhóm các contig dài nhất mà tổng chiều dài của chúng chiếm ít nhất 50% tổng chiều dài của tất cả các contig. Đây là một chỉ số phổ biến để đánh giá độ phân mảnh của bộ lắp ráp.
-
-7. **N75**:
-   - Tương tự như N50, nhưng tính cho 75% tổng chiều dài của tất cả các contig.
-
-8. **L50**:
-   - Số lượng contig dài nhất sao cho tổng chiều dài của chúng chiếm ít nhất 50% tổng chiều dài của tất cả các contig. Chỉ số này giúp bạn hiểu rõ hơn về mức độ phân mảnh của bộ lắp ráp.
-
-9. **L75**:
-   - Tương tự như L50, nhưng tính cho 75% tổng chiều dài của tất cả các contig.
-
-10. **# misassemblies**:
-    - Số lượng lỗi lắp ráp. Lỗi lắp ráp xảy ra khi một đoạn DNA bị lắp ráp sai vị trí hoặc bị đảo ngược so với bộ gen tham chiếu.
-
-11. **# mismatches per 100 kbp**:
-    - Số lượng nucleotide không khớp trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
-
-12. **# indels per 100 kbp**:
-    - Số lượng các insertion (thêm vào) và deletion (xóa bỏ) trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
+1. **# contigs**: - Số lượng contig trong bộ lắp ráp. Contig là các đoạn DNA liên tục mà không có khoảng trống không xác định.
+2. **Largest contig**: - Chiều dài của contig lớn nhất trong bộ lắp ráp, tính bằng base pair (bp).
+3. **Total length**: - Tổng chiều dài của tất cả các contig trong bộ lắp ráp, tính bằng base pair (bp).
+4. **Reference length**: - Chiều dài của bộ gen tham chiếu. Đây là chiều dài của bộ gen mà bạn đang so sánh với bộ lắp ráp của mình.
+5. **GC (%)**: - Tỷ lệ phần trăm của các base guanine (G) và cytosine (C) trong bộ lắp ráp.
+6. **N50**: - Chiều dài của contig ngắn nhất trong nhóm các contig dài nhất mà tổng chiều dài của chúng chiếm ít nhất 50% tổng chiều dài của tất cả các contig. Đây là một chỉ số phổ biến để đánh giá độ phân mảnh của bộ lắp ráp.
+7. **N75**: - Tương tự như N50, nhưng tính cho 75% tổng chiều dài của tất cả các contig.
+8. **L50**: - Số lượng contig dài nhất sao cho tổng chiều dài của chúng chiếm ít nhất 50% tổng chiều dài của tất cả các contig. Chỉ số này giúp bạn hiểu rõ hơn về mức độ phân mảnh của bộ lắp ráp.
+9. **L75**: - Tương tự như L50, nhưng tính cho 75% tổng chiều dài của tất cả các contig.
+10. **# misassemblies**: - Số lượng lỗi lắp ráp. Lỗi lắp ráp xảy ra khi một đoạn DNA bị lắp ráp sai vị trí hoặc bị đảo ngược so với bộ gen tham chiếu.
+11. **# mismatches per 100 kbp**: - Số lượng nucleotide không khớp trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
+12. **# indels per 100 kbp**: - Số lượng các insertion (thêm vào) và deletion (xóa bỏ) trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
 
 ### Kết Luận
-
 - **Số lượng contig ít** và **chiều dài lớn nhất của contig cao** thường là dấu hiệu của một bộ lắp ráp chất lượng cao, ít bị phân mảnh.
 - **N50 và L50** càng cao càng tốt, chỉ ra rằng các contig trong bộ lắp ráp có xu hướng dài và ít bị phân mảnh.
 - **Số lượng lỗi lắp ráp thấp** và **số lượng mismatches và indels thấp** cho thấy bộ lắp ráp có độ chính xác cao khi so sánh với bộ gen tham chiếu.
