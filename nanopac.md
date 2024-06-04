@@ -84,6 +84,8 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
+![de novo assembly](https://github.com/trunghachi/RLearning/assets/45091486/df101ee3-5263-407b-a5ee-0f77cf80585a)
+
 ## Công cụ
 To assemble a human genome, we recommend the third-party de novo assembly tool [Flye](https://github.com/fenderglass/Flye). This analysis package represents a complete pipeline, taking raw nanopore reads as input, and producing polished contigs as output. We also advise one round of additional polishing of the assembly with [Medeka](https://github.com/nanoporetech/medaka).
 
