@@ -91,6 +91,46 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 To assemble a human genome, we recommend the third-party de novo assembly tool [Flye](https://github.com/fenderglass/Flye). This analysis package represents a complete pipeline, taking raw nanopore reads as input, and producing polished contigs as output. We also advise one round of additional polishing of the assembly with [Medeka](https://github.com/nanoporetech/medaka).
 
 # 2. Pacbio
+
+![image](https://github.com/trunghachi/RLearning/assets/45091486/1eea46d0-ecc9-4878-b694-2aac1729276b)
+
+```
+bam="path/to/your/file.bam"
+prefix="prefix_for_output_files"
+bam_basename=$(basename "$bam" .bam)
+threads=32
+
+# Initial: Convert bam to fasta
+samtools fasta -@ $(($threads - 1)) "$bam" > "${bam_basename}.fasta"
+
+# Step 1: De-novo assembly by hifiasm
+hifiasm -o "$prefix" -t "$threads" "${bam_basename}.fasta"
+
+# Step: gfa -> fa
+gfatools gfa2fa "${prefix}.bp.p_ctg.gfa" > "${prefix}.bp.p_ctg.fasta"
+bgzip --threads $threads --stdout "${prefix}.bp.p_ctg.fasta" > "${prefix}.bp.p_ctg.fasta.gz"
+
+# Optional for assembly stats
+k8 /opt/calN50/calN50.js -L3.1g "${prefix}.bp.p_ctg.fasta.gz" > "${prefix}.bp.p_ctg.fasta.stats.txt"
+
+# Step 3: Align fasta file to HG38 reference
+reference="path/to/HG38/reference"
+sample_id="sample123"
+query_sequences="${prefix}.bp.p_ctg.fasta.gz"
+minimap2 -t $(($threads - 4)) -L --secondary=no --eqx --cs -a -x asm5 -R "@RG\\tID:${sample_id}_hifiasm\\tSM:${sample_id}" "$reference" "$query_sequences" | \
+    samtools sort -@ 3 -T ./TMP -m 8G -O BAM -o "${sample_id}.asm.${reference_name}.bam"
+samtools index "${sample_id}.asm.${reference_name}.bam"
+
+# Optional step to get more stats from assembly
+samtools view -h "${sample_id}.asm.${reference_name}.bam" | \
+k8 /opt/minimap2-2.17/misc/paftools.js sam2paf - | \
+sort -k6,6 -k8,8n | \
+k8 /opt/minimap2-2.17/misc/paftools.js call -L5000 -f "$reference" -s "$sample_id" - > "${bam_basename}.paftools.vcf"
+bgzip --threads $threads --stdout "${bam_basename}.paftools.vcf" > "${bam_basename}.paftools.vcf.gz"
+tabix -p vcf "${bam_basename}.paftools.vcf.gz"
+bcftools stats --threads $(($threads - 1)) "${bam_basename}.paftools.vcf.gz" > "${bam_basename}.stats.txt"
+```
+
 ## Hifiasm
 Hifiasm là một trình tổng hợp de novo nhanh chóng cho các bản đọc PacBio HiFi với phân giải haplotype. Nó có thể tổng hợp một bộ gen người trong vài giờ và tổng hợp một bộ gen cây sequoia California khoảng 30Gb trong vài ngày. Hifiasm phát ra các bộ phận tổng hợp một phần có chất lượng cạnh tranh với các trình tổng hợp tốt nhất. Khi có dữ liệu đọc ngắn của cha mẹ hoặc dữ liệu Hi-C, nó tạo ra các bộ tổng hợp có phân giải haplotype tốt nhất cho đến nay. Nó giúp đơn giản hoá quy trình tổng hợp, rút ngắn thời gian, không cần các trình đánh bóng như pilon hay racon. 
 ### Sử dụng hifiasm
