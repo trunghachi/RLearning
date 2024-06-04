@@ -84,6 +84,7 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
+
 ![de novo assembly](https://github.com/trunghachi/RLearning/assets/45091486/df101ee3-5263-407b-a5ee-0f77cf80585a)
 
 ## Công cụ
