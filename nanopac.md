@@ -107,14 +107,14 @@ To assemble a human genome, we recommend the third-party de novo assembly tool [
 
 | Image         | Major tool versions                                                        | 
 |---------------|----------------------------------------------------------------------------|
-| align_hifiasm | minimap2 2.17<br>samtools 1.14                                             |
-| bcftools      | bcftools 1.14                                                              |
+| align_hifiasm | minimap2/2.24-gcccore-11.3.0 <br>samtools/1.16.1-gcc-11.3.0                                           |
+| bcftools      | bcftools/1.15.1-gcc-11.3.0                                                             |
 | gfatools      | gfatools 0.4<br>htslib 1.14<br>k8 0.2.5<br>caln50 01091f2                  |
 | hifiasm       | hifiasm 0.19.4                                                             |
 | htslib        | htslib 1.14                                                                |
 | paftools      | paftools 2.26-r1182-dirty                                                  |
 | pyyaml        | python 3.8.10; custom scripts                                              |
-| samtools      | samtools 1.14                                                              |
+| samtools      |samtools/1.16.1-gcc-11.3.0                                                              |
 | yak           | yak 0.1                                                                    |
 
 
