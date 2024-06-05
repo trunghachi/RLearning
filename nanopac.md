@@ -119,40 +119,111 @@ To assemble a human genome, we recommend the third-party de novo assembly tool [
 
 
 ```
-bam="path/to/your/file.bam"
-prefix="prefix_for_output_files"
+#!/bin/bash
+#SBATCH -N 1                       # Yêu cầu 1 node
+#SBATCH -n 1                       # Yêu cầu 1 task
+#SBATCH -c 16                      # Yêu cầu 16 CPU cores cho mỗi task
+#SBATCH --mem=300GB                # Yêu cầu 250GB bộ nhớ RAM
+#SBATCH -o out_%x_%j.txt           # Xuất file log ra file có tên out_<tên công việc>_<ID công việc>.txt
+#SBATCH -e error_%x_%j.txt         # Xuất file lỗi ra file có tên error_<tên công việc>_<ID công việc>.txt
+#SBATCH --job-name=asm920          # Đặt tên công việc là "asm"
+#SBATCH --time=30:00:00            # Thời gian chạy tối đa là 24 giờ
+#SBATCH --partition=general        # Sử dụng phân vùng "general"
+#SBATCH --account=a_nguyen_quan    # Sử dụng tài khoản "a_nguyen_quan" để tính toán tài nguyên sử dụng
+
+# parameters
+bam="/QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/VN_01_01_0920/20220803_Sequel64123_0067/Merged/VN0920.hifi_reads.bam"
+fasta="/QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/VN_01_01_0920/20220803_Sequel64123_0067/Merged/"
+prefix="/QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/hifi_data/VN_01_01_0920/20220803_Sequel64123_0067/asm_output/"
+mkdir -p "${prefix}"
 bam_basename=$(basename "$bam" .bam)
-threads=32
+threads=16
 
-# Initial: Convert bam to fasta
-samtools fasta -@ $(($threads - 1)) "$bam" > "${bam_basename}.fasta"
+# active env for installed tools: gfatools, bgzip
+conda init
+source activate quast
+# Load tools
+module load samtools/1.16.1-gcc-11.3.0 
+module load minimap2/2.24-gcccore-11.3.0 
+module load  bcftools/1.15.1-gcc-11.3.0 
+module load tabixpp/1.1.0-gcc-10.3.0
+source ~/.bashrc
 
-# Step 1: De-novo assembly by hifiasm
-hifiasm -o "$prefix" -t "$threads" "${bam_basename}.fasta"
+# Initial: Convert bam to fasta using samtools or bedtools. 
+# Input:            bam file;
+# Output:           fasta/fastq file, it is much smaller than binary bam file
+samtools fasta -@ $(($threads - 1)) "$bam" > "${fasta}${bam_basename}.fasta"
 
-# Step: gfa -> fa
-gfatools gfa2fa "${prefix}.bp.p_ctg.gfa" > "${prefix}.bp.p_ctg.fasta"
-bgzip --threads $threads --stdout "${prefix}.bp.p_ctg.fasta" > "${prefix}.bp.p_ctg.fasta.gz"
+# Step 1: De-novo assembly by hifiasm. In HPC: hifiasm/0.16.1-gcccore-10.3.0; or download from Github
+# Input:            fasta/fastq file;
+# Output hifiasm:    gfa, bed, we will need the {basename}.bp.p_ctg.gfa
+cd /scratch/project/stseq/Trung/hifiasm/
+./hifiasm -o "$prefix" -t "$threads" "${fasta}${bam_basename}.fasta"
+
+# Step 2: gfa -> fasta -> fasta.gz
+gfatools gfa2fa "${prefix}${bam_basename}.bp.p_ctg.gfa" > "${prefix}${bam_basename}.bp.p_ctg.fasta"
+bgzip --threads $threads --stdout "${prefix}${bam_basename}.bp.p_ctg.fasta" > "${prefix}${bam_basename}.bp.p_ctg.fasta.gz"
 
 # Optional for assembly stats
-k8 /opt/calN50/calN50.js -L3.1g "${prefix}.bp.p_ctg.fasta.gz" > "${prefix}.bp.p_ctg.fasta.stats.txt"
+/scratch/project/stseq/Trung/Conda/envs/quast/bin/k8 \
+    /scratch/project/stseq/Trung/Conda/envs/quast/bin/calN50.js \
+    -L3.1g "${prefix}${bam_basename}.bp.p_ctg.fasta.gz" > \
+    "${prefix}${bam_basename}.bp.p_ctg.fasta.stats.txt"
 
 # Step 3: Align fasta file to HG38 reference
-reference="path/to/HG38/reference"
-sample_id="sample123"
-query_sequences="${prefix}.bp.p_ctg.fasta.gz"
-minimap2 -t $(($threads - 4)) -L --secondary=no --eqx --cs -a -x asm5 -R "@RG\\tID:${sample_id}_hifiasm\\tSM:${sample_id}" "$reference" "$query_sequences" | \
-    samtools sort -@ 3 -T ./TMP -m 8G -O BAM -o "${sample_id}.asm.${reference_name}.bam"
-samtools index "${sample_id}.asm.${reference_name}.bam"
+# Input:            HG38 reference (wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz); 
+#                   query_sequences: fasta.gz file
+# Output:           bam file
 
-# Optional step to get more stats from assembly
-samtools view -h "${sample_id}.asm.${reference_name}.bam" | \
-k8 /opt/minimap2-2.17/misc/paftools.js sam2paf - | \
-sort -k6,6 -k8,8n | \
-k8 /opt/minimap2-2.17/misc/paftools.js call -L5000 -f "$reference" -s "$sample_id" - > "${bam_basename}.paftools.vcf"
-bgzip --threads $threads --stdout "${bam_basename}.paftools.vcf" > "${bam_basename}.paftools.vcf.gz"
-tabix -p vcf "${bam_basename}.paftools.vcf.gz"
-bcftools stats --threads $(($threads - 1)) "${bam_basename}.paftools.vcf.gz" > "${bam_basename}.stats.txt"
+reference="/scratch/project/stseq/Trung/vngenome/hg38.fa"
+sample_id="VN0920"
+query_sequences="${prefix}${bam_basename}.bp.p_ctg.fasta.gz"
+reference_name="hg38"
+
+# Ensure the calculated thread count is non-negative
+minimap_threads=$((threads > 8 ? threads - 8 : 1))
+
+minimap2 \
+    -t "$minimap_threads" \
+    -L \
+    --secondary=no --eqx --cs -a \
+    -x asm5 \
+    -R "@RG\tID:${sample_id}_hifiasm\tSM:${sample_id}" \
+    "$reference" \
+    "$query_sequences" | \
+    samtools sort \
+    -@ "$minimap_threads" \
+    -T ./TMP \
+    -m 100G \
+    -O BAM \
+    -o "${prefix}${sample_id}.asm.${reference_name}.bam"
+
+samtools index "${prefix}${sample_id}.asm.${reference_name}.bam"
+
+# Optional: Get more stats from assembly
+samtools \
+    view -h "${prefix}${sample_id}.asm.${reference_name}.bam" | \
+    /scratch/project/stseq/Trung/Conda/envs/quast/bin/k8 \
+        /scratch/project/stseq/Trung/Conda/envs/quast/bin/paftools.js sam2paf - | \
+    sort -k6,6 -k8,8n | \
+    /scratch/project/stseq/Trung/Conda/envs/quast/bin/k8 \
+        /scratch/project/stseq/Trung/Conda/envs/quast/bin/paftools.js call \
+        -L5000 -f "$reference" -s "$sample_id" - > "${prefix}${bam_basename}.paftools.vcf"
+
+bgzip --threads $threads --stdout "${prefix}${bam_basename}.paftools.vcf" > "${prefix}${bam_basename}.paftools.vcf.gz"
+tabix -p vcf "${prefix}${bam_basename}.paftools.vcf.gz"
+bcftools stats --threads $((threads - 1)) "${prefix}${bam_basename}.paftools.vcf.gz" > "${prefix}${bam_basename}.stats.txt"
+
+conda deactivate
+
+## If you can run paftools.js from minimap2, you already have k8 installed. If not:
+
+## install k8 without conda:
+# curl -L https://github.com/attractivechaos/k8/releases/download/v0.2.4/k8-0.2.4.tar.bz2 | tar -jxf -
+# cp k8-0.2.4/k8-`uname -s` k8         # or copy it to a directory on your $PATH
+
+## install k8 via bioconda:
+# conda install -c bioconda minimap2   # k8 comes with minimap2
 ```
 
 ## Hifiasm
