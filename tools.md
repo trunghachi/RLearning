@@ -1,6 +1,4 @@
 # Plot and tools:
-1. [BLEEP](https://github.com/bowang-lab/BLEEP): Spatially Resolved Gene Expression Prediction from Histology Images via Bi-modal Contrastive Learning
-2. [VOLTA](https://github.com/AIMLab-UBC/VOLTA): an enVironment-aware cOntrastive ceLl represenTation leArning for histopathology
 3. [circlize](https://github.com/jokergoo/circlize): circular visualization in R: 
 4. [PyGWalker](https://kanaries.net/pygwalker): turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
 5. [BioCypher](https://biocypher.org/): BioCypher is the simplest way to create an AI-enabled knowledge graph for biomedical (or other) tasks.
@@ -19,6 +17,8 @@
 2. [TORCH](https://www.nature.com/articles/s41591-024-02915-w): Prediction of tumor origin in cancers of unknown primary origin with cytology-based deep learning
 
 # Constrastive learning:
+1. [BLEEP](https://github.com/bowang-lab/BLEEP): Spatially Resolved Gene Expression Prediction from Histology Images via Bi-modal Contrastive Learning
+2. [VOLTA](https://github.com/AIMLab-UBC/VOLTA): an enVironment-aware cOntrastive ceLl represenTation leArning for histopathology
 1. [TransPath](https://github.com/Xiyue-Wang/TransPath): Transformer-based unsupervised contrastive learning for histopathological image classification
 1. [T-cells](https://www.science.org/doi/10.1126/sciadv.adk4670): Self-supervised learning of T cell receptor sequences exposes core properties for T cell membership
 2. [scDiffusion](https://github.com/EperLuo/scDiffusion): conditional generation of high-quality single-cell data using diffusion model
