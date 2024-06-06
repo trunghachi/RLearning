@@ -1,8 +1,9 @@
 # Plot and tools:
 1. [BLEEP](https://github.com/bowang-lab/BLEEP): Spatially Resolved Gene Expression Prediction from Histology Images via Bi-modal Contrastive Learning
-2. [circlize](https://github.com/jokergoo/circlize): circular visualization in R: 
-3. [PyGWalker](https://kanaries.net/pygwalker): turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
-4. [BioCypher](https://biocypher.org/): BioCypher is the simplest way to create an AI-enabled knowledge graph for biomedical (or other) tasks.
+2. [VOLTA](https://github.com/AIMLab-UBC/VOLTA): an enVironment-aware cOntrastive ceLl represenTation leArning for histopathology
+3. [circlize](https://github.com/jokergoo/circlize): circular visualization in R: 
+4. [PyGWalker](https://kanaries.net/pygwalker): turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
+5. [BioCypher](https://biocypher.org/): BioCypher is the simplest way to create an AI-enabled knowledge graph for biomedical (or other) tasks.
 # New models:
 1. [RUDOLFV](https://arxiv.org/pdf/2401.04079): A foundation model by pathologists for pathologists
 2. [HistoSSLscaling](https://github.com/owkin/HistoSSLscaling): Scaling Self-Supervised Learning for Histopathology with Masked Image Modeling
