@@ -513,3 +513,25 @@ A human variation workflow refers to the systematic process of analyzing genetic
 * **Association studies**: Linking identified variants to specific diseases or traits.
 * **Functional studies**: Investigating the biological effects of specific variants.
 * **Population genetics**: Understanding the distribution and evolution of genetic variations in human populations.
+## [Nanopore EPI2ME workflows](https://labs.epi2me.io/workflows/wf-human-variation/#miscellaneous-options)
+1. [Remora, MinKNOW](https://github.com/nanoporetech/remora): For **gold-standard 5mC methylation calling** in the human genome, we recommend the algorithm Remora, which is integrated into MinKNOW — the software onboard nanopore sequencing devices.
+2. [Clair3](https://github.com/HKU-BAL/Clair3):
+* _clair3_SNP.vcf_: Variant Call Format (VCF) files contains information about SNPs identified by the Clair3 variant caller in the Nanopore data. Each line represents a potential **SNP** location, its reference and alternative alleles, and quality scores. ('/QRISdata/Q3570/Data/sequencing_data/NanoPore/old_analysis')
+* Clair3 appears to be the best tool for calling SNP/Indels from NanoPore data (more detail at: https://www.biorxiv.org/content/10.1101/2024.03.15.585313v1.full.pdf) 
+4. [CuteSV](https://github.com/tjiangHIT/cuteSV): https://link.springer.com/protocol/10.1007/978-1-0716-2293-3_9
+* _cuteSV.vcf_: This file contains information about structural variants (SVs) like insertions, deletions, inversions, and translocations identified by cuteSV in the Nanopore data. Each line represents a potential **SV** location, its type, and other relevant details.
+## [Pacbio Whole Genome Sequencing Workflow](https://github.com/PacificBiosciences/HiFI-human-WGS-WDL)
+PacBio WGS Variant Pipeline performs read alignment, variant calling, and phasing. Joint-calling of small variants and structural variants for cohorts and optional variant filtering and annotation is also available for HiFi human WGS. The workflow can run using **Azure, AWS, GCP, and HPC backends**."
+1. [ccsmeth](https://github.com/PengNi/ccsmeth): Detecting DNA methylation from PacBio CCS reads
+2.  resource and a reference bundle for WGS: https://pbsharing.blob.core.windows.net/resources/reference.tar; https://pbsharing.blob.core.windows.net/resources/resources.tar;
+3.  [Sniffles2](https://www.biorxiv.org/content/10.1101/2022.04.04.487055v1.full)
+4.  Hifiasm
+5.  [primrose](https://github.com/mattoslmp/primrose): Primrose predicts 5-Methylcytosine (5mC) of each CpG in PacBio HiFi reads, using a Convolutional Neural Network. Methylation is assumed to be symmetric between strands. The output is reported in the forward direction with respect to the HiFi read sequence.
+6.  [PacBio Secondary Analysis](https://github.com/PacificBiosciences/pbbioconda) Tools on Bioconda
+7.  [SMRT Link](https://www.pacb.com/support/software-downloads/): Single-Molecule Real-Time Sequencing, SMRT sequencing can read much longer stretches, often exceeding 30,000 bases in a single read. This provides a more comprehensive view of the entire DNA sequence.
+8.  
+## Where are the data:
+```
+QRISdata/Q3570/Data/sequencing_data/NanoPore
+/QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/
+```
