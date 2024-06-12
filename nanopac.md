@@ -54,6 +54,10 @@ Tranditional method.
 * **Satellite Chromosomes**: These are chromosomes with a small, secondary constriction on one arm. This constriction is attached to the main body of the chromosome by a thin strand of chromatin and often appears like a small satellite orbiting a planet.  These are found in humans on chromosomes 13, 14, 15, 21, and 22, and the Y chromosome in some cases. They don't contain genes themselves but may play a role in chromosome stability and function.
 * **Satellite DNA**: This refers to repetitive, non-coding DNA sequences found in the human genome.  These sequences are thought to be leftover DNA that doesn't code for proteins and may not have a specific function. There are different families of satellite DNA, with Human Satellite 1 (**HSat1**) being the most AT-rich (high Adenine and Thymine content) fraction; **HSat2**: Less AT-rich than HSat1; **HSat3**: The least AT-rich satellite family.  While the function of these sequences is not fully understood, recent research suggests they might play a role in regulating gene expression.
 * **HOR array (Higher-Order Repeat array)**:
+* **Native DNA**: exists within the chromosomes of the cell nucleus, packaged with proteins like histones (that means the DNA in native state, unmodified)
+* **Plasmid DNA**: These are small, circular DNA molecules found in bacteria that replicate independently of the chromosome.
+* **Recombinant DNA**: This is artificially created DNA formed by combining segments from different sources.
+* **Amplified DNA**: This refers to DNA that has been copied or multiplied using techniques like PCR, often for specific research purposes.
 * ****:
 * ****:
 * ****:
@@ -545,3 +549,55 @@ QRISdata/Q3570/Data/sequencing_data/NanoPore
 /QRISdata/Q3570/Data/sequencing_data/NGUY-0032_PacBio/
 ```
 2. Example datasets: https://www.pacb.com/connect/datasets/
+
+## Cấu trúc cơ bản của một số định dạng file:
+### 1. .fasta 
+```
+">gi|12345678|gb|AC123456.1| Homo sapiens chromosome 1, GRCh38.p13 Primary Assembly
+ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT
+>gi|12345679|gb|AC123457.1| Homo sapiens chromosome 2, GRCh38.p13 Primary Assembly
+ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGAT"
+```
+"Tập tin FASTA (FASTA file) là định dạng văn bản được sử dụng để lưu trữ trình tự DNA, RNA hoặc protein. Tên gọi FASTA bắt nguồn từ ""FAST All"", một chương trình được sử dụng để so sánh trình tự DNA.
+
+1. Dòng đầu tiên: Bắt đầu bằng dấu "">"" (ký hiệu greater than) và tiếp theo là tên trình tự. Tên này có thể bao gồm thông tin về nguồn gốc, chức năng hoặc các đặc điểm khác của trình tự.
+2. Dòng tiếp theo: Chứa trình tự DNA, RNA hoặc protein. Các ký tự được sử dụng để biểu diễn các axit amin hoặc base nitơ.
+3. Dòng tiếp theo: Có thể có thêm dòng comment (bắt đầu bằng dấu #) để cung cấp thông tin bổ sung về trình tự.
+4. Kết thúc: Tập tin FASTA có thể chứa nhiều trình tự, mỗi trình tự được phân tách bởi dòng đầu tiên với tên mới.
+
+### 2. raw .fastq
+```
+@661c877d-cfda-487e-8b31-8d8266ff5623 runid=452d67d8b1ec1afdd73c02966d09c4c42c8f4dae read=111 ch=1579 start$
+ATTACCTGTTACTCGTTCAGTTACGTATTGCTACCCAACAGCAATGAAAACATGTCCACACAAAAACCTGTACACAAGTGATTCACAGCAGCCTTATCCATCACAGC$
++
+'(*(()*0/0)))))667666?@;877;>=><<<@@>?@BCCCDD<6888,,/AB@<=>E{GFCJPGA@?E;9=AAB>@??GGFFFDCCDBBA?B@A@<<<?A?:;2$
+```
+"FASTQ files (.fastq) là một định dạng tập tin văn bản được sử dụng để lưu trữ trình tự DNA hoặc RNA thô được tạo ra bởi các máy giải trình tự DNA thế hệ mới (NGS). So với FASTA files chỉ chứa trình tự, FASTQ files cung cấp thông tin bổ sung về chất lượng của mỗi base gọi (base call) trong trình tự. Mỗi đọc (read) trong FASTQ file được biểu diễn bằng bốn dòng:
+
+1. Dòng header (tiêu đề): Bắt đầu bằng ký tự ""@"" (@), tiếp theo là một chuỗi ký tự nhận dạng duy nhất cho đọc (read ID). Thường chứa thông tin về nguồn, máy giải trình tự, và vị trí của đọc trên chip dòng chảy (flowcell).
+2. Dòng trình tự: Chứa trình tự nucleotide của đọc (thường là DNA hoặc RNA). Các ký tự A, C, G, T (U) được sử dụng để đại diện cho các base nitơ.
+3. Dòng dấu ""+"" (plus): Dòng này thường là dấu ""+"" (plus) và không chứa thông tin hữu ích.
+4. Dòng chất lượng: Chứa các ký tự mã hóa chất lượng (quality scores) cho mỗi base tương ứng với dòng trình tự ở trên. Ký tự thường được sử dụng là Phred score (+33) hoặc Sanger score (+40). Giá trị chất lượng cao hơn biểu thị khả năng đọc base đó chính xác cao hơn.
+
+### 3. .mmi files (minimap index files) from FASTA files
+"Minimap is a popular tool used for aligning DNA or RNA sequences. To improve search speed, it creates index files in the .mmi format from reference sequences stored in FASTA files (.fasta). These .mmi files don't contain the actual sequences themselves, but rather a compressed representation to facilitate rapid searching during alignment.
+The specific details of the internal structure of .mmi files are not publicly documented by the minimap developers.
+
+### 4. .bam files
+5mC BAM files: These files store the aligned reads from PacBio sequencing after methylation calling. They likely contain information about which regions of the genome are methylated with 5mC.
+Unlike human-readable FASTA files, BAM files are stored in a binary format for compactness and faster processing by computers.
+AM files (Binary Alignment Map) are the workhorses for storing alignments between DNA/RNA reads (short sequences) and a reference genome (a complete DNA sequence). They offer a compact and efficient way to represent this vital information for bioinformatics analyses.
+Two Main Parts: BAM files consist of two key components:
+1. **Header**: This section contains crucial information about the alignment process and the data itself. It includes details like:
+* Reference genome information (name, length, etc.)
+* Read group information (source of the reads)
+* Alignment parameters used (software, settings)
+* Dictionary for any custom tags used in the alignment
+2. **Alignment Blocks**: This section stores the actual alignment data for each read against the reference genome. Each block (alignment) has details like:
+- Query Name: The unique identifier for the read being aligned.
+- Flags: Bitwise flags indicating properties of the alignment (e.g., mapped, unmapped, reverse strand).
+- Reference ID & Position: The chromosome (or contig) and starting position in the reference genome where the read aligns.
+- Mapping Quality (MAPQ): A score indicating the confidence of the alignment.
+- CIGAR String: A compact string representing how well the read aligns to the reference (insertions, deletions, mismatches).
+- Mate Information (optional): Details about the paired-end read (if applicable).
+- Optional Tags: Additional information specific to the aligner software used (e.g., intron information)."
