@@ -1,4 +1,76 @@
-# 1. Một số khái niệm cơ bản lắp ráp pha (phased assembly):
+# 1. Công nghệ [Pacbio](https://www.pacb.com/)
+## Bisulfite sequencing:
+Tranditional methods. This is the current gold standard technique for detecting 5mC. However, it has limitations like requiring a lot of data and having a longer analysis time.
+
+## Nanopore sequensing:
+A technique that sequences DNA or RNA by passing the nucleic acids through a tiny pore and measuring changes in electrical current. This method allows for the direct sequencing of long strands of DNA or RNA. This is a newer method for DNA sequencing that seems to be promising for 5mC detection.
+
+## MAS-seq method:
+**MAS-Seq**, or Multiplexed Arrays Sequencing, is a method used in scRNA-seq to obtain full-length transcript information for each cell. This is important because traditional short-read RNA sequencing only captures the ends of transcripts, which can miss important information about how genes are spliced. MAS-Seq uses a process called concatenation to link together multiple cDNA molecules into longer fragments. These longer fragments can then be sequenced on PacBio sequencers, which can read much longer stretches of DNA than traditional sequencing machines.
+Here's a simplified breakdown of the MAS-Seq method:
+
+1. **Single-cell cDNA generation**:  This is typically done using a commercially available system like the 10x Chromium.
+2. **TSO PCR and artifact removal**:  TSO (template-switching oligos) are used to add adapters to the cDNA molecules. These adapters are then used to amplify the cDNA molecules and remove any unwanted artifacts.
+3. **MAS PCR and array formation**:  The cDNA molecules are concatenated into ordered arrays.
+4. **Adapter ligation and enrichment**: Adapters are ligated to the ends of the MAS arrays, and then only full-length arrays are enriched for sequencing.
+5. **Sequencing on PacBio sequencers**:  The enriched MAS arrays are sequenced on PacBio sequencers, which can read long stretches of DNA.
+6. **Data analysis**:  The sequencing data is then analyzed to identify and quantify the different transcript isoforms that were present in each cell.
+
+MAS-Seq has several **advantages** over traditional short-read RNA sequencing for single-cell studies. First, MAS-Seq can provide full-length transcript information, which can be important for understanding how genes are regulated. Second, MAS-Seq can be more sensitive than short-read RNA sequencing, which means that it can detect transcripts that are expressed at low levels. Finally, MAS-Seq can be used to identify novel transcript isoforms.
+
+However, MAS-Seq also has some **limitations**. First, it is a more complex and expensive method than short-read RNA sequencing. Second, the data analysis can be more challenging.
+
+Overall, MAS-Seq is a powerful new tool for single-cell RNA sequencing. It can provide researchers with a more complete understanding of how genes are expressed in individual cells.
+# 2. Công nghệ Nanopore
+## Reduced-representation bisulfite sequencing (RRBS)
+Tranditional method.
+## Reduced-Representation Methylation Sequencing (RRMS) with Oxford Nanopore
+* More accurate identification of 5mC compared to bisulfite sequencing.
+* Requires less sequencing data to achieve similar accuracy.
+* Provides more even coverage across the genome, meaning all regions are analyzed more consistently.
+* Significantly faster analysis time.
+* More even genomic coverage with lower GC bias
+* Higher number of CpG positions called at lower read depth
+* Simplified haplotype phasing of methylated bases using long reads
+* Greater experimental reproducibility
+
+# 3. Một số khái niệm sinh học
+* **demographic, anthropometric, biochemical, and clinical traits**:  đặc điểm dân số, đặc điểm hình thể, sinh hóa, và đặc điểm lâm sàng
+* **Single-nucleotide resolution**:  The ability to detect changes at the level of individual nucleotides, which are the basic building blocks of DNA and RNA.
+* **Basecalling algorithms**: Computational methods used to interpret the raw data from sequencing machines and translate it into the sequence of bases. These algorithms are essential for turning the electrical signals from nanopore sequencing into readable DNA or RNA sequences.
+* **Epigenetic modifications**: Heritable changes in gene function that do not involve alterations in the DNA sequence. These can include *DNA methylation*, *histone modification*, and *RNA-associated* silencing (bất hoạt RNA)
+* **DNA and RNA base modifications**: Chemical alterations to the standard bases (adenine, thymine, cytosine, guanine, and uracil) in the genetic material. These modifications can affect gene expression and are involved in various biological processes
+* **5mC (5-methylcytosine)**: A modified form of the DNA base cytosine, where **a methyl group is added**. It’s often involved in gene regulation and is a common epigenetic marker. 5-methyl cytosine (5mC) most frequently occurs in mammalian cells in CpG dinucleotides and can alter gene expression by suppressing transcription.
+* **5hmC (5-hydroxymethylcytosine)**: A further modification of 5mC, where **a hydroxymethyl group is added**. It’s thought to be an intermediate step in the process of DNA _demethylation_.
+* **m6A (N6-methyladenosine)**: A common modification in RNA, particularly mRNA, where _a methyl group is added to the adenine base_. It plays a role in the regulation of mRNA stability and translation
+* **BrdU (Bromodeoxyuridine)**: A synthetic nucleoside that can be incorporated into DNA during _replication_. It’s commonly used as a _marker_ to study _cell proliferation_ (tăng sinh).
+* **CpG dinucleotides**: These are short DNA sequences where a cytosine (C) is followed by a guanine (G). 5mC modifications most commonly occur at these sites in humans.
+* **GC bias (guanine-cytosine)**: the non-random distribution of guanine (G) and cytosine (C) nucleotides in a DNA sequence. Một số kỹ thuật có thể gặp khó khăn hơn trong việc đọc các vùng DNA nghèo GC, dẫn đến việc đánh giá thấp mức độ methylation trong những vùng này.
+* **repetitive regions**: Repetitive regions in DNA are sequences that are repeated multiple times throughout the genome. Chúng chiếm một phần đáng kể bộ gen người. These regions can be classified based on the size and nature of the repeats: **Tandem Repeats** (_Satellite DNA_ - They are often found in centromeric and pericentromeric regions of chromosomes; _Alpha Satellite_: Found near the centromeres of human chromosomes; _Minisatellites_ - 10-60 base pairs in length; _Microsatellites_: 2-10 base pairs in length. They are highly polymorphic and widely used in genetic studies and forensic analysis). **Interspersed Repeats** (_DNA Transposons_: Move directly from one location to another through a "cut and paste" mechanism. _Retrotransposons_)
+* **Retrotransposons**: Move by being transcribed into RNA and then back into DNA before being inserted at a new location. They can be further divided into:
+  * _Long Interspersed Nuclear Elements (LINEs)_: Autonomous elements capable of self-transposition. LINE-1 (L1) is a common example in the human genome.
+  * _Short Interspersed Nuclear Elements (SINEs)_: Non-autonomous elements that rely on LINEs for transposition. Alu elements are a common example in humans.
+  * _Long Terminal Repeat (LTR) Retrotransposons_: Contain LTR sequences at both ends. They are similar to retroviruses but lack the ability to form infectious particles.
+* **Satellite Chromosomes**: These are chromosomes with a small, secondary constriction on one arm. This constriction is attached to the main body of the chromosome by a thin strand of chromatin and often appears like a small satellite orbiting a planet.  These are found in humans on chromosomes 13, 14, 15, 21, and 22, and the Y chromosome in some cases. They don't contain genes themselves but may play a role in chromosome stability and function.
+* **Satellite DNA**: This refers to repetitive, non-coding DNA sequences found in the human genome.  These sequences are thought to be leftover DNA that doesn't code for proteins and may not have a specific function. There are different families of satellite DNA, with Human Satellite 1 (**HSat1**) being the most AT-rich (high Adenine and Thymine content) fraction; **HSat2**: Less AT-rich than HSat1; **HSat3**: The least AT-rich satellite family.  While the function of these sequences is not fully understood, recent research suggests they might play a role in regulating gene expression.
+* **HOR array (Higher-Order Repeat array)**:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+* ****:
+  
+
+# 1. Một số khái niệm cơ bản lắp ráp pha (phased assembly): 
 
 1. **Transposon**:
 Transposon(còn được gọi là **phần tử di động**) là một chuỗi **ADN** có khả năng tự di chuyển hoặc tự chèn chính nó vào một vị trí mới trong **genome** (genome là tập hợp toàn bộ thông tin di truyền - bao gồm cả DNA, genes, và nhiễm sắc thể, 
@@ -414,7 +486,30 @@ L75             35
 11. **# mismatches per 100 kbp**: - Số lượng nucleotide không khớp trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
 12. **# indels per 100 kbp**: - Số lượng các insertion (thêm vào) và deletion (xóa bỏ) trên mỗi 100,000 base pair khi so sánh với bộ gen tham chiếu.
 
-### Kết Luận
+### đánh giá:
 - **Số lượng contig ít** và **chiều dài lớn nhất của contig cao** thường là dấu hiệu của một bộ lắp ráp chất lượng cao, ít bị phân mảnh.
 - **N50 và L50** càng cao càng tốt, chỉ ra rằng các contig trong bộ lắp ráp có xu hướng dài và ít bị phân mảnh.
 - **Số lượng lỗi lắp ráp thấp** và **số lượng mismatches và indels thấp** cho thấy bộ lắp ráp có độ chính xác cao khi so sánh với bộ gen tham chiếu.
+
+# Human variation workflow
+A human variation workflow refers to the systematic process of analyzing genetic variations in humans. This workflow typically involves several key steps:
+1. **Data acquisition**:
+* **DNA samples**: This is the starting point. DNA is extracted from human blood, saliva, or other tissues.
+* **Reference genome**: A reference human genome sequence is used as a baseline for comparison.
+2. **Data preparation**:
+* **Sequencing**: The DNA samples are sequenced using high-throughput DNA sequencing technologies like **Illumina** or **Nanopore**. This generates raw sequencing data.
+* **Alignment**: The raw sequencing reads are aligned to the reference genome. This process identifies where the reads map on the reference sequence.
+* **Quality control (QC)**: The aligned reads are checked for quality issues like sequencing errors or adapter contamination. Low-quality reads are often filtered out.
+3. **Variant calling**: This step identifies genetic variations between the sequenced sample and the reference genome. These variations can include:
+* **Single nucleotide polymorphisms (SNPs)**: Changes in a single DNA base pair.
+* **Insertions/Deletions (Indels)**: Insertion or deletion of a short DNA sequence.
+* **Copy number variations (CNVs)**: Gains or losses of larger DNA segments.
+* **Structural variations (SVs)**: Larger rearrangements in the genome, such as inversions or translocations.
+4. **Variant annotation**: The identified variants are annotated with additional information to understand their potential functional impact. This may include:
+* **Gene location**: Whether the variant falls within a known gene.
+* **Predicted effect on protein function**: How the variant might affect the protein coded by the gene.
+* **Frequency in the population**: How common the variant is in the general population.
+5. **Downstream analysis**: Depending on the research question, further analysis may be performed:
+* **Association studies**: Linking identified variants to specific diseases or traits.
+* **Functional studies**: Investigating the biological effects of specific variants.
+* **Population genetics**: Understanding the distribution and evolution of genetic variations in human populations.
