@@ -1,3 +1,6 @@
+```
+salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP_project --time=05:00:00 --partition=general --account=a_nguyen_quan srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
+```
 # 1. Công nghệ [Pacbio](https://www.pacb.com/)
 ## Bisulfite sequencing:
 Tranditional methods. This is the current gold standard technique for detecting 5mC. However, it has limitations like requiring a lot of data and having a longer analysis time.
