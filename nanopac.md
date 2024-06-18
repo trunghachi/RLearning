@@ -16,7 +16,6 @@ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP
 ## Circular Consensus Sequencing (CCS)
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/a273c45e-12e6-4d3c-a1d4-9c4b22dc04bd) ![image](https://github.com/trunghachi/RLearning/assets/45091486/c868d8a9-c52c-4662-b100-a4569c99b5b8)
 
-
 ## Bisulfite sequencing:
 Tranditional methods. This is the current gold standard technique for detecting 5mC. However, it has limitations like requiring a lot of data and having a longer analysis time.
 
@@ -53,6 +52,10 @@ Tranditional method.
 * Greater experimental reproducibility
 
 # 3. Một số khái niệm sinh học
+* **Genome**: **Nuclear human genome**: 23 chromosome, ~6.400.000.000 bp (2000x) ~ 30.000 genes, diploid, coding sparse: < 2% genome, repetitive DNA 40% - 80% of genome; **Mitochondrial genome**: 16kbp, 37 genes, haploid, Hundreds - thousands of mitochondria per cell.
+  ![image](https://github.com/trunghachi/RLearning/assets/45091486/b9febade-122f-4b5a-9171-4a8d65ca39f6)
+* Prokaryotic genomes: Single chromosome (usually), Chromosomes are circular, Small genome ~ 3,000,000bp, ~ 4000 genes, Haploid (1 copy of chromosome) [see more here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/hybrid_assembly/media/hybrid_assembly_slides.pdf)
+
 * **demographic, anthropometric, biochemical, and clinical traits**:  đặc điểm dân số, đặc điểm hình thể, sinh hóa, và đặc điểm lâm sàng
 * **Single-nucleotide resolution**:  The ability to detect changes at the level of individual nucleotides, which are the basic building blocks of DNA and RNA.
 * **Basecalling algorithms**: Computational methods used to interpret the raw data from sequencing machines and translate it into the sequence of bases. These algorithms are essential for turning the electrical signals from nanopore sequencing into readable DNA or RNA sequences.
@@ -76,24 +79,11 @@ Tranditional method.
 * **Plasmid DNA**: These are small, circular DNA molecules found in bacteria that replicate independently of the chromosome.
 * **Recombinant DNA**: This is artificially created DNA formed by combining segments from different sources.
 * **Amplified DNA**: This refers to DNA that has been copied or multiplied using techniques like PCR, often for specific research purposes.
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
-* ****:
   
 
-# 1. Một số khái niệm cơ bản lắp ráp pha (phased assembly): 
-
+# 1. Một số khái niệm kỹ thuật trong lắp ráp pha (phased assembly): 
+1. **Base calling**:
+   ![image](https://github.com/trunghachi/RLearning/assets/45091486/7dec8271-acd8-4c10-8734-a20731fa7459)
 1. **Transposon**:
 Transposon(còn được gọi là **phần tử di động**) là một chuỗi **ADN** có khả năng tự di chuyển hoặc tự chèn chính nó vào một vị trí mới trong **genome** (genome là tập hợp toàn bộ thông tin di truyền - bao gồm cả DNA, genes, và nhiễm sắc thể, 
 trong khi nhiễm sắc thể là các đơn vị cấu tạo của genome chứa các gen cụ thể). Chúng có thể gây ra các hiệu ứng như tạo hoặc đảo ngược đột biến và thay đổi kích thước của genôm.
@@ -114,10 +104,14 @@ Có hai loại transposon chính:
 2. **Basecalling**  là quá trình chuyển đổi các tín hiệu điện tử thô thu được từ thiết bị giải trình tự thành chuỗi nucleotide (DNA hoặc RNA). Đây giống như quá trình nhận dạng giọng nói, nơi ngôn ngữ nói được chuyển thành văn bản viết. Trong giải trình tự gen, basecalling là bước quan trọng để từ các tín hiệu điện tử, xác định được trình tự các nucleotide tạo nên DNA hoặc RNA
 3. **25–35 kilobase reads** có nghĩa là các đoạn DNA được giải trình tự có chiều dài từ 25.000 đến 35.000 base (cặp nucleotide).
 
-
 Xem thêm các nội dung khác tại [Heng Li's blog](https://lh3.github.io/)
-1. **Contig** - contiguous sequence: dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo. Một contig không chứa các đoạn dài của trình tự không xác định (còn gọi là _khoảng trống lắp ráp - gaps_).
-1. **Scaffolds** (đôi khi gọi là _supercontig_): Được tạo ra bằng cách ghép nối các contigs lại với nhau bởi các _gaps có kích thước không chính xác_ (thông tin overlap giữa chúng) hoặc thông tin từ các kỹ thuật bổ sung như _mate-pair sequencing_. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+1. **Reads**: DNA fragments sequenced by platform
+1. **Contig** - contiguous sequence: Unbroken assembled piece of genome sequence. dùng để chỉ một đoạn trình tự DNA liên tục được lắp ráp từ các đoạn đọc nhỏ hơn ("reads"). Đây là thành phần quan trọng của lắp ráp de novo. Một contig không chứa các đoạn dài của trình tự không xác định (còn gọi là _khoảng trống lắp ráp - gaps_).
+1. **Scaffolds** (đôi khi gọi là _supercontig_): 2 or more contigs on same chromosome with known relative position. Được tạo ra bằng cách ghép nối các contigs lại với nhau bởi các _gaps có kích thước không chính xác_ (thông tin overlap giữa chúng) hoặc thông tin từ các kỹ thuật bổ sung như _mate-pair sequencing_. Scaffolds cung cấp một ước lượng về cấu trúc và khoảng cách giữa các contigs trong genome.
+1. **Coverage**: Ratio of sequenced base pairs to genome length. 30x coverage of human genome (3.2 Gbp) would require 100Gb sequence data.
+2. **Depth**: Number of reads sampling a given nucleotide
+1. **Assembly Graph**: Contigs and the connections between contigs
+![image](https://github.com/trunghachi/RLearning/assets/45091486/33d848e4-c027-4403-8c1a-23bdc59b122a)
 1. **Assembly**: một tập hợp các contig hoặc scaffold. Một lắp ráp là hoàn chỉnh haploid hoặc đơn giản là hoàn chỉnh nếu nó đại diện cho một bộ gen haploid đầy đủ.
 1. **Haplotig**: một contig đến từ cùng một haplotype. Trong một lắp ráp chưa phân pha, một contig có thể kết hợp các alen từ các haplotype khác nhau của bố mẹ trong một bộ gen diploid hoặc polyploid.
 1. **Unitig**: là một chuỗi liên tục của các đoạn DNA không bị gián đoạn bởi các khe hoặc lỗ. Nó được tạo ra bằng cách kết hợp các đoạn đọc (reads) từ dữ liệu ngắn hoặc dài thành một chuỗi duy nhất. Unitig thường là một phần của một **contig** hoặc **scaffold** trong quá trình lắp ráp genome.
@@ -135,6 +129,11 @@ Xem thêm các nội dung khác tại [Heng Li's blog](https://lh3.github.io/)
 
    
 ## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
+
+Process of transforming sequence reads into a more cohesive picture
+![image](https://github.com/trunghachi/RLearning/assets/45091486/6733ddff-f7f6-4cb4-a19f-22f1e2d7c4cc)
+
+
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
 
 1. **Thu thập mẫu (Sample Collection)**:
