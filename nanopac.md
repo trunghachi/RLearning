@@ -1,7 +1,22 @@
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP_project --time=05:00:00 --partition=general --account=a_nguyen_quan srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
 ```
+# Technology comparison
+![techcomparison](https://github.com/trunghachi/RLearning/assets/45091486/867b7104-e5af-4dfc-8c7a-ed9ae22f2727)
+## 1. Short read niche (gives Base-level information)
+* Variant detection (small INDEL, SNP)
+* Transcriptomics (RNA, scRNA seq)
+## 2. Long read niche (gives Structural information)
+* Structural variant detection
+* Transcript isoform detection
+* Pathogen detection
+* Epigenetics
+
 # 1. Công nghệ [Pacbio](https://www.pacb.com/)
+## Circular Consensus Sequencing (CCS)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/a273c45e-12e6-4d3c-a1d4-9c4b22dc04bd) ![image](https://github.com/trunghachi/RLearning/assets/45091486/c868d8a9-c52c-4662-b100-a4569c99b5b8)
+
+
 ## Bisulfite sequencing:
 Tranditional methods. This is the current gold standard technique for detecting 5mC. However, it has limitations like requiring a lot of data and having a longer analysis time.
 
