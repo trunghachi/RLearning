@@ -1,55 +1,54 @@
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP_project --time=05:00:00 --partition=general --account=a_nguyen_quan srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
 ```
-# Technology comparison
+# A. Technology
+## 1. Technology comparison
 ![techcomparison](https://github.com/trunghachi/RLearning/assets/45091486/867b7104-e5af-4dfc-8c7a-ed9ae22f2727)
-## 1. Short read niche (gives Base-level information)
+### Short read niche (gives Base-level information)
 * Variant detection (small INDEL, SNP)
 * Transcriptomics (RNA, scRNA seq)
-## 2. Long read niche (gives Structural information)
+### Long read niche (gives Structural information)
 * Structural variant detection
 * Transcript isoform detection
 * Pathogen detection
 * Epigenetics
 
-# 1. Công nghệ [Pacbio](https://www.pacb.com/)
+## 2. [Pacbio](https://www.pacb.com/)
 ## Circular Consensus Sequencing (CCS)
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/a273c45e-12e6-4d3c-a1d4-9c4b22dc04bd) ![image](https://github.com/trunghachi/RLearning/assets/45091486/c868d8a9-c52c-4662-b100-a4569c99b5b8)
 
-## Bisulfite sequencing:
+* **Bisulfite sequencing**:
 Tranditional methods. This is the current gold standard technique for detecting 5mC. However, it has limitations like requiring a lot of data and having a longer analysis time.
-
-## Nanopore sequensing:
-A technique that sequences DNA or RNA by passing the nucleic acids through a tiny pore and measuring changes in electrical current. This method allows for the direct sequencing of long strands of DNA or RNA. This is a newer method for DNA sequencing that seems to be promising for 5mC detection.
-
-## MAS-seq method:
-**MAS-Seq**, or Multiplexed Arrays Sequencing, is a method used in scRNA-seq to obtain full-length transcript information for each cell. This is important because traditional short-read RNA sequencing only captures the ends of transcripts, which can miss important information about how genes are spliced. MAS-Seq uses a process called concatenation to link together multiple cDNA molecules into longer fragments. These longer fragments can then be sequenced on PacBio sequencers, which can read much longer stretches of DNA than traditional sequencing machines.
+* **MAS-seq method**: Multiplexed Arrays Sequencing, is a method used in scRNA-seq to obtain full-length transcript information for each cell. This is important because traditional short-read RNA sequencing only captures the ends of transcripts, which can miss important information about how genes are spliced. MAS-Seq uses a process called concatenation to link together multiple cDNA molecules into longer fragments. These longer fragments can then be sequenced on PacBio sequencers, which can read much longer stretches of DNA than traditional sequencing machines.
 Here's a simplified breakdown of the MAS-Seq method:
-
-1. **Single-cell cDNA generation**:  This is typically done using a commercially available system like the 10x Chromium.
-2. **TSO PCR and artifact removal**:  TSO (template-switching oligos) are used to add adapters to the cDNA molecules. These adapters are then used to amplify the cDNA molecules and remove any unwanted artifacts.
-3. **MAS PCR and array formation**:  The cDNA molecules are concatenated into ordered arrays.
-4. **Adapter ligation and enrichment**: Adapters are ligated to the ends of the MAS arrays, and then only full-length arrays are enriched for sequencing.
-5. **Sequencing on PacBio sequencers**:  The enriched MAS arrays are sequenced on PacBio sequencers, which can read long stretches of DNA.
-6. **Data analysis**:  The sequencing data is then analyzed to identify and quantify the different transcript isoforms that were present in each cell.
+  1. **Single-cell cDNA generation**:  This is typically done using a commercially available system like the 10x Chromium.
+  2. **TSO PCR and artifact removal**:  TSO (template-switching oligos) are used to add adapters to the cDNA molecules. These adapters are then used to amplify the cDNA molecules and remove any unwanted artifacts.
+  3. **MAS PCR and array formation**:  The cDNA molecules are concatenated into ordered arrays.
+  4. **Adapter ligation and enrichment**: Adapters are ligated to the ends of the MAS arrays, and then only full-length arrays are enriched for sequencing.
+  5. **Sequencing on PacBio sequencers**:  The enriched MAS arrays are sequenced on PacBio sequencers, which can read long stretches of DNA.
+  6. **Data analysis**:  The sequencing data is then analyzed to identify and quantify the different transcript isoforms that were present in each cell.
 
 MAS-Seq has several **advantages** over traditional short-read RNA sequencing for single-cell studies. First, MAS-Seq can provide full-length transcript information, which can be important for understanding how genes are regulated. Second, MAS-Seq can be more sensitive than short-read RNA sequencing, which means that it can detect transcripts that are expressed at low levels. Finally, MAS-Seq can be used to identify novel transcript isoforms.
 
 However, MAS-Seq also has some **limitations**. First, it is a more complex and expensive method than short-read RNA sequencing. Second, the data analysis can be more challenging.
 
 Overall, MAS-Seq is a powerful new tool for single-cell RNA sequencing. It can provide researchers with a more complete understanding of how genes are expressed in individual cells.
-# 2. Công nghệ Nanopore
-## Reduced-representation bisulfite sequencing (RRBS)
+
+## 3. [Nanopore](https://nanoporetech.com/)
+
+A technique that sequences DNA or RNA by passing the nucleic acids through a tiny pore and measuring changes in electrical current. This method allows for the direct sequencing of long strands of DNA or RNA. This is a newer method for DNA sequencing that seems to be promising for 5mC detection.
+
+* **Reduced-representation bisulfite sequencing (RRBS)**
 Tranditional method.
-## Reduced-Representation Methylation Sequencing (RRMS) with Oxford Nanopore
-* More accurate identification of 5mC compared to bisulfite sequencing.
-* Requires less sequencing data to achieve similar accuracy.
-* Provides more even coverage across the genome, meaning all regions are analyzed more consistently.
-* Significantly faster analysis time.
-* More even genomic coverage with lower GC bias
-* Higher number of CpG positions called at lower read depth
-* Simplified haplotype phasing of methylated bases using long reads
-* Greater experimental reproducibility
+* **Reduced-Representation Methylation Sequencing (RRMS)** with Oxford Nanopore
+  * More accurate identification of 5mC compared to bisulfite sequencing.
+  * Requires less sequencing data to achieve similar accuracy.
+  * Provides more even coverage across the genome, meaning all regions are analyzed more consistently.
+  * Significantly faster analysis time.
+  * More even genomic coverage with lower GC bias
+  * Higher number of CpG positions called at lower read depth
+  * Simplified haplotype phasing of methylated bases using long reads
+  * Greater experimental reproducibility
 
 # 3. Một số khái niệm sinh học
 * **Genome**: **Nuclear human genome**: 23 chromosome, ~6.400.000.000 bp (2000x) ~ 30.000 genes, diploid, coding sparse: < 2% genome, repetitive DNA 40% - 80% of genome; **Mitochondrial genome**: 16kbp, 37 genes, haploid, Hundreds - thousands of mitochondria per cell.
