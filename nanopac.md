@@ -1,7 +1,40 @@
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP_project --time=05:00:00 --partition=general --account=a_nguyen_quan srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
 ```
-# A. Technology
+# A. Một số khái niệm sinh học
+* **Genome**: **Nuclear human genome**: 23 chromosome, ~6.400.000.000 bp (2000x) ~ 30.000 genes, diploid, coding sparse: < 2% genome, repetitive DNA 40% - 80% of genome; **Mitochondrial genome**: 16kbp, 37 genes, haploid, Hundreds - thousands of mitochondria per cell.
+  ![image](https://github.com/trunghachi/RLearning/assets/45091486/b9febade-122f-4b5a-9171-4a8d65ca39f6)
+* Prokaryotic genomes: Single chromosome (usually), Chromosomes are circular, Small genome ~ 3,000,000bp, ~ 4000 genes, Haploid (1 copy of chromosome) [see more here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/hybrid_assembly/media/hybrid_assembly_slides.pdf)
+
+* **demographic, anthropometric, biochemical, and clinical traits**:  đặc điểm dân số, đặc điểm hình thể, sinh hóa, và đặc điểm lâm sàng
+* **Single-nucleotide resolution**:  The ability to detect changes at the level of individual nucleotides, which are the basic building blocks of DNA and RNA.
+* **Basecalling algorithms**: Computational methods used to interpret the raw data from sequencing machines and translate it into the sequence of bases. These algorithms are essential for turning the electrical signals from nanopore sequencing into readable DNA or RNA sequences.
+* **Epigenetic modifications**: Heritable changes in gene function that do not involve alterations in the DNA sequence. These can include *DNA methylation*, *histone modification*, and *RNA-associated* silencing (bất hoạt RNA)
+* **DNA and RNA base modifications**: Chemical alterations to the standard bases (adenine, thymine, cytosine, guanine, and uracil) in the genetic material. These modifications can affect gene expression and are involved in various biological processes
+* **5mC (5-methylcytosine)**: A modified form of the DNA base cytosine, where **a methyl group is added**. It’s often involved in gene regulation and is a common epigenetic marker. 5-methyl cytosine (5mC) most frequently occurs in mammalian cells in CpG dinucleotides and can alter gene expression by suppressing transcription.
+* **5hmC (5-hydroxymethylcytosine)**: A further modification of 5mC, where **a hydroxymethyl group is added**. It’s thought to be an intermediate step in the process of DNA _demethylation_.
+* **m6A (N6-methyladenosine)**: A common modification in RNA, particularly mRNA, where _a methyl group is added to the adenine base_. It plays a role in the regulation of mRNA stability and translation
+* **BrdU (Bromodeoxyuridine)**: A synthetic nucleoside that can be incorporated into DNA during _replication_. It’s commonly used as a _marker_ to study _cell proliferation_ (tăng sinh).
+* **CpG dinucleotides**: These are short DNA sequences where a cytosine (C) is followed by a guanine (G). 5mC modifications most commonly occur at these sites in humans.
+* **GC bias (guanine-cytosine)**: the non-random distribution of guanine (G) and cytosine (C) nucleotides in a DNA sequence. Một số kỹ thuật có thể gặp khó khăn hơn trong việc đọc các vùng DNA nghèo GC, dẫn đến việc đánh giá thấp mức độ methylation trong những vùng này.
+* **repetitive regions**: Repetitive regions in DNA are sequences that are repeated multiple times throughout the genome. Chúng chiếm một phần đáng kể bộ gen người. These regions can be classified based on the size and nature of the repeats: **Tandem Repeats** (_Satellite DNA_ - They are often found in centromeric and pericentromeric regions of chromosomes; _Alpha Satellite_: Found near the centromeres of human chromosomes; _Minisatellites_ - 10-60 base pairs in length; _Microsatellites_: 2-10 base pairs in length. They are highly polymorphic and widely used in genetic studies and forensic analysis). **Interspersed Repeats** (_DNA Transposons_: Move directly from one location to another through a "cut and paste" mechanism. _Retrotransposons_)
+
+  ![image](https://github.com/trunghachi/RLearning/assets/45091486/95ef9fe1-d69f-41b8-9c55-626819ba496f)
+
+* **Retrotransposons**: Move by being transcribed into RNA and then back into DNA before being inserted at a new location. They can be further divided into:
+  * _Long Interspersed Nuclear Elements (LINEs)_: Autonomous elements capable of self-transposition. LINE-1 (L1) is a common example in the human genome.
+  * _Short Interspersed Nuclear Elements (SINEs)_: Non-autonomous elements that rely on LINEs for transposition. Alu elements are a common example in humans.
+  * _Long Terminal Repeat (LTR) Retrotransposons_: Contain LTR sequences at both ends. They are similar to retroviruses but lack the ability to form infectious particles.
+* **Satellite Chromosomes**: These are chromosomes with a small, secondary constriction on one arm. This constriction is attached to the main body of the chromosome by a thin strand of chromatin and often appears like a small satellite orbiting a planet.  These are found in humans on chromosomes 13, 14, 15, 21, and 22, and the Y chromosome in some cases. They don't contain genes themselves but may play a role in chromosome stability and function.
+* **Satellite DNA**: This refers to repetitive, non-coding DNA sequences found in the human genome.  These sequences are thought to be leftover DNA that doesn't code for proteins and may not have a specific function. There are different families of satellite DNA, with Human Satellite 1 (**HSat1**) being the most AT-rich (high Adenine and Thymine content) fraction; **HSat2**: Less AT-rich than HSat1; **HSat3**: The least AT-rich satellite family.  While the function of these sequences is not fully understood, recent research suggests they might play a role in regulating gene expression.
+* **HOR array (Higher-Order Repeat array)**:
+* **Native DNA**: exists within the chromosomes of the cell nucleus, packaged with proteins like histones (that means the DNA in native state, unmodified)
+* **Plasmid DNA**: These are small, circular DNA molecules found in bacteria that replicate independently of the chromosome.
+* **Recombinant DNA**: This is artificially created DNA formed by combining segments from different sources.
+* **Amplified DNA**: This refers to DNA that has been copied or multiplied using techniques like PCR, often for specific research purposes.
+  
+
+# B. Technology
 ## 1. Technology comparison
 ![techcomparison](https://github.com/trunghachi/RLearning/assets/45091486/867b7104-e5af-4dfc-8c7a-ed9ae22f2727)
 ### Short read niche (gives Base-level information)
@@ -38,8 +71,7 @@ Overall, MAS-Seq is a powerful new tool for single-cell RNA sequencing. It can p
 
 A technique that sequences DNA or RNA by passing the nucleic acids through a tiny pore and measuring changes in electrical current. This method allows for the direct sequencing of long strands of DNA or RNA. This is a newer method for DNA sequencing that seems to be promising for 5mC detection.
 
-* **Reduced-representation bisulfite sequencing (RRBS)**
-Tranditional method.
+* **Reduced-representation bisulfite sequencing (RRBS)** Tranditional method.
 * **Reduced-Representation Methylation Sequencing (RRMS)** with Oxford Nanopore
   * More accurate identification of 5mC compared to bisulfite sequencing.
   * Requires less sequencing data to achieve similar accuracy.
@@ -50,40 +82,7 @@ Tranditional method.
   * Simplified haplotype phasing of methylated bases using long reads
   * Greater experimental reproducibility
 
-# 3. Một số khái niệm sinh học
-* **Genome**: **Nuclear human genome**: 23 chromosome, ~6.400.000.000 bp (2000x) ~ 30.000 genes, diploid, coding sparse: < 2% genome, repetitive DNA 40% - 80% of genome; **Mitochondrial genome**: 16kbp, 37 genes, haploid, Hundreds - thousands of mitochondria per cell.
-  ![image](https://github.com/trunghachi/RLearning/assets/45091486/b9febade-122f-4b5a-9171-4a8d65ca39f6)
-* Prokaryotic genomes: Single chromosome (usually), Chromosomes are circular, Small genome ~ 3,000,000bp, ~ 4000 genes, Haploid (1 copy of chromosome) [see more here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/hybrid_assembly/media/hybrid_assembly_slides.pdf)
-
-* **demographic, anthropometric, biochemical, and clinical traits**:  đặc điểm dân số, đặc điểm hình thể, sinh hóa, và đặc điểm lâm sàng
-* **Single-nucleotide resolution**:  The ability to detect changes at the level of individual nucleotides, which are the basic building blocks of DNA and RNA.
-* **Basecalling algorithms**: Computational methods used to interpret the raw data from sequencing machines and translate it into the sequence of bases. These algorithms are essential for turning the electrical signals from nanopore sequencing into readable DNA or RNA sequences.
-* **Epigenetic modifications**: Heritable changes in gene function that do not involve alterations in the DNA sequence. These can include *DNA methylation*, *histone modification*, and *RNA-associated* silencing (bất hoạt RNA)
-* **DNA and RNA base modifications**: Chemical alterations to the standard bases (adenine, thymine, cytosine, guanine, and uracil) in the genetic material. These modifications can affect gene expression and are involved in various biological processes
-* **5mC (5-methylcytosine)**: A modified form of the DNA base cytosine, where **a methyl group is added**. It’s often involved in gene regulation and is a common epigenetic marker. 5-methyl cytosine (5mC) most frequently occurs in mammalian cells in CpG dinucleotides and can alter gene expression by suppressing transcription.
-* **5hmC (5-hydroxymethylcytosine)**: A further modification of 5mC, where **a hydroxymethyl group is added**. It’s thought to be an intermediate step in the process of DNA _demethylation_.
-* **m6A (N6-methyladenosine)**: A common modification in RNA, particularly mRNA, where _a methyl group is added to the adenine base_. It plays a role in the regulation of mRNA stability and translation
-* **BrdU (Bromodeoxyuridine)**: A synthetic nucleoside that can be incorporated into DNA during _replication_. It’s commonly used as a _marker_ to study _cell proliferation_ (tăng sinh).
-* **CpG dinucleotides**: These are short DNA sequences where a cytosine (C) is followed by a guanine (G). 5mC modifications most commonly occur at these sites in humans.
-* **GC bias (guanine-cytosine)**: the non-random distribution of guanine (G) and cytosine (C) nucleotides in a DNA sequence. Một số kỹ thuật có thể gặp khó khăn hơn trong việc đọc các vùng DNA nghèo GC, dẫn đến việc đánh giá thấp mức độ methylation trong những vùng này.
-* **repetitive regions**: Repetitive regions in DNA are sequences that are repeated multiple times throughout the genome. Chúng chiếm một phần đáng kể bộ gen người. These regions can be classified based on the size and nature of the repeats: **Tandem Repeats** (_Satellite DNA_ - They are often found in centromeric and pericentromeric regions of chromosomes; _Alpha Satellite_: Found near the centromeres of human chromosomes; _Minisatellites_ - 10-60 base pairs in length; _Microsatellites_: 2-10 base pairs in length. They are highly polymorphic and widely used in genetic studies and forensic analysis). **Interspersed Repeats** (_DNA Transposons_: Move directly from one location to another through a "cut and paste" mechanism. _Retrotransposons_)
-
-  ![image](https://github.com/trunghachi/RLearning/assets/45091486/95ef9fe1-d69f-41b8-9c55-626819ba496f)
-
-* **Retrotransposons**: Move by being transcribed into RNA and then back into DNA before being inserted at a new location. They can be further divided into:
-  * _Long Interspersed Nuclear Elements (LINEs)_: Autonomous elements capable of self-transposition. LINE-1 (L1) is a common example in the human genome.
-  * _Short Interspersed Nuclear Elements (SINEs)_: Non-autonomous elements that rely on LINEs for transposition. Alu elements are a common example in humans.
-  * _Long Terminal Repeat (LTR) Retrotransposons_: Contain LTR sequences at both ends. They are similar to retroviruses but lack the ability to form infectious particles.
-* **Satellite Chromosomes**: These are chromosomes with a small, secondary constriction on one arm. This constriction is attached to the main body of the chromosome by a thin strand of chromatin and often appears like a small satellite orbiting a planet.  These are found in humans on chromosomes 13, 14, 15, 21, and 22, and the Y chromosome in some cases. They don't contain genes themselves but may play a role in chromosome stability and function.
-* **Satellite DNA**: This refers to repetitive, non-coding DNA sequences found in the human genome.  These sequences are thought to be leftover DNA that doesn't code for proteins and may not have a specific function. There are different families of satellite DNA, with Human Satellite 1 (**HSat1**) being the most AT-rich (high Adenine and Thymine content) fraction; **HSat2**: Less AT-rich than HSat1; **HSat3**: The least AT-rich satellite family.  While the function of these sequences is not fully understood, recent research suggests they might play a role in regulating gene expression.
-* **HOR array (Higher-Order Repeat array)**:
-* **Native DNA**: exists within the chromosomes of the cell nucleus, packaged with proteins like histones (that means the DNA in native state, unmodified)
-* **Plasmid DNA**: These are small, circular DNA molecules found in bacteria that replicate independently of the chromosome.
-* **Recombinant DNA**: This is artificially created DNA formed by combining segments from different sources.
-* **Amplified DNA**: This refers to DNA that has been copied or multiplied using techniques like PCR, often for specific research purposes.
-  
-
-# 1. Một số khái niệm kỹ thuật trong lắp ráp pha (phased assembly): 
+## 4. Một số khái niệm kỹ thuật trong lắp ráp pha (phased assembly): 
 1. **Base calling**:
    ![image](https://github.com/trunghachi/RLearning/assets/45091486/7dec8271-acd8-4c10-8734-a20731fa7459)
 1. **Transposon**:
@@ -129,15 +128,13 @@ Xem thêm các nội dung khác tại [Heng Li's blog](https://lh3.github.io/)
 1. **Partially phased assembly - Lắp ráp phân pha một phần**: các bộ lắp ráp hoàn chỉnh với các đoạn dài của khối pha, đại diện cho toàn bộ bộ gen diploid/polyploid.
 1. **Haplotype-resolved assembly**: các bộ lắp ráp hoàn chỉnh gồm các haplotig, đại diện cho toàn bộ bộ gen diploid/polyploid. Khái niệm này đã được sử dụng không nhất quán trong các ấn phẩm mà không có định nghĩa rõ ràng.
 8. **Telomere-to-telomere assembly**: t2t hay tổng hợp từ telomere đến telomere, là quá trình tạo ra một bản tổng hợp của bộ gen không có khoảng trống, bao gồm toàn bộ các nhiễm sắc thể từ điểm bắt đầu (telomere) đến điểm kết thúc (telomere) của chúng. Trước đây, các bộ gen thường được tổng hợp thành các đoạn có độ dài vài megabase tốt nhất, nhưng nhờ vào tiến bộ công nghệ trong việc đọc trình tự gen dài, ngày nay có thể tổng hợp gần như hoàn chỉnh mỗi nhiễm sắc thể.
-
    
-## Tóm tắt [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
+# C. [quy trình](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) phân tích gene:
 
 Process of transforming sequence reads into a more cohesive picture
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/6733ddff-f7f6-4cb4-a19f-22f1e2d7c4cc)
 
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/b5fb8754-7f20-48db-a687-91877279e7a0)
-
 
 Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lúc ra kết quả là bộ gen hoàn chỉnh, bao gồm các bước sau và thời gian ước tính cho mỗi bước:
 
@@ -178,7 +175,7 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 
 **Tổng thời gian**: Quá trình từ thu thập mẫu đến có được bộ gen hoàn chỉnh mất khoảng 1-2 tuần, tùy thuộc vào điều kiện cụ thể và độ phức tạp của từng bước.
 
-
+# D. Áp dụng thực tế
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
