@@ -1,7 +1,14 @@
-for more, refer to [NCCN Guidelines](https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1419)
+for more information, refer to [NCCN Guidelines](https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1419)
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/trunghachi/RLearning/assets/45091486/a534998a-ba42-4c99-95eb-fc8df837eba7" alt="LLMs"  style="width:100%; height:100%;">
+      <br>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. <a href="https://www.nature.com/articles/s41572-019-0111-2">Breast Cancer on Nature</a></p>
+    </td>
+  </tr>
+</table>
 
-![image](https://github.com/trunghachi/RLearning/assets/45091486/a534998a-ba42-4c99-95eb-fc8df837eba7)
-[Nature](https://www.nature.com/articles/s41572-019-0111-2)
 
 # Luminal A, B (Lum A, Lum B)
 Trong ung thư vú, Luminal A (Lum A) và Luminal B (Lum B) là hai phân nhóm chính của ung thư vú, được xác định dựa trên biểu hiện của các thụ thể hormone và các dấu ấn sinh học khác. 
