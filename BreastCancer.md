@@ -163,3 +163,98 @@ Trong các khối u, đặc biệt là ung thư vú, một số cặp ligand-rec
     </td>
   </tr>
 </table>
+
+## Một số cặp LR khác
+
+1. **MIF - CD74**
+   - **Vai trò**: MIF (Macrophage Migration Inhibitory Factor) liên kết với CD74 (cũng được gọi là invariant chain).
+   - **Chức năng**: Tham gia vào điều hòa miễn dịch và viêm. Trong ung thư, sự tương tác này có thể thúc đẩy sự phát triển và di căn của tế bào ung thư thông qua kích hoạt con đường tín hiệu viêm.
+
+2. **MIF - CXCR4**
+   - **Vai trò**: MIF liên kết với thụ thể CXCR4.
+   - **Chức năng**: Thúc đẩy di cư và xâm lấn của tế bào ung thư, góp phần vào di căn.
+
+3. **COL3A1 - DDR1**
+   - **Vai trò**: COL3A1 (Collagen, type III, alpha 1) liên kết với DDR1 (Discoidin Domain Receptor 1).
+   - **Chức năng**: DDR1 là một thụ thể tyrosine kinase tham gia vào sự tương tác giữa tế bào và ma trận ngoại bào, thúc đẩy sự phát triển và xâm lấn của khối u.
+
+4. **BSG - SLC16A1**
+   - **Vai trò**: BSG (Basigin, cũng được gọi là CD147) liên kết với SLC16A1 (Monocarboxylate Transporter 1).
+   - **Chức năng**: Thúc đẩy sự phát triển và xâm lấn của tế bào ung thư thông qua điều hòa trao đổi chất và sự tăng sinh.
+
+5. **EPCAM - EPCAM**
+   - **Vai trò**: EPCAM (Epithelial Cell Adhesion Molecule) liên kết với chính nó (homophilic binding).
+   - **Chức năng**: Đóng vai trò quan trọng trong sự kết dính tế bào và duy trì tính toàn vẹn của biểu mô. Trong ung thư, sự biểu hiện quá mức của EPCAM có thể dẫn đến sự phát triển và di căn của tế bào ung thư.
+
+6. **DEN - ERBB4**
+   - **Vai trò**: DEN liên kết với ERBB4 (Erb-B2 Receptor Tyrosine Kinase 4).
+   - **Chức năng**: ERBB4 tham gia vào con đường tín hiệu phát triển và sống sót của tế bào, liên quan đến sự phát triển và di căn của ung thư.
+
+7. **PIPRK - PTPRK**
+   - **Vai trò**: PIPRK (Protein Tyrosine Phosphatase, Receptor Type K) liên kết với chính nó.
+   - **Chức năng**: Điều hòa các tín hiệu tế bào liên quan đến sự phát triển và biệt hóa tế bào. Đóng vai trò trong sự ức chế phát triển của tế bào ung thư.
+
+8. **NECTIN4 - NECTIN1**
+   - **Vai trò**: Nectin-4 liên kết với Nectin-1.
+   - **Chức năng**: Thúc đẩy sự kết dính tế bào và liên quan đến sự phát triển và di căn của tế bào ung thư. Nectin-4 là một dấu ấn sinh học và mục tiêu điều trị trong ung thư.
+
+9. **CADM1 - CADM1**
+   - **Vai trò**: CADM1 (Cell Adhesion Molecule 1) liên kết với chính nó.
+   - **Chức năng**: Đóng vai trò quan trọng trong sự kết dính tế bào và ngăn chặn sự phát triển của tế bào ung thư thông qua duy trì tính toàn vẹn của mô.
+
+10. **NECTIN2 - NECTIN2**
+    - **Vai trò**: Nectin-2 liên kết với chính nó.
+    - **Chức năng**: Thúc đẩy sự kết dính tế bào và liên quan đến sự phát triển và di căn của tế bào ung thư.
+
+11. **AGPI - ITGAV**
+    - **Vai trò**: AGPI (Autocrine Growth Factor-PI) liên kết với ITGAV (Integrin alpha V).
+    - **Chức năng**: Điều hòa sự di cư và xâm lấn của tế bào ung thư thông qua tương tác với ma trận ngoại bào.
+
+12. **MDK - TSPANT**
+    - **Vai trò**: MDK (Midkine) liên kết với TSPAN (Tetraspanin).
+    - **Chức năng**: Tham gia vào sự phát triển, xâm lấn và di căn của tế bào ung thư.
+
+13. **HEBP1 - FPR3**
+    - **Vai trò**: HEBP1 (Heme Binding Protein 1) liên kết với FPR3 (Formyl Peptide Receptor 3).
+    - **Chức năng**: Điều hòa sự đáp ứng miễn dịch và viêm, có thể ảnh hưởng đến môi trường vi mô của khối u.
+
+14. **CXCL8 - CXCR2**
+    - **Vai trò**: CXCL8 (Interleukin-8) liên kết với CXCR2.
+    - **Chức năng**: Thúc đẩy sự di cư, xâm lấn và angiogenesis của tế bào ung thư, góp phần vào sự phát triển và di căn của khối u.
+
+15. **LAMA5 - BCAM**
+    - **Vai trò**: LAMA5 (Laminin alpha 5) liên kết với BCAM (Basal Cell Adhesion Molecule).
+    - **Chức năng**: Thúc đẩy sự kết dính và di cư của tế bào ung thư, góp phần vào sự xâm lấn của khối u.
+
+16. **SEMA4D - ERBB2**
+    - **Vai trò**: SEMA4D (Semaphorin 4D) liên kết với ERBB2 (Her2/neu).
+    - **Chức năng**: Điều hòa sự phát triển và di cư của tế bào ung thư. ERBB2 là một mục tiêu điều trị quan trọng trong ung thư vú.
+
+17. **FAM3C - LIFR**
+    - **Vai trò**: FAM3C (Family with Sequence Similarity 3, Member C) liên kết với LIFR (Leukemia Inhibitory Factor Receptor).
+    - **Chức năng**: Tham gia vào sự phát triển và di cư của tế bào ung thư.
+
+18. **HSP90AA1 - FGFR3**
+    - **Vai trò**: HSP90AA1 (Heat Shock Protein 90 alpha) liên kết với FGFR3 (Fibroblast Growth Factor Receptor 3).
+    - **Chức năng**: Điều hòa sự phát triển và sống sót của tế bào ung thư. FGFR3 liên quan đến sự phát triển của một số loại ung thư.
+
+19. **NECTIN1 - NECTIN1**
+    - **Vai trò**: Nectin-1 liên kết với chính nó.
+    - **Chức năng**: Thúc đẩy sự kết dính tế bào và liên quan đến sự phát triển và di căn của tế bào ung thư.
+
+20. **TFF3 - ACKR3**
+    - **Vai trò**: TFF3 (Trefoil Factor 3) liên kết với ACKR3 (Atypical Chemokine Receptor 3).
+    - **Chức năng**: Điều hòa sự phát triển và di cư của tế bào ung thư.
+
+21. **MFGE8 - CD44**
+    - **Vai trò**: MFGE8 (Milk Fat Globule-EGF Factor 8) liên kết với CD44.
+    - **Chức năng**: Thúc đẩy sự di cư và xâm lấn của tế bào ung thư.
+
+22. **TFPI2 - ITGB1**
+    - **Vai trò**: TFPI2 (Tissue Factor Pathway Inhibitor 2) liên kết với ITGB1 (Integrin beta 1).
+    - **Chức năng**: Điều hòa sự kết dính và di cư của tế bào ung thư.
+
+![image](https://github.com/trunghachi/RLearning/assets/45091486/a89b03a3-cfaa-47c5-b0a2-857d530befb9)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/a0fe62ab-ad93-460b-902c-9e7dc1a32642)
+
+
