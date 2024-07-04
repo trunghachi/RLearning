@@ -153,3 +153,13 @@ Trong các khối u, đặc biệt là ung thư vú, một số cặp ligand-rec
 ### 10. M-CSF - c-Fms
 - **Vai trò**: M-CSF (Macrophage Colony-Stimulating Factor) và thụ thể c-Fms điều hòa sự phát triển và hoạt động của tế bào đại thực bào.
 - **Liên quan đến ung thư vú**: Sự biểu hiện quá mức của M-CSF và c-Fms liên quan đến sự tăng trưởng của tế bào ung thư và tạo điều kiện thuận lợi cho di căn thông qua tương tác với tế bào miễn dịch trong vi môi trường khối u.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/trunghachi/RLearning/assets/45091486/40c29d3a-3a6c-472e-9ad2-1269d3e45c68" alt="LLMs"  style="width:100%; height:100%;">
+      <br>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;"> Hình 2. Đột biến phân tử trong ung thư vú. </p>
+    </td>
+  </tr>
+</table>
