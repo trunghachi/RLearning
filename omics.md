@@ -21,7 +21,18 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/cf1711f3-204e-45a6-8152-7af75c51f23d)
 
 
-
+### The 10x sequence reads
+* Information on cell identity (10x barcode)
+* Information on molecule identity (UMI)
+* Information on sample identity (Index read)
+* Information on the RNA molecule (transcriptome read)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/b3c77e0e-ebcb-464d-b1fc-b72bdf834aa0)
+The output matrix is often stored in a compressed format such as **MEX** (Market Exchange Format), **HDF5** (Hierarchical Data Format)
+#### HDF5
+![image](https://github.com/trunghachi/RLearning/assets/45091486/c08ab23f-add5-4023-a7c2-b97bb1410c14)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/d72fb666-7765-4c79-8b90-2299c3a5eb86)
+#### MEX
+![image](https://github.com/trunghachi/RLearning/assets/45091486/7dd17d45-82b4-466a-b0c2-ac49b3eeb017)
 
 
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/ef8baeaf-e190-4703-9ea4-1a195346fe90)
