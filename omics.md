@@ -27,10 +27,10 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 * Information on sample identity (Index read)
 * Information on the RNA molecule (transcriptome read)
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/b3c77e0e-ebcb-464d-b1fc-b72bdf834aa0)
+
 The output matrix is often stored in a compressed format such as **MEX** (Market Exchange Format), **HDF5** (Hierarchical Data Format)
 #### HDF5
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/c08ab23f-add5-4023-a7c2-b97bb1410c14)
-![image](https://github.com/trunghachi/RLearning/assets/45091486/d72fb666-7765-4c79-8b90-2299c3a5eb86)
 #### MEX
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/7dd17d45-82b4-466a-b0c2-ac49b3eeb017)
 
