@@ -25,4 +25,4 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 
 
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/ef8baeaf-e190-4703-9ea4-1a195346fe90)
-[](https://rockefelleruniversity.github.io/scRNA-seq/)
+[scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
