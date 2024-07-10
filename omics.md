@@ -31,9 +31,22 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 The output matrix is often stored in a compressed format such as **MEX** (Market Exchange Format), **HDF5** (Hierarchical Data Format)
 #### HDF5
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/c08ab23f-add5-4023-a7c2-b97bb1410c14)
-#### MEX
+- filtered_feature_bc_matrix.h5
+- raw_feature_bc_matrix.h5
+#### MEX (Cell Ranger)
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/7dd17d45-82b4-466a-b0c2-ac49b3eeb017)
+- filtered_feature_bc_matrix
+- raw_feature_bc_matrix
+
+* **FASTA file** - File containing the full genome sequence for the reference of interest
+* **GTF file** (Gene Transfer Format) - File containing the gene/transcript models for the reference of interest. Used to genome annotation, gtf file stores position, feature (exon) and meta-feature (transcript/gene) information.
+* **BAM** file - alignments for all barcodes against the reference
+
+# single-cell RNA-seq analysis
+## 1. Seurat and Bioconductor
+
+## 2. AnnData and scanpy
+![image](https://github.com/trunghachi/RLearning/assets/45091486/50db6ea5-906d-41f0-b30d-b35447a92742)
 
 
-![image](https://github.com/trunghachi/RLearning/assets/45091486/ef8baeaf-e190-4703-9ea4-1a195346fe90)
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
