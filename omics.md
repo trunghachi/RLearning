@@ -51,3 +51,47 @@ The output matrix is often stored in a compressed format such as **MEX** (Market
 ![AnnData](https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg)
 
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
+
+### 1. CosMx
+CosMx is a spatial sequencing technology that provides detailed information about gene expression at the single-cell level.
+
+- **Raw Data**:
+  - **Images**: Spatial images of tissue sections.
+  - **Expression Matrix**: Gene expression matrix (cells x genes).
+  - **Spatial Coordinates**: Spatial coordinates of the cells or points within the sample.
+- **Processed Data**:
+  - **Cluster Information**: Data on cell clusters based on gene expression.
+  - **Cell Types**: Classification of cells based on gene expression and spatial location.
+
+### 2. Visium
+Visium by 10x Genomics is a spatial sequencing technology that uses tissue sections to analyze gene expression spatially.
+
+- **Raw Data**:
+  - **H&E Images**: Hematoxylin and Eosin (H&E) stained images of tissue sections.
+  - **Spatial Expression Matrix**: Gene expression matrix (spots x genes).
+  - **Spatial Coordinates**: Spatial coordinates of the spots (locations).
+- **Processed Data**:
+  - **Cluster Information**: Information on clusters of cells or regions within the sample.
+  - **Spot Annotations**: Annotations for spots, such as tissue type or disease state.
+
+### 3. Xenium
+Xenium is another spatial sequencing technology that provides spatial gene expression information in biological samples.
+
+- **Raw Data**:
+  - **Images**: Spatial images of tissue sections.
+  - **Expression Matrix**: Gene expression matrix (cells/spots x genes).
+  - **Spatial Coordinates**: Spatial coordinates of the cells or spots within the sample.
+- **Processed Data**:
+  - **Cluster Information**: Information on clusters of cells or regions within the sample.
+  - **Cell/Spot Types**: Classification of cells or spots based on gene expression and spatial location.
+
+### 4. CODEX
+CODEX (CO-Detection by indEXing) is a spatial imaging technology that uses labeled antibodies to co-detect multiple proteins within tissue sections.
+
+- **Raw Data**:
+  - **Multichannel Images**: Multichannel images of tissue sections, with each channel corresponding to a labeled antibody.
+  - **Intensity Matrix**: Intensity matrix (cells x proteins).
+  - **Spatial Coordinates**: Spatial coordinates of the cells or points within the sample.
+- **Processed Data**:
+  - **Cluster Information**: Information on clusters of cells based on protein expression.
+  - **Cell Types**: Classification of cells based on protein expression and spatial location.
