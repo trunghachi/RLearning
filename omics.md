@@ -44,9 +44,10 @@ The output matrix is often stored in a compressed format such as **MEX** (Market
 
 # single-cell RNA-seq analysis
 ## 1. Seurat and Bioconductor
+![image](./assets/45091486/de9ce624-d4ac-4032-9332-fdf9de4e106c)
 
 ## 2. AnnData and scanpy
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/50db6ea5-906d-41f0-b30d-b35447a92742)
-
+![AnnData](https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg)
 
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
