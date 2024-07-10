@@ -176,6 +176,12 @@ Toàn bộ quy trình phân tích gen người, từ lúc lấy mẫu đến lú
 **Tổng thời gian**: Quá trình từ thu thập mẫu đến có được bộ gen hoàn chỉnh mất khoảng 1-2 tuần, tùy thuộc vào điều kiện cụ thể và độ phức tạp của từng bước.
 
 # D. Áp dụng thực tế
+
+![image](https://github.com/trunghachi/RLearning/assets/45091486/d73fe102-81a2-49d4-8176-dfb738fb3f8f)
+[Advancements in long-read genome sequencing technologies and algorithms](https://www.sciencedirect.com/science/article/pii/S0888754324000636)
+
+[Utility of long-read sequencing for All of Us](https://www.nature.com/articles/s41467-024-44804-3)
+[Gapless assembly of complete human and plant chromosomes using only nanopore sequencing](https://www.biorxiv.org/content/10.1101/2024.03.15.585294v1.full)
 # 1. Nanopore
 
 [Assembling the human genome](https://a.storyblok.com/f/196663/cd1c1c07ec/human-assembly-workflow.pdf) using long [nanopore](https://nanoporetech.com/products/prepare) sequencing reads 
