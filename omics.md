@@ -52,6 +52,9 @@ The output matrix is often stored in a compressed format such as **MEX** (Market
 
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
 
+## Spatial Transcriptomic [Methods](https://www.mdpi.com/2073-4409/12/16/2042)
+![image](https://github.com/trunghachi/RLearning/assets/45091486/f97c50aa-582a-4e81-95f6-730ec10b83de)
+
 ### 1. CosMx
 CosMx is a spatial sequencing technology that provides detailed information about gene expression at the single-cell level.
 
