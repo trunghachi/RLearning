@@ -78,6 +78,31 @@ The output matrix is often stored in a compressed format such as **MEX** (Market
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/50db6ea5-906d-41f0-b30d-b35447a92742)
 ![AnnData](https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg)
 
+Core Components:
+1. X (Expression Data): This is the heart of the AnnData object. It's typically a sparse matrix representing the gene expression data for all analyzed cells. Rows represent individual cells identified by unique barcodes, and columns represent genes. The matrix entries typically contain values indicating expression levels (e.g., counts, transcripts per million [TPM]).
+2. Annotations:
+a) obs (Cell Annotations): This is a pandas DataFrame associated with the observations (cells) in the data. It stores various annotations for each cell, such as:
+ - Cell type labels: Categorical information about the cell type (e.g., T cell, B cell) based on gene expression patterns or prior knowledge.
+ - Experimental conditions: Information about the experimental group or treatment each cell belongs to.
+ - Doublet/singlet labels: Flags indicating if a cell is likely a single cell or a doublet (fusion of two cells).
+ - Other relevant metadata: Any additional information specific to your experiment or analysis.
+b) var (Gene Annotations): This is another pandas DataFrame associated with the variables (genes) in the data. It can store annotations for each gene, including: 
+ - Gene names: Descriptive names for the genes represented in the expression matrix.
+ - Gene symbols: Shorter, standardized identifiers for the genes.
+ - Functional annotations: Information about the gene's function or pathway membership.
+ - Other relevant metadata: Any additional information specific to your genes of interest.
+3.Optional Components:
+a) layers (Multidimensional Annotations): This dictionary can store additional data matrices with the same number of rows (cells) as the main expression matrix (X). These layers can represent various types of information, such as:
+ - Reduced dimensionality data: Results from dimensionality reduction techniques like PCA, stored as a separate matrix.
+ - Spliced vs. unspliced counts: Information about splicing events for specific genes.
+ - Spatial coordinates: If spatial transcriptomics data is available, X and Y coordinates for each cell can be stored in a layer.
+b) uns (Unstructured Annotations): This dictionary can hold various unstructured information related to the entire dataset, such as:
+ - Sample information: Details about the sample source and preparation.
+ - Processing steps: Information about the data normalization and filtering steps performed.
+ - Software versions: Versions of the software used for data processing and analysis.
+Relationships Between Components:
+The components within an AnnData object are interconnected. The cell and gene annotations (obs and var) allow you to link specific expression values in the X matrix to individual cells and their characteristics. Similarly, layers and uns provide additional information that enriches the analysis of the core expression data
+
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
 
 ## Spatial Transcriptomic [Methods](https://www.mdpi.com/2073-4409/12/16/2042)
@@ -97,6 +122,7 @@ CosMx is a spatial sequencing technology that provides detailed information abou
 
 ### 2. Visium
 Visium by 10x Genomics is a spatial sequencing technology that uses tissue sections to analyze gene expression spatially.
+Visium offers medium-resolution spatial information. It captures gene expression at the level of tissue regions (spots), typically containing multiple cells (1-10 cells).
 
 - **Raw Data**:
   - **H&E Images**: Hematoxylin and Eosin (H&E) stained images of tissue sections.
@@ -108,7 +134,7 @@ Visium by 10x Genomics is a spatial sequencing technology that uses tissue secti
 
 ### 3. Xenium
 Xenium is another spatial sequencing technology that provides spatial gene expression information in biological samples.
-
+Xenium offers high-resolution data, enabling researchers to analyze gene expression at the level of single cells or even subcellular compartments.
 - **Raw Data**:
   - **Images**: Spatial images of tissue sections.
   - **Expression Matrix**: Gene expression matrix (cells/spots x genes).
