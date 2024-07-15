@@ -9,7 +9,6 @@ for more information, refer to [NCCN Guidelines](https://www.nccn.org/guidelines
   </tr>
 </table>
 
-
 # Luminal A, B (Lum A, Lum B)
 Trong ung thư vú, Luminal A (Lum A) và Luminal B (Lum B) là hai phân nhóm chính của ung thư vú, được xác định dựa trên biểu hiện của các thụ thể hormone và các dấu ấn sinh học khác. 
 Đây là thông tin chi tiết về từng nhóm:
@@ -257,4 +256,9 @@ Trong các khối u, đặc biệt là ung thư vú, một số cặp ligand-rec
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/a89b03a3-cfaa-47c5-b0a2-857d530befb9)
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/a0fe62ab-ad93-460b-902c-9e7dc1a32642)
 
+## Treatment
+![image](https://github.com/user-attachments/assets/f5eda392-fcef-4022-8c5e-25f4bcbd07ee)
 
+## Common metastatic sites in breast cancer
+
+![image](https://github.com/user-attachments/assets/a616c2a7-5cdb-40f9-b8e1-3d90dd274c4e)
