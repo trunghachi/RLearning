@@ -1,9 +1,10 @@
+# _de novo_ human genome assemblies
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP_project --time=05:00:00 --partition=general --account=a_nguyen_quan srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
 ```
 [Xem thêm tại đây](https://www.sciencedirect.com/science/article/pii/S2666166722003860)
 
-# A. Một số khái niệm sinh học
+## A. Một số khái niệm sinh học
 * **Genome**: **Nuclear human genome**: 23 chromosome, ~6.400.000.000 bp (2000x) ~ 30.000 genes, diploid, coding sparse: < 2% genome, repetitive DNA 40% - 80% of genome; **Mitochondrial genome**: 16kbp, 37 genes, haploid, Hundreds - thousands of mitochondria per cell.
   ![image](https://github.com/trunghachi/RLearning/assets/45091486/b9febade-122f-4b5a-9171-4a8d65ca39f6)
 * Prokaryotic genomes: Single chromosome (usually), Chromosomes are circular, Small genome ~ 3,000,000bp, ~ 4000 genes, Haploid (1 copy of chromosome) [see more here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/hybrid_assembly/media/hybrid_assembly_slides.pdf)
@@ -37,6 +38,11 @@ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --mem=120G --job-name=VGP
   
 
 # B. Technology
+
+## Next-generation sequencing (NGS)
+* short read sequencing technology (∼200 bp)
+* long-read sequencing technology (-> ∼1 Mb)
+
 ## 1. Technology comparison
 ![techcomparison](https://github.com/trunghachi/RLearning/assets/45091486/867b7104-e5af-4dfc-8c7a-ed9ae22f2727)
 ### Short read niche (gives Base-level information)
