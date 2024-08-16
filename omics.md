@@ -75,8 +75,9 @@ The output matrix is often stored in a compressed format such as **MEX** (Market
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/912207ad-c1d0-4852-ad13-259348be684d)
 
 The **Seurat object** is a hierarchical data **container**. When created from scratch, a Seurat object contains information in **slots**
+
 **@ meta.data** : data frame ; contains metadata qualifiers for barcodes/cells
-@ assays : a list of containers for count data (assays), the default one named :
+* @ assays : a list of containers for count data (assays), the default one named :
  💲 RNA : container of :
     ● data matrices (feature x barcode) :
       @ counts : contains raw counts (filled by default)
@@ -85,11 +86,11 @@ The **Seurat object** is a hierarchical data **container**. When created from sc
     ● meta.features : data.frame ; contains metadata qualifiers for features
     ● var.features : vector ; contains the name of a selection of features (based on their high expression variability) 
  💲...
-@ reductions : a list of containers for dimension reduction spaces (PCA, etc). By example : 
+* @ reductions : a list of containers for dimension reduction spaces (PCA, etc). By example : 
  💲 pca (component x barcode)
  💲...
-@ project.name : character that defines the project name
-@ commands : a freeze of the different steps the object underwent, and their parameter values
+* @ project.name : character that defines the project name
+* @ commands : a freeze of the different steps the object underwent, and their parameter values
 ![image](https://github.com/user-attachments/assets/d2a63e08-c69b-44df-9c2a-bed25b7f76ad)
 
 ## 2. AnnData and scanpy
