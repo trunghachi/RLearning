@@ -177,10 +177,10 @@ Divide each raw count by its sample's size factor:
 
 | Gene ID | Sample_1 (Norm) | Sample_2 (Norm) | Sample_3 (Norm) | Sample_4 (Norm) |
 |---------|-----------------|-----------------|-----------------|-----------------|
-| GeneA   | $$\frac{150}{1.01} \approx 148.51$$ | $$ \frac{200}{0.86} \approx 232.56$$ | $$\frac{50}{1.15} \approx 43.48$$ | $$\frac{75}{1.01} \approx 74.26$$ |
-| GeneB   | $$\frac{500}{1.01} \approx 495.05$$ | $$ \frac{450}{0.86} \approx 523.26$$ | $$ \frac{600}{1.15} \approx 521.74 $$ | $$ \frac{550}{1.01} \approx 544.55$$ |
+| GeneA   | $$\frac{150}{1.01} \approx 148.51$$ | $$\frac{200}{0.86} \approx 232.56$$ | $$\frac{50}{1.15} \approx 43.48$$ | $$\frac{75}{1.01} \approx 74.26$$ |
+| GeneB   | $$\frac{500}{1.01} \approx 495.05$$ | $$\frac{450}{0.86} \approx 523.26$$ | $$\frac{600}{1.15} \approx 521.74 $$ | $$\frac{550}{1.01} \approx 544.55$$ |
 | GeneC   | $$\frac{0}{1.01} = 0$$ | $$\frac{10}{0.86} \approx 11.63$$ | $$\frac{5}{1.15} \approx 4.35$$ | $$\frac{0}{1.01} = 0$$ |
-| GeneD   | $$\frac{300}{1.01} \approx 297.03$$ | $$ \frac{250}{0.86} \approx 290.70$$ | $$ \frac{350}{1.15} \approx 304.35$$ | $$\frac{300}{1.01} \approx 297.03$$ |
+| GeneD   | $$\frac{300}{1.01} \approx 297.03$$ | $$\frac{250}{0.86} \approx 290.70$$ | $$\frac{350}{1.15} \approx 304.35$$ | $$\frac{300}{1.01} \approx 297.03$$ |
 
 ### Log-Transformed Values
 
