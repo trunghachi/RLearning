@@ -93,6 +93,84 @@ The **Seurat object** is a hierarchical data **container**. When created from sc
 * **@ commands** : a freeze of the different steps the object underwent, and their parameter values
 ![image](https://github.com/user-attachments/assets/d2a63e08-c69b-44df-9c2a-bed25b7f76ad)
 
+### Gene Expression Matrixs:
+
+Certainly! Let's go through the normalization process using the DESeq2 method step-by-step for the example gene expression matrix. We'll calculate the size factors and then use them to normalize the counts.
+
+### Original Gene Expression Matrix (Raw Counts)
+
+| Gene ID | Sample_1 | Sample_2 | Sample_3 | Sample_4 |
+|---------|----------|----------|----------|----------|
+| GeneA   | 150      | 200      | 50       | 75       |
+| GeneB   | 500      | 450      | 600      | 550      |
+| GeneC   | 0        | 10       | 5        | 0        |
+| GeneD   | 300      | 250      | 350      | 300      |
+
+### Step-by-Step Normalization
+
+#### 1. Calculate Geometric Means
+
+For each gene, calculate the geometric mean of counts across all samples, excluding zeros:
+
+- **GeneA:** $$ \text{Geometric Mean} = \sqrt{150 \times 200 \times 50 \times 75} \approx 110.67 $$
+- **GeneB:** $$ \text{Geometric Mean} = \sqrt{500 \times 450 \times 600 \times 550} \approx 523.61 $$
+- **GeneC:** Ignore zeros for geometric mean calculation.
+- **GeneD:** $$ \text{Geometric Mean} = \sqrt{300 \times 250 \times 350 \times 300} \approx 296.98 $$
+
+#### 2. Calculate Size Factors
+
+For each sample, divide each gene's count by the geometric mean of that gene, and compute the median of these ratios.
+
+- **Sample_1 Ratios:**
+  - GeneA: $$ \frac{150}{110.67} \approx 1.36 $$
+  - GeneB: $$ \frac{500}{523.61} \approx 0.95 $$
+  - GeneD: $$ \frac{300}{296.98} \approx 1.01 $$
+  - Median: $$ \text{Median}(1.36, 0.95, 1.01) \approx 1.01 $$
+
+- **Sample_2 Ratios:**
+  - GeneA: $$ \frac{200}{110.67} \approx 1.81 $$
+  - GeneB: $$ \frac{450}{523.61} \approx 0.86 $$
+  - GeneD: $$ \frac{250}{296.98} \approx 0.84 $$
+  - Median: $$ \text{Median}(1.81, 0.86, 0.84) \approx 0.86 $$
+
+- **Sample_3 Ratios:**
+  - GeneA: $$ \frac{50}{110.67} \approx 0.45 $$
+  - GeneB: $$ \frac{600}{523.61} \approx 1.15 $$
+  - GeneD: $$ \frac{350}{296.98} \approx 1.18 $$
+  - Median: $$ \text{Median}(0.45, 1.15, 1.18) \approx 1.15 $$
+
+- **Sample_4 Ratios:**
+  - GeneA: $$ \frac{75}{110.67} \approx 0.68 $$
+  - GeneB: $$ \frac{550}{523.61} \approx 1.05 $$
+  - GeneD: $$ \frac{300}{296.98} \approx 1.01 $$
+  - Median: $$ \text{Median}(0.68, 1.05, 1.01) \approx 1.01 $$
+
+#### 3. Normalize Counts
+
+Divide each raw count by its sample's size factor:
+
+| Gene ID | Sample_1 (Norm) | Sample_2 (Norm) | Sample_3 (Norm) | Sample_4 (Norm) |
+|---------|-----------------|-----------------|-----------------|-----------------|
+| GeneA   | $$ \frac{150}{1.01} \approx 148.51 $$ | $$ \frac{200}{0.86} \approx 232.56 $$ | $$ \frac{50}{1.15} \approx 43.48 $$ | $$ \frac{75}{1.01} \approx 74.26 $$ |
+| GeneB   | $$ \frac{500}{1.01} \approx 495.05 $$ | $$ \frac{450}{0.86} \approx 523.26 $$ | $$ \frac{600}{1.15} \approx 521.74 $$ | $$ \frac{550}{1.01} \approx 544.55 $$ |
+| GeneC   | $$ \frac{0}{1.01} = 0 $$ | $$ \frac{10}{0.86} \approx 11.63 $$ | $$ \frac{5}{1.15} \approx 4.35 $$ | $$ \frac{0}{1.01} = 0 $$ |
+| GeneD   | $$ \frac{300}{1.01} \approx 297.03 $$ | $$ \frac{250}{0.86} \approx 290.70 $$ | $$ \frac{350}{1.15} \approx 304.35 $$ | $$ \frac{300}{1.01} \approx 297.03 $$ |
+
+### Log-Transformed Values
+
+To log-transform the normalized counts, add a pseudocount (e.g., 1) to each normalized count and then apply the log2 transformation:
+
+| Gene ID | Sample_1 (Log2) | Sample_2 (Log2) | Sample_3 (Log2) | Sample_4 (Log2) |
+|---------|-----------------|-----------------|-----------------|-----------------|
+| GeneA   | $$ \log_2(148.51 + 1) \approx 7.23 $$ | $$ \log_2(232.56 + 1) \approx 7.87 $$ | $$ \log_2(43.48 + 1) \approx 5.46 $$ | $$ \log_2(74.26 + 1) \approx 6.23 $$ |
+| GeneB   | $$ \log_2(495.05 + 1) \approx 8.96 $$ | $$ \log_2(523.26 + 1) \approx 9.03 $$ | $$ \log_2(521.74 + 1) \approx 9.03 $$ | $$ \log_2(544.55 + 1) \approx 9.10 $$ |
+| GeneC   | $$ \log_2(0 + 1) = 0 $$ | $$ \log_2(11.63 + 1) \approx 3.64 $$ | $$ \log_2(4.35 + 1) \approx 2.39 $$ | $$ \log_2(0 + 1) = 0 $$ |
+| GeneD   | $$ \log_2(297.03 + 1) \approx 8.21 $$ | $$ \log_2(290.70 + 1) \approx 8.19 $$ | $$ \log_2(304.35 + 1) \approx 8.26 $$ | $$ \log_2(297.03 + 1) \approx 8.21 $$ |
+
+This process provides normalized and log-transformed values suitable for downstream analysis, such as differential expression analysis.
+
+
+
 ## 2. AnnData and scanpy
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/50db6ea5-906d-41f0-b30d-b35447a92742)
 ![AnnData](https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg)
