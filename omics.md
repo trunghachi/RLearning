@@ -93,9 +93,35 @@ The **Seurat object** is a hierarchical data **container**. When created from sc
 * **@ commands** : a freeze of the different steps the object underwent, and their parameter values
 ![image](https://github.com/user-attachments/assets/d2a63e08-c69b-44df-9c2a-bed25b7f76ad)
 
-### Gene Expression Matrixs:
+### Gene Expression Matrixs Example:
+A gene expression matrix contains numerical values that represent the expression levels of genes across different samples or conditions. Here's a breakdown of what these values mean and how they are typically represented:
 
-Certainly! Let's go through the normalization process using the DESeq2 method step-by-step for the example gene expression matrix. We'll calculate the size factors and then use them to normalize the counts.
+1. **Rows (Genes):**
+   - Each row corresponds to a specific gene. The row may be labeled with a gene identifier, such as a gene symbol (e.g., "TP53") or an Ensembl gene ID (e.g., "ENSG00000141510").
+
+2. **Columns (Samples/Conditions):**
+   - Each column corresponds to a sample or condition. Columns may be labeled with sample identifiers or names that indicate the experimental condition, such as "Sample_1" or "Control_1."
+
+3. **Values (Expression Levels):**
+   - The values in the matrix represent the expression level of each gene in each sample. These values can be in various forms, depending on how the data has been processed:
+
+   - **Raw Counts:** The raw number of reads or fragments mapped to a gene. This is the initial output from RNA-seq data processing and reflects the abundance of RNA molecules.
+
+   - **Normalized Counts:** Adjusted values that account for differences in sequencing depth and other technical biases. Common normalization methods include:
+     - **Counts Per Million (CPM):** The number of reads per million total reads, which normalizes for sequencing depth.
+     - **Fragments Per Kilobase of transcript per Million mapped reads (FPKM):** Normalizes for both sequencing depth and gene length.
+     - **Transcripts Per Million (TPM):** Similar to FPKM but better suited for comparing expression levels between samples.
+
+   - **Log-Transformed Values:** Logarithmic transformation of normalized counts to stabilize variance and make the data more suitable for statistical analysis.
+
+#### Interpretation of Values:
+
+- **Higher Values:** Indicate higher expression levels of a gene in a particular sample, suggesting that the gene is more active or abundant in that condition.
+- **Lower Values:** Indicate lower expression levels, suggesting reduced activity or abundance.
+- **Zero or Near-Zero Values:** May indicate that the gene is not expressed or is expressed at very low levels in the sample.
+
+The gene expression matrix is a critical tool for analyzing gene activity, identifying differentially expressed genes, and understanding the molecular basis of phenotypic differences across samples or conditions.
+
 
 ### Original Gene Expression Matrix (Raw Counts)
 
