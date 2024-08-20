@@ -177,10 +177,10 @@ Divide each raw count by its sample's size factor:
 
 | Gene ID | Sample_1 (Norm) | Sample_2 (Norm) | Sample_3 (Norm) | Sample_4 (Norm) |
 |---------|-----------------|-----------------|-----------------|-----------------|
-| GeneA   | $$ \frac{150}{1.01} \approx 148.51 $$ | $$ \frac{200}{0.86} \approx 232.56 $$ | $$ \frac{50}{1.15} \approx 43.48 $$ | $$ \frac{75}{1.01} \approx 74.26 $$ |
-| GeneB   | $$ \frac{500}{1.01} \approx 495.05 $$ | $$ \frac{450}{0.86} \approx 523.26 $$ | $$ \frac{600}{1.15} \approx 521.74 $$ | $$ \frac{550}{1.01} \approx 544.55 $$ |
-| GeneC   | $$ \frac{0}{1.01} = 0 $$ | $$ \frac{10}{0.86} \approx 11.63 $$ | $$ \frac{5}{1.15} \approx 4.35 $$ | $$ \frac{0}{1.01} = 0 $$ |
-| GeneD   | $$ \frac{300}{1.01} \approx 297.03 $$ | $$ \frac{250}{0.86} \approx 290.70 $$ | $$ \frac{350}{1.15} \approx 304.35 $$ | $$ \frac{300}{1.01} \approx 297.03 $$ |
+| GeneA   | $$\frac{150}{1.01} \approx 148.51$$ | $$ \frac{200}{0.86} \approx 232.56$$ | $$\frac{50}{1.15} \approx 43.48$$ | $$\frac{75}{1.01} \approx 74.26$$ |
+| GeneB   | $$\frac{500}{1.01} \approx 495.05$$ | $$ \frac{450}{0.86} \approx 523.26$$ | $$ \frac{600}{1.15} \approx 521.74 $$ | $$ \frac{550}{1.01} \approx 544.55$$ |
+| GeneC   | $$\frac{0}{1.01} = 0$$ | $$\frac{10}{0.86} \approx 11.63$$ | $$\frac{5}{1.15} \approx 4.35$$ | $$\frac{0}{1.01} = 0$$ |
+| GeneD   | $$\frac{300}{1.01} \approx 297.03$$ | $$ \frac{250}{0.86} \approx 290.70$$ | $$ \frac{350}{1.15} \approx 304.35$$ | $$\frac{300}{1.01} \approx 297.03$$ |
 
 ### Log-Transformed Values
 
@@ -188,10 +188,10 @@ To log-transform the normalized counts, add a pseudocount (e.g., 1) to each norm
 
 | Gene ID | Sample_1 (Log2) | Sample_2 (Log2) | Sample_3 (Log2) | Sample_4 (Log2) |
 |---------|-----------------|-----------------|-----------------|-----------------|
-| GeneA   | $$ \log_2(148.51 + 1) \approx 7.23 $$ | $$ \log_2(232.56 + 1) \approx 7.87 $$ | $$ \log_2(43.48 + 1) \approx 5.46 $$ | $$ \log_2(74.26 + 1) \approx 6.23 $$ |
-| GeneB   | $$ \log_2(495.05 + 1) \approx 8.96 $$ | $$ \log_2(523.26 + 1) \approx 9.03 $$ | $$ \log_2(521.74 + 1) \approx 9.03 $$ | $$ \log_2(544.55 + 1) \approx 9.10 $$ |
-| GeneC   | $$ \log_2(0 + 1) = 0 $$ | $$ \log_2(11.63 + 1) \approx 3.64 $$ | $$ \log_2(4.35 + 1) \approx 2.39 $$ | $$ \log_2(0 + 1) = 0 $$ |
-| GeneD   | $$ \log_2(297.03 + 1) \approx 8.21 $$ | $$ \log_2(290.70 + 1) \approx 8.19 $$ | $$ \log_2(304.35 + 1) \approx 8.26 $$ | $$ \log_2(297.03 + 1) \approx 8.21 $$ |
+| GeneA   | $$\log_2(148.51 + 1) \approx 7.23$$ | $$\log_2(232.56 + 1) \approx 7.87$$ | $$\log_2(43.48 + 1) \approx 5.46$$ | $$\log_2(74.26 + 1) \approx 6.23$$ |
+| GeneB   | $$\log_2(495.05 + 1) \approx 8.96$$ | $$\log_2(523.26 + 1) \approx 9.03$$ | $$\log_2(521.74 + 1) \approx 9.03$$ | $$\log_2(544.55 + 1) \approx 9.10$$ |
+| GeneC   | $$\log_2(0 + 1) = 0$$ | $$\log_2(11.63 + 1) \approx 3.64$$ | $$\log_2(4.35 + 1) \approx 2.39$$ | $$\log_2(0 + 1) = 0$$ |
+| GeneD   | $$\log_2(297.03 + 1) \approx 8.21$$ | $$\log_2(290.70 + 1) \approx 8.19$$ | $$\log_2(304.35 + 1) \approx 8.26$$ | $$\log_2(297.03 + 1) \approx 8.21$$ |
 
 This process provides normalized and log-transformed values suitable for downstream analysis, such as differential expression analysis.
 
