@@ -138,10 +138,10 @@ The gene expression matrix is a critical tool for analyzing gene activity, ident
 
 For each gene, calculate the geometric mean of counts across all samples, excluding zeros:
 
-- **GeneA:** $$ \text{Geometric Mean} = \sqrt{150 \times 200 \times 50 \times 75} \approx 110.67 $$
-- **GeneB:** $$ \text{Geometric Mean} = \sqrt{500 \times 450 \times 600 \times 550} \approx 523.61 $$
+- **GeneA:** $$\text{Geometric Mean} = \sqrt{150 \times 200 \times 50 \times 75} \approx 110.67$$
+- **GeneB:** $$\text{Geometric Mean} = \sqrt{500 \times 450 \times 600\times 550} \approx 523.61$$
 - **GeneC:** Ignore zeros for geometric mean calculation.
-- **GeneD:** $$ \text{Geometric Mean} = \sqrt{300 \times 250 \times 350 \times 300} \approx 296.98 $$
+- **GeneD:** $$\text{Geometric Mean}=\sqrt{300\times 250\times 350\times 300}\approx 296.98 $$
 
 #### 2. Calculate Size Factors
 
@@ -160,16 +160,16 @@ For each sample, divide each gene's count by the geometric mean of that gene, an
   - Median: $\text{Median}(1.81, 0.86, 0.84)\approx 0.86$
 
 - **Sample_3 Ratios:**
-  - GeneA: $$ \frac{50}{110.67} \approx 0.45 $$
-  - GeneB: $$ \frac{600}{523.61} \approx 1.15 $$
-  - GeneD: $$ \frac{350}{296.98} \approx 1.18 $$
-  - Median: $$ \text{Median}(0.45, 1.15, 1.18) \approx 1.15 $$
+  - GeneA: $$\frac{50}{110.67} \approx 0.45$$
+  - GeneB: $$\frac{600}{523.61} \approx 1.15$$
+  - GeneD: $$\frac{350}{296.98} \approx 1.18$$
+  - Median: $$\text{Median}(0.45, 1.15, 1.18) \approx 1.15$$
 
 - **Sample_4 Ratios:**
-  - GeneA: $$ \frac{75}{110.67} \approx 0.68 $$
-  - GeneB: $$ \frac{550}{523.61} \approx 1.05 $$
-  - GeneD: $$ \frac{300}{296.98} \approx 1.01 $$
-  - Median: $$ \text{Median}(0.68, 1.05, 1.01) \approx 1.01 $$
+  - GeneA: $$\frac{75}{110.67} \approx 0.68$$
+  - GeneB: $$\frac{550}{523.61} \approx 1.05$$
+  - GeneD: $$\frac{300}{296.98} \approx 1.01$$
+  - Median: $$\text{Median}(0.68, 1.05, 1.01) \approx 1.01$$
 
 #### 3. Normalize Counts
 
