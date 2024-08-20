@@ -147,21 +147,17 @@ For each gene, calculate the geometric mean of counts across all samples, exclud
 
 For each sample, divide each gene's count by the geometric mean of that gene, and compute the median of these ratios.
 
-\[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]
 
 - **Sample_1 Ratios:**
-  - GeneA: $$ \frac{150}{110.67} \approx 1.36 $$
-  - GeneB: $$ \frac{500}{523.61} \approx 0.95 $$
-  - GeneD: $$ \frac{300}{296.98} \approx 1.01 $$
-  - Median: $$ \text{Median}(1.36, 0.95, 1.01) \approx 1.01 $$
-
+   * GeneA: $\frac{150}{110.67}\approx 1.36$
+   * GeneB: $\frac{500}{523.61}\approx 0.95$
+   * GeneD: $\frac{300}{296.98}\approx 1.01$
+   * Median: $\text{Median}(1.36, 0.95, 1.01)\approx 1.01$
 - **Sample_2 Ratios:**
-  - GeneA: $$ \frac{200}{110.67} \approx 1.81 $$
-  - GeneB: $$ \frac{450}{523.61} \approx 0.86 $$
-  - GeneD: $$ \frac{250}{296.98} \approx 0.84 $$
-  - Median: $$ \text{Median}(1.81, 0.86, 0.84) \approx 0.86 $$
+  - GeneA: $\frac{200}{110.67}\approx 1.81$
+  - GeneB: $\frac{450}{523.61}\approx 0.86$
+  - GeneD: $\frac{250}{296.98}\approx 0.84$
+  - Median: $\text{Median}(1.81, 0.86, 0.84)\approx 0.86$
 
 - **Sample_3 Ratios:**
   - GeneA: $$ \frac{50}{110.67} \approx 0.45 $$
