@@ -148,7 +148,7 @@ For each gene, calculate the geometric mean of counts across all samples, exclud
 For each sample, divide each gene's count by the geometric mean of that gene, and compute the median of these ratios.
 
 - **Sample_1 Ratios:**
-  - GeneA: $$ \frac{150}{110.67} \approx 1.36 $$
+  - GeneA: $ \frac{150}{110.67} \approx 1.36 $
   - GeneB: $$ \frac{500}{523.61} \approx 0.95 $$
   - GeneD: $$ \frac{300}{296.98} \approx 1.01 $$
   - Median: $$ \text{Median}(1.36, 0.95, 1.01) \approx 1.01 $$
