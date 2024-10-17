@@ -40,7 +40,7 @@ Bệnh phổi bao gồm nhiều loại bệnh khác nhau, ảnh hưởng đến 
 
 Các loại bệnh phổi này có thể có triệu chứng và cách điều trị khác nhau, và chẩn đoán chính xác là rất quan trọng để điều trị hiệu quả.
 
-
+---
 # Interstitial Lung Diseas (ILD)
 ---
 **"Bệnh phổi kẽ"** hoặc **"Bệnh phổi mô kẽ"**. Đây là nhóm bệnh gây tổn thương và xơ hóa mô kẽ của phổi, tức là các mô nằm giữa các túi khí (phế nang). Những thay đổi này khiến phổi trở nên cứng hơn, gây khó thở và giảm khả năng trao đổi oxy. 
@@ -80,6 +80,7 @@ ILD gồm nhiều loại như:
 
 Bệnh phổi kẽ có nhiều dạng và mức độ khác nhau, cần phải chẩn đoán và điều trị theo từng trường hợp cụ thể.
 
+---
 # Lung Cancer
 ---
 Ung thư phổi được chia thành hai loại chính, dựa trên kích thước và hình dạng của tế bào ung thư dưới kính hiển vi. Hai loại chính này là:
