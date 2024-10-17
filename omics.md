@@ -1,5 +1,3 @@
-# scRNAseq
-
 ## A brief history of sequencing
 ### First generation sequencing
 * 1969: DNA was already first isolated by Friedrich Miescher.
@@ -228,7 +226,9 @@ The components within an AnnData object are interconnected. The cell and gene an
 
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
 
-## Spatial Transcriptomic [Methods](https://www.mdpi.com/2073-4409/12/16/2042)
+---
+# Spatial Transcriptomic [Methods](https://www.mdpi.com/2073-4409/12/16/2042)
+---
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/f97c50aa-582a-4e81-95f6-730ec10b83de)
 scRNAseq, GeoMx DSP, Xenium, Visium, CosMx, RNAscope, Opal Multiplex Polaris, CODEX
 
@@ -306,3 +306,37 @@ Number of variable genes to return. Rank the genes base in their standardized va
 8. Find differentially expressed genes between samples, within clusters
 9. Visualize interesting genes
 
+---
+# Fluorescence In-Situ Hybridization (FISH)
+---
+Single-molecule FISH (Fluorescent In-Situ Hybridization) là một kỹ thuật quan trọng để hình dung và phân tích sự biểu hiện gene ở mức độ từng phân tử trong các tế bào hoặc mô. Nó sử dụng các đầu dò huỳnh quang liên kết với các trình tự RNA hoặc DNA cụ thể, cho phép xác định vị trí và số lượng của các phân tử này trong mẫu. Các biến thể của kỹ thuật này, như SeqFISH, SeqFISH+, và MERFISH, cải thiện độ phân giải không gian và khả năng đa dạng mục tiêu, giúp phân tích hàng trăm hoặc hàng nghìn gene cùng lúc. Dưới đây là mô tả các phương pháp phổ biến:
+
+### 1. **SeqFISH (Sequential Fluorescence In-Situ Hybridization)**
+   - **Nguyên lý**: SeqFISH sử dụng một chuỗi các bước hybrid hóa lặp lại để nhận diện nhiều gene trong cùng một mẫu. Trong mỗi vòng lặp, một bộ đầu dò huỳnh quang liên kết với một tập hợp con của các trình tự RNA đích. Các đầu dò sau đó được rửa sạch và chu kỳ hybrid hóa khác bắt đầu, sử dụng một bộ đầu dò mới.
+   - **Ứng dụng**: SeqFISH cho phép nhận diện đồng thời hàng trăm đến hàng nghìn gene trong các mẫu đơn lẻ, giúp phân tích không gian biểu hiện gene và kiến trúc không gian của tế bào.
+
+### 2. **SeqFISH+**
+   - **Cải tiến từ SeqFISH**: SeqFISH+ là một phiên bản nâng cao của SeqFISH, với cải tiến về độ chính xác và số lượng gene có thể được phát hiện đồng thời. Nó sử dụng các chiến lược gắn nhãn phức tạp và thuật toán giải mã để nhận diện các gene mục tiêu với độ nhạy cao hơn.
+   - **Đặc điểm nổi bật**: SeqFISH+ cho phép mã hóa hàng nghìn gene bằng cách sử dụng các vòng hybrid hóa được tối ưu hóa để tăng hiệu quả liên kết đầu dò và giảm nhiễu nền.
+   - **Ứng dụng**: Đặc biệt hữu ích trong nghiên cứu sinh học tế bào và sinh học phát triển, nơi việc theo dõi sự thay đổi biểu hiện gene ở nhiều gene là rất quan trọng.
+
+### 3. **MERFISH (Multiplexed Error-Robust Fluorescence In-Situ Hybridization)**
+   - **Nguyên lý**: MERFISH sử dụng mã hóa nhị phân cho các gene mục tiêu, với các chuỗi đầu dò được thiết kế để gắn vào các phân tử RNA theo cách mã hóa lỗi chịu lỗi (error-robust). Điều này giúp nhận diện nhiều gene mà không bị nhiễu tín hiệu.
+   - **Phương pháp giải mã**: Mỗi phân tử RNA được mã hóa bằng một tập hợp các lần bật/tắt tín hiệu huỳnh quang trong một loạt các chu kỳ, cho phép xác định các gene mục tiêu ngay cả khi có nhiễu hoặc mất tín hiệu.
+   - **Ứng dụng**: MERFISH có thể xác định hàng nghìn gene trong các tế bào riêng lẻ, được sử dụng rộng rãi trong nghiên cứu biểu hiện gene và phân tích không gian của các hệ thống sinh học phức tạp, như mô não.
+
+### 4. **smFISH (Single-Molecule FISH)**
+   - **Nguyên lý**: Đây là phương pháp cơ bản của single-molecule FISH, sử dụng các đầu dò huỳnh quang để phát hiện RNA cụ thể với độ chính xác cao ở mức từng phân tử.
+   - **Đặc điểm**: Mỗi phân tử RNA đích được gắn một số lượng lớn đầu dò để tạo ra tín hiệu huỳnh quang mạnh, giúp dễ dàng đếm số lượng phân tử.
+   - **Ứng dụng**: smFISH được sử dụng để nghiên cứu sự phân bố RNA và động học phiên mã ở mức độ phân tử trong các tế bào đơn lẻ.
+
+### 5. **Other Variations and Techniques**
+   - **STARmap (Spatially Resolved Transcript Amplicon Readout Mapping)**: Sử dụng kỹ thuật mã hóa không gian và giải mã amplicon để phân tích biểu hiện gene không gian mà không cần lặp lại các chu kỳ huỳnh quang.
+   - **osmFISH (Oligonucleotide-Sequential Multiplexed FISH)**: Giảm nhiễu và tăng số lượng gene có thể phân tích bằng cách sử dụng các đầu dò oligonucleotide kết hợp với các bước tuần tự hybrid hóa.
+
+### 6. **Các yếu tố quan trọng trong các phương pháp Single-molecule FISH**
+   - **Độ phân giải không gian và độ nhạy**: SeqFISH+ và MERFISH cải tiến độ phân giải và độ nhạy so với smFISH, cho phép nhận diện các thay đổi trong biểu hiện gene ngay cả ở mức độ phân tử thấp.
+   - **Chiến lược mã hóa và giải mã**: Phương pháp mã hóa nhị phân của MERFISH giúp tăng độ chính xác khi giải mã hàng nghìn gene mục tiêu.
+   - **Khả năng mở rộng**: Những phương pháp tiên tiến như SeqFISH+ và MERFISH có khả năng phát hiện đồng thời hàng nghìn gene, trong khi smFISH thường giới hạn ở một số lượng gene nhỏ hơn.
+
+Những kỹ thuật này cung cấp những công cụ mạnh mẽ để phân tích không gian biểu hiện gene ở mức phân tử và hiểu rõ hơn về chức năng tế bào trong các hệ thống sinh học phức tạp.
