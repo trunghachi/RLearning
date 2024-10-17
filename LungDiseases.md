@@ -84,6 +84,17 @@ Bệnh phổi kẽ có nhiều dạng và mức độ khác nhau, cần phải c
 ---
 Ung thư phổi được chia thành hai loại chính, dựa trên kích thước và hình dạng của tế bào ung thư dưới kính hiển vi. Hai loại chính này là:
 
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrc3775/MediaObjects/41568_2014_Article_BFnrc3775_Fig2_HTML.jpg?as=webp" alt="LLMs"  style="width:100%; height:100%;">
+      <br>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
+    </td>
+  </tr>
+</table>
+
 ## 1. **Ung thư phổi không tế bào nhỏ (Non-Small-Cell Lung Cancer - NSCLC)**
 Tế bào lớn hơn và không có đặc điểm dính chặt như SCLC. Các tế bào có hình thái đa dạng tùy thuộc vào loại phụ (ung thư biểu mô tuyến, ung thư biểu mô vảy, ung thư tế bào lớn).
 
