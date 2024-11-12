@@ -20,6 +20,9 @@ Trong ung thư vú, Luminal A (Lum A) và Luminal B (Lum B) là hai phân nhóm 
   - Thụ thể HER2 âm tính.
   - Chỉ số tăng trưởng tế bào Ki-67 thấp (thường dưới 20%).
 
+- **Hoạt hóa gen chủ chốt**: Loại này có sự hoạt hóa của một số gen bao gồm **ERS1**, **GATA3**, **FOXA1**, và **XBP1**.
+- **Đặc điểm mô học**: Loại ung thư này liên quan đến ung thư biểu mô ống dẫn sữa không đặc biệt (NST), cùng với các đặc điểm mô học như dạng ống sàng (tubular cribriform) và mô học tiểu thùy cổ điển (classic lobular).
+
 - **Tiên lượng**: 
   - Tiên lượng tốt, tỷ lệ sống sót cao hơn.
   - Thường có thời gian sống dài hơn sau khi chẩn đoán.
