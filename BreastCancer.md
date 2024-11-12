@@ -32,6 +32,9 @@ Trong ung thư vú, Luminal A (Lum A) và Luminal B (Lum B) là hai phân nhóm 
   - Thường không cần hóa trị, trừ khi có yếu tố nguy cơ cao khác.
 
 ### Luminal B (Lum B)
+
+Lum B có những đặc điểm sinh học khác biệt so với các phân nhóm khác như Luminal A và các phân nhóm HER2+. Luminal B thường được liên kết với các đột biến di truyền và các đặc điểm lâm sàng cụ thể. 
+
 - **Đặc điểm sinh học**:
   - Thụ thể estrogen (ER) dương tính.
   - Thụ thể progesterone (PR) có thể dương tính hoặc âm tính.
