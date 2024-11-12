@@ -262,3 +262,8 @@ Trong các khối u, đặc biệt là ung thư vú, một số cặp ligand-rec
 ## Common metastatic sites in breast cancer
 
 ![image](https://github.com/user-attachments/assets/a616c2a7-5cdb-40f9-b8e1-3d90dd274c4e)
+
+## Data
+```
+/QRISdata/Q1851/Wils*/Pfizer/PROCESSED_DATA/
+```
