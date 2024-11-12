@@ -53,7 +53,7 @@ Lum B có những đặc điểm sinh học khác biệt so với các phân nh�
 Các cặp ligand-receptor (LR-pairs) là những cặp phân tử bao gồm một ligand (chất gắn, phối tử) và một receptor (thụ thể) tương tác với nhau để truyền tín hiệu giữa các tế bào. 
 Có hàng trăm cặp LR được xác định trong cơ thể người, và mỗi cặp đóng vai trò quan trọng trong việc điều hòa các quá trình sinh học khác nhau như sự phát triển, miễn dịch, và chức năng của các cơ quan.
 
-Dưới đây là danh sách khoảng 10 cặp LR phổ biến cùng với vai trò và chức năng của chúng:
+Dưới đây là danh sách các  cặp LR phổ biến cùng với vai trò và chức năng của chúng:
 
 1. **EGF - EGFR**
    - **Vai trò**: EGF (Epidermal Growth Factor) và EGFR (Epidermal Growth Factor Receptor) tham gia vào việc điều hòa sự phát triển và phân chia tế bào.
@@ -62,6 +62,7 @@ Dưới đây là danh sách khoảng 10 cặp LR phổ biến cùng với vai t
 2. **TGF-β - TGF-β Receptor**
    - **Vai trò**: TGF-β (Transforming Growth Factor-beta) và thụ thể của nó điều chỉnh sự phát triển tế bào và đáp ứng miễn dịch.
    - **Chức năng**: Tham gia vào quá trình phân chia tế bào, phát triển mô và ức chế miễn dịch. Bất thường trong con đường này có thể dẫn đến bệnh xơ cứng và ung thư.
+   - **Liên quan đến ung thư vú**: TGF-β có vai trò kép trong ung thư: nó có thể ức chế sự phát triển tế bào ở giai đoạn sớm nhưng lại thúc đẩy di căn ở giai đoạn muộn.
 
 3. **Insulin - Insulin Receptor**
    - **Vai trò**: Insulin và thụ thể insulin điều chỉnh chuyển hóa glucose.
@@ -78,22 +79,42 @@ Dưới đây là danh sách khoảng 10 cặp LR phổ biến cùng với vai t
 6. **IL-6 - IL-6 Receptor**
    - **Vai trò**: Interleukin-6 (IL-6) và thụ thể của nó điều hòa phản ứng viêm và miễn dịch.
    - **Chức năng**: Tham gia vào phản ứng viêm và miễn dịch. Bất thường trong con đường này có thể dẫn đến bệnh tự miễn và viêm khớp dạng thấp.
+  
+7. **IL-8 - CXCR1/CXCR2**
+   - **Vai trò**: IL-8 và thụ thể của nó tham gia vào phản ứng viêm và di cư tế bào.
+   - **Liên quan đến ung thư vú**: IL-8 thúc đẩy sự di cư và xâm lấn của tế bào ung thư, cũng như angiogenesis trong khối u.
 
-7. **TNF-α - TNF Receptor**
+8. **TNF-α - TNF Receptor**
    - **Vai trò**: TNF-α (Tumor Necrosis Factor-alpha) và thụ thể của nó điều chỉnh viêm và apoptosis (chết tế bào theo lập trình).
    - **Chức năng**: Quan trọng trong phản ứng viêm và miễn dịch. Mức độ cao có thể dẫn đến bệnh tự miễn và viêm khớp.
 
-8. **NGF - TrkA**
+9. **NGF - TrkA**
    - **Vai trò**: Nerve Growth Factor (NGF) và thụ thể TrkA điều chỉnh sự phát triển và duy trì các tế bào thần kinh.
    - **Chức năng**: Hỗ trợ sự sống sót và phát triển của tế bào thần kinh. Sự gián đoạn trong con đường này có thể dẫn đến bệnh thần kinh.
 
-9. **Notch - Delta/Jagged**
+10. **Notch - Delta/Jagged**
    - **Vai trò**: Notch và các ligand Delta/Jagged tham gia vào việc điều hòa sự phát triển và phân chia tế bào.
    - **Chức năng**: Điều chỉnh sự phát triển và biệt hóa tế bào. Rối loạn trong con đường này có thể dẫn đến ung thư và các bệnh phát triển.
 
-10. **CXCL12 - CXCR4**
-    - **Vai trò**: CXCL12 (còn gọi là SDF-1) và thụ thể CXCR4 tham gia vào việc di chuyển tế bào và sự phát triển của mạch máu.
-    - **Chức năng**: Quan trọng trong quá trình di cư của tế bào gốc và sự phát triển của mạch máu. Bất thường trong con đường này có thể dẫn đến ung thư và bệnh tim mạch.
+11. **CXCL12 - CXCR4**
+   - **Vai trò**: CXCL12 (còn gọi là SDF-1) và thụ thể CXCR4 tham gia vào việc di chuyển tế bào và sự phát triển của mạch máu.
+   - **Chức năng**: Quan trọng trong quá trình di cư của tế bào gốc và sự phát triển của mạch máu. Bất thường trong con đường này có thể dẫn đến ung thư và bệnh tim mạch.
+
+12. **HER2 - HER2 Receptor**
+   - **Vai trò**: HER2 (Human Epidermal Growth Factor Receptor 2) là một thụ thể tăng trưởng tế bào.
+   - **Liên quan đến ung thư vú**: Khoảng 20% ung thư vú có sự khuếch đại và/hoặc biểu hiện quá mức của HER2, dẫn đến sự phát triển và xâm lấn nhanh chóng của khối u. Trastuzumab (Herceptin) là một liệu pháp nhắm trúng đích được phát triển để điều trị loại ung thư này.
+
+13. CXCL12 (SDF-1) - CXCR4**
+   - **Vai trò**: CXCL12 (còn gọi là SDF-1) và thụ thể CXCR4 tham gia vào di cư tế bào và sự phát triển của mạch máu.
+   - **Liên quan đến ung thư vú**: CXCR4 được biểu hiện quá mức trong ung thư vú và giúp tế bào ung thư di căn đến các cơ quan xa.
+
+14. **HGF - c-Met**
+   - **Vai trò**: HGF (Hepatocyte Growth Factor) và thụ thể c-Met tham gia vào sự phát triển và di cư tế bào.
+   - **Liên quan đến ung thư vú**: Sự kích hoạt của con đường HGF/c-Met liên quan đến sự phát triển, di căn, và xâm lấn của tế bào ung thư vú.
+
+15. **M-CSF - c-Fms**
+   - **Vai trò**: M-CSF (Macrophage Colony-Stimulating Factor) và thụ thể c-Fms điều hòa sự phát triển và hoạt động của tế bào đại thực bào.
+   - **Liên quan đến ung thư vú**: Sự biểu hiện quá mức của M-CSF và c-Fms liên quan đến sự tăng trưởng của tế bào ung thư và tạo điều kiện thuận lợi cho di căn thông qua tương tác với tế bào miễn dịch trong vi môi trường khối u
 
 
 ## Nectin-1, Nectin-2, Nectin-3 và Nectin-4
@@ -116,48 +137,7 @@ Các protein thuộc họ nectin, đóng vai trò quan trọng trong các quá t
 - **Vai trò**: Nectin-4 chủ yếu được tìm thấy ở các tế bào biểu mô và có vai trò trong việc kết dính tế bào và duy trì cấu trúc của mô.
 - **Liên quan đến bệnh lý**: Nectin-4 được coi là một dấu ấn sinh học trong một số loại ung thư, đặc biệt là ung thư vú và ung thư bàng quang. Các loại thuốc nhắm vào Nectin-4, như enfortumab vedotin, đang được phát triển và sử dụng trong điều trị ung thư.
 
-## LR-pairs in Tumours
-Trong các khối u, đặc biệt là ung thư vú, một số cặp ligand-receptor (LR-pairs) được nghiên cứu kỹ lưỡng do vai trò của chúng trong việc thúc đẩy sự phát triển và di căn của tế bào ung thư. Dưới đây là một số LR-pairs hoạt động mạnh mẽ nhất trong ung thư vú:
 
-### 1. EGF - EGFR
-- **Vai trò**: EGF (Epidermal Growth Factor) và EGFR (Epidermal Growth Factor Receptor) tham gia vào sự phát triển và phân chia tế bào.
-- **Liên quan đến ung thư vú**: EGFR thường được biểu hiện quá mức trong ung thư vú, dẫn đến sự tăng trưởng và di căn của tế bào ung thư.
-
-### 2. HER2 - HER2 Receptor
-- **Vai trò**: HER2 (Human Epidermal Growth Factor Receptor 2) là một thụ thể tăng trưởng tế bào.
-- **Liên quan đến ung thư vú**: Khoảng 20% ung thư vú có sự khuếch đại và/hoặc biểu hiện quá mức của HER2, dẫn đến sự phát triển và xâm lấn nhanh chóng của khối u. Trastuzumab (Herceptin) là một liệu pháp nhắm trúng đích được phát triển để điều trị loại ung thư này.
-
-### 3. VEGF - VEGFR
-- **Vai trò**: VEGF (Vascular Endothelial Growth Factor) và thụ thể VEGFR tham gia vào việc hình thành mạch máu mới.
-- **Liên quan đến ung thư vú**: Tăng cường angiogenesis, cung cấp máu và dinh dưỡng cho khối u, giúp khối u phát triển và di căn. Bevacizumab (Avastin) là một kháng thể đơn dòng nhắm vào VEGF.
-
-### 4. CXCL12 (SDF-1) - CXCR4
-- **Vai trò**: CXCL12 (còn gọi là SDF-1) và thụ thể CXCR4 tham gia vào di cư tế bào và sự phát triển của mạch máu.
-- **Liên quan đến ung thư vú**: CXCR4 được biểu hiện quá mức trong ung thư vú và giúp tế bào ung thư di căn đến các cơ quan xa.
-
-### 5. HGF - c-Met
-- **Vai trò**: HGF (Hepatocyte Growth Factor) và thụ thể c-Met tham gia vào sự phát triển và di cư tế bào.
-- **Liên quan đến ung thư vú**: Sự kích hoạt của con đường HGF/c-Met liên quan đến sự phát triển, di căn, và xâm lấn của tế bào ung thư vú.
-
-### 6. PDGF - PDGFR
-- **Vai trò**: PDGF (Platelet-Derived Growth Factor) và thụ thể PDGFR tham gia vào sự phát triển và phân chia tế bào.
-- **Liên quan đến ung thư vú**: Sự biểu hiện quá mức của PDGF và PDGFR thúc đẩy sự tăng trưởng của tế bào ung thư và angiogenesis.
-
-### 7. TGF-β - TGF-β Receptor
-- **Vai trò**: TGF-β (Transforming Growth Factor-beta) và thụ thể của nó điều hòa sự phát triển tế bào và đáp ứng miễn dịch.
-- **Liên quan đến ung thư vú**: TGF-β có vai trò kép trong ung thư: nó có thể ức chế sự phát triển tế bào ở giai đoạn sớm nhưng lại thúc đẩy di căn ở giai đoạn muộn.
-
-### 8. IL-8 - CXCR1/CXCR2
-- **Vai trò**: IL-8 và thụ thể của nó tham gia vào phản ứng viêm và di cư tế bào.
-- **Liên quan đến ung thư vú**: IL-8 thúc đẩy sự di cư và xâm lấn của tế bào ung thư, cũng như angiogenesis trong khối u.
-
-### 9. TNF-α - TNF Receptor
-- **Vai trò**: TNF-α (Tumor Necrosis Factor-alpha) và thụ thể của nó điều chỉnh viêm và apoptosis.
-- **Liên quan đến ung thư vú**: TNF-α có thể thúc đẩy viêm trong khối u, tạo điều kiện thuận lợi cho sự phát triển và di căn của tế bào ung thư.
-
-### 10. M-CSF - c-Fms
-- **Vai trò**: M-CSF (Macrophage Colony-Stimulating Factor) và thụ thể c-Fms điều hòa sự phát triển và hoạt động của tế bào đại thực bào.
-- **Liên quan đến ung thư vú**: Sự biểu hiện quá mức của M-CSF và c-Fms liên quan đến sự tăng trưởng của tế bào ung thư và tạo điều kiện thuận lợi cho di căn thông qua tương tác với tế bào miễn dịch trong vi môi trường khối u.
 
 <table>
   <tr>
