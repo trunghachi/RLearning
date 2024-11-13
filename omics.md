@@ -221,30 +221,44 @@ This process provides normalized and log-transformed values suitable for downstr
 ![image](https://github.com/trunghachi/RLearning/assets/45091486/50db6ea5-906d-41f0-b30d-b35447a92742)
 ![AnnData](https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg)
 
-Core Components:
-1. X (Expression Data): This is the heart of the AnnData object. It's typically a sparse matrix representing the gene expression data for all analyzed cells. Rows represent individual cells identified by unique barcodes, and columns represent genes. The matrix entries typically contain values indicating expression levels (e.g., counts, transcripts per million [TPM]).
-2. Annotations:
-a) obs (Cell Annotations): This is a pandas DataFrame associated with the observations (cells) in the data. It stores various annotations for each cell, such as:
- - Cell type labels: Categorical information about the cell type (e.g., T cell, B cell) based on gene expression patterns or prior knowledge.
- - Experimental conditions: Information about the experimental group or treatment each cell belongs to.
- - Doublet/singlet labels: Flags indicating if a cell is likely a single cell or a doublet (fusion of two cells).
- - Other relevant metadata: Any additional information specific to your experiment or analysis.
-b) var (Gene Annotations): This is another pandas DataFrame associated with the variables (genes) in the data. It can store annotations for each gene, including: 
- - Gene names: Descriptive names for the genes represented in the expression matrix.
- - Gene symbols: Shorter, standardized identifiers for the genes.
- - Functional annotations: Information about the gene's function or pathway membership.
- - Other relevant metadata: Any additional information specific to your genes of interest.
-3.Optional Components:
-a) layers (Multidimensional Annotations): This dictionary can store additional data matrices with the same number of rows (cells) as the main expression matrix (X). These layers can represent various types of information, such as:
- - Reduced dimensionality data: Results from dimensionality reduction techniques like PCA, stored as a separate matrix.
- - Spliced vs. unspliced counts: Information about splicing events for specific genes.
- - Spatial coordinates: If spatial transcriptomics data is available, X and Y coordinates for each cell can be stored in a layer.
-b) uns (Unstructured Annotations): This dictionary can hold various unstructured information related to the entire dataset, such as:
- - Sample information: Details about the sample source and preparation.
- - Processing steps: Information about the data normalization and filtering steps performed.
- - Software versions: Versions of the software used for data processing and analysis.
-Relationships Between Components:
-The components within an AnnData object are interconnected. The cell and gene annotations (obs and var) allow you to link specific expression values in the X matrix to individual cells and their characteristics. Similarly, layers and uns provide additional information that enriches the analysis of the core expression data
+AnnData chủ yếu được sử dụng trong thư viện **scanpy** (Python) để quản lý và phân tích dữ liệu sinh học. 
+
+### 1. **`X`**: Ma trận dữ liệu chính
+- **`X`** là ma trận số liệu chính của đối tượng AnnData, thường lưu trữ dữ liệu dưới dạng ma trận số học (n×m), với **n** là số lượng quan sát (cells hoặc spots) và **m** là số lượng biến (genes, hoặc các tính chất khác).
+- Ví dụ, trong dữ liệu **single-cell RNA-seq**, các giá trị trong ma trận này có thể là **số lượng transcript** (e.g., counts, transcripts per million [TPM]) hoặc **số lượng reads** mà một gene đã được phát hiện trong mỗi tế bào. 
+
+### 2. **`obs`**: Metadata về quan sát (Observations)
+- **`obs`** là một bảng dữ liệu (dataframe) chứa thông tin về các quan sát (như tế bào hoặc spots trong dữ liệu không gian). Mỗi dòng của **`obs`** tương ứng với một quan sát, và các cột lưu trữ các thuộc tính hoặc metadata của quan sát đó.
+- Ví dụ trong dữ liệu **single-cell RNA-seq**, bạn có thể có các cột như `cell_type`, `cluster`, hoặc `condition`.
+  
+### 3. **`var`**: Metadata về các biến (Variables)
+- **`var`** là một bảng dữ liệu (dataframe) chứa thông tin về các biến, hay các yếu tố, trong dữ liệu. Trong trường hợp dữ liệu gene expression, mỗi dòng trong **`var`** sẽ tương ứng với một gene, và các cột sẽ chứa các thông tin như tên gene, loại gene (ví dụ, mã hóa protein, mã hóa RNA), hoặc các thông tin chú giải khác.
+- Ví dụ, trong dữ liệu gene expression, bạn có thể có cột như `gene_name`, `gene_type`, `chromosome`.
+
+### 4. **`uns`**: Dữ liệu không có cấu trúc (Unstructured data)
+- **`uns`** là một dictionary (từ điển) chứa các dữ liệu không có cấu trúc, hoặc dữ liệu bổ sung mà không được lưu trữ dưới dạng bảng dữ liệu. Thông thường, **`uns`** chứa thông tin như kết quả của các phân tích (ví dụ, kết quả PCA, t-SNE, hoặc UMAP), các thông số phân tích, hoặc các hình ảnh (như hình ảnh từ dữ liệu không gian).
+- Ví dụ, bạn có thể lưu các đối tượng kết quả phân tích như `uns['pca']` hoặc `uns['umap']` trong đây.
+
+### 5. **`obsm`**: Dữ liệu đa chiều liên quan đến các quan sát
+- **`obsm`** là một dictionary lưu trữ các dữ liệu đa chiều hoặc các phép biến đổi không gian của các quan sát. Các giá trị trong `obsm` có thể là các ma trận hoặc mảng 2D chứa các đặc tính như kết quả PCA, t-SNE, UMAP cho từng tế bào hoặc spot.
+- Ví dụ, bạn có thể lưu kết quả của một phép giảm chiều (dimension reduction) trong `obsm['X_pca']` (kết quả PCA của dữ liệu tế bào).
+
+### 6. **`varm`**: Dữ liệu đa chiều liên quan đến các biến
+- **`varm`** là một dictionary lưu trữ các dữ liệu đa chiều liên quan đến các biến (ví dụ, genes). Các giá trị trong **`varm`** có thể là các ma trận chứa các thông tin bổ sung liên quan đến các genes, như trọng số của các gene trong các phân tích giảm chiều hoặc các phân tích kiểu tương tự.
+- Ví dụ, bạn có thể lưu các trọng số của các gene trong PCA trong `varm['X_pca']`.
+
+### 7. **`obsp`**: Ma trận ma trận đối chiếu (Observation-Observation Matrix)
+- **`obsp`** là một dictionary chứa các ma trận ma trận đối chiếu (pairwise matrix), ví dụ như ma trận khoảng cách hoặc ma trận tương tự giữa các quan sát. Điều này có thể bao gồm các phép toán tương tự hoặc khoảng cách giữa các tế bào trong phân tích dữ liệu.
+
+### 8. **`varp`**: Ma trận ma trận đối chiếu (Variable-Variable Matrix)
+- **`varp`** tương tự như **`obsp`**, nhưng thay vì lưu trữ các quan hệ giữa các quan sát (tế bào), nó lưu trữ các quan hệ giữa các biến (genes). Ví dụ, ma trận tương tự giữa các gene.
+
+### 9. **`raw`**: Dữ liệu thô
+- **`raw`** là một đối tượng AnnData con có thể lưu trữ dữ liệu thô trước khi thực hiện bất kỳ quá trình xử lý nào (như chuẩn hóa hoặc lọc). Điều này giúp người dùng lưu trữ và giữ lại dữ liệu gốc để có thể so sánh hoặc xử lý sau này.
+
+### 10. **`obs_names` và `var_names`**:
+- **`obs_names`** là một danh sách hoặc chỉ mục chứa tên các quan sát (tế bào hoặc spot).
+- **`var_names`** là một danh sách hoặc chỉ mục chứa tên các biến (genes).
 
 [scRNAseq](https://rockefelleruniversity.github.io/scRNA-seq/)
 
