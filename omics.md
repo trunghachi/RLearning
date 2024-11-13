@@ -69,7 +69,14 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 ATGCGTACGTAGCTAG
 >gene2
 GCTAGCTAGCATCGAT
-``` 
+```
+* **FASTQ** - một định dạng tệp được sử dụng rộng rãi trong phân tích dữ liệu giải trình tự (sequencing), đặc biệt là trong các công nghệ như **Illumina, PacBio, Oxford Nanopore**.
+```
+@SEQ_ID
+ATGCAGCTAG
++
+IIIIIIIIII
+```
 * **GTF file** (Gene Transfer Format) - File containing the gene/transcript models for the reference of interest. Used to genome annotation, gtf file stores position, feature (exon) and meta-feature (transcript/gene) information.
 ```
 chr1    HAVANA  gene    11869   14409   .   +   .   gene_id "ENSG00000223972"; gene_name "DDX11L1";
