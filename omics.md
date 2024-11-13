@@ -229,11 +229,11 @@ AnnData chủ yếu được sử dụng trong thư viện **scanpy** (Python) �
 
 ### 2. **`obs`**: Metadata về quan sát (Observations)
 - **`obs`** là một bảng dữ liệu (dataframe) chứa thông tin về các quan sát (như tế bào hoặc spots trong dữ liệu không gian). Mỗi dòng của **`obs`** tương ứng với một quan sát, và các cột lưu trữ các thuộc tính hoặc metadata của quan sát đó.
-- Ví dụ trong dữ liệu **single-cell RNA-seq**, bạn có thể có các cột như `cell_type`, `cluster`, hoặc `condition`.
+- Ví dụ trong dữ liệu **single-cell RNA-seq**, bạn có thể có các cột như `cell_type`, `cluster`, `condition`, `batch`, `donor`, `time_point`, `n_counts`, `percent_mito`, `n_genes_by_counts`, `log1p_total_counts`, `sample_id`, hoặc `treatment_group`.
   
 ### 3. **`var`**: Metadata về các biến (Variables)
 - **`var`** là một bảng dữ liệu (dataframe) chứa thông tin về các biến, hay các yếu tố, trong dữ liệu. Trong trường hợp dữ liệu gene expression, mỗi dòng trong **`var`** sẽ tương ứng với một gene, và các cột sẽ chứa các thông tin như tên gene, loại gene (ví dụ, mã hóa protein, mã hóa RNA), hoặc các thông tin chú giải khác.
-- Ví dụ, trong dữ liệu gene expression, bạn có thể có cột như `gene_name`, `gene_type`, `chromosome`.
+- Ví dụ, trong dữ liệu gene expression, bạn có thể có cột như `gene_id`, `gene_name`, `gene_type`, `chromosome`, `start`, `end`, `length`, `mean_counts`, `log1p_mean_counts`, `pct_dropout_by_counts`, `n_cells_by_counts`, hay `mito`.
 
 ### 4. **`uns`**: Dữ liệu không có cấu trúc (Unstructured data)
 - **`uns`** là một dictionary (từ điển) chứa các dữ liệu không có cấu trúc, hoặc dữ liệu bổ sung mà không được lưu trữ dưới dạng bảng dữ liệu. Thông thường, **`uns`** chứa thông tin như kết quả của các phân tích (ví dụ, kết quả PCA, t-SNE, hoặc UMAP), các thông số phân tích, hoặc các hình ảnh (như hình ảnh từ dữ liệu không gian).
