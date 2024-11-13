@@ -64,8 +64,23 @@ As 10x is sequencing only the 3' of transcripts/genes, less sequencing depth is 
 - raw_feature_bc_matrix
 
 * **FASTA file** - File containing the full genome sequence for the reference of interest
+```
+>gene1
+ATGCGTACGTAGCTAG
+>gene2
+GCTAGCTAGCATCGAT
+``` 
 * **GTF file** (Gene Transfer Format) - File containing the gene/transcript models for the reference of interest. Used to genome annotation, gtf file stores position, feature (exon) and meta-feature (transcript/gene) information.
-* **BAM** file - alignments for all barcodes against the reference
+```
+chr1    HAVANA  gene    11869   14409   .   +   .   gene_id "ENSG00000223972"; gene_name "DDX11L1";
+chr1    HAVANA  exon    11869   12227   .   +   .   gene_id "ENSG00000223972"; gene_name "DDX11L1";
+```
+* **SAM** file (Sequence Alignment Map) - lưu trữ thông tin về sự liên kết giữa các reads và trình tự tham chiếu
+```
+@SQ SN:chr1 LN:248956422
+read1   0   chr1    100  60   50M  *   0   0   AGCTTAGCTAGCTACCTATATCTTGGTCTTGGCCG  *
+```
+* **BAM** file - alignments for all barcodes against the reference, là dạng nén của  sam
 
 # single-cell RNA-seq analysis
 ## 1. Seurat and Bioconductor
