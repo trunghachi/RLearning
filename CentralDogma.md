@@ -35,52 +35,53 @@ The central dogma of molecular biology describes the flow of genetic information
    - **Termination**: When a stop codon (UAA, UAG, UGA) is reached, the ribosome releases the completed polypeptide chain and the mRNA.
 RNA (Ribonucleic Acid) is a versatile molecule that plays crucial roles in the expression and regulation of genetic information. There are several types of RNA, each with specific functions in the cell. Here are the main types of RNA:
 
-### 1. Messenger RNA (mRNA)
+## 1. Coding RNA or Messenger RNA (mRNA)
 - **Function**: Carries genetic information from DNA to the ribosome, where it serves as a template for protein synthesis.
 - **Structure**: Single-stranded molecule that includes a 5' cap, a 5' untranslated region (UTR), a coding sequence (open reading frame), a 3' UTR, and a poly-A tail.
 - **Role in Central Dogma**: Transcription (DNA to RNA) and Translation (RNA to Protein).
 
-### 2. Transfer RNA (tRNA)
+## 2. Non-coding RNA
+### 1. Transfer RNA (tRNA)
 - **Function**: Brings amino acids to the ribosome during translation. Each tRNA molecule has an anticodon that pairs with a complementary codon on the mRNA.
 - **Structure**: Cloverleaf structure with an anticodon loop and an amino acid attachment site.
 - **Role in Central Dogma**: Translation (assists in assembling amino acids into proteins).
 
-### 3. Ribosomal RNA (rRNA)
+### 2. Ribosomal RNA (rRNA)
 - **Function**: Forms the core of ribosomes, which are the molecular machines that synthesize proteins. rRNA catalyzes peptide bond formation and ensures proper alignment of mRNA and tRNA.
 - **Structure**: rRNA molecules combine with proteins to form the large and small subunits of the ribosome.
 - **Role in Central Dogma**: Translation (structural and catalytic component of ribosomes).
 
-### 4. Small Nuclear RNA (snRNA)
+### 3. Small Nuclear RNA (snRNA)
 - **Function**: Involved in the processing of pre-mRNA (splicing). snRNAs are components of spliceosomes, which remove introns from pre-mRNA.
 - **Structure**: Small RNA molecules (approximately 150 nucleotides long) that associate with proteins to form small nuclear ribonucleoproteins (snRNPs).
 - **Role in Central Dogma**: RNA processing (splicing of pre-mRNA).
 
-### 5. Small Nucleolar RNA (snoRNA)
+### 4. Small Nucleolar RNA (snoRNA)
 - **Function**: Involved in the chemical modification and processing of rRNA, tRNA, and snRNA. snoRNAs guide the modification of nucleotides in these RNA molecules.
 - **Structure**: Small RNA molecules that localize to the nucleolus.
 - **Role in Central Dogma**: RNA processing (modification of rRNA, tRNA, and snRNA).
 
-### 6. MicroRNA (miRNA)
+### 5. MicroRNA (miRNA)
 - **Function**: Regulates gene expression by binding to complementary sequences on target mRNAs, leading to their degradation or inhibition of translation.
 - **Structure**: Small RNA molecules (about 22 nucleotides long).
 - **Role in Central Dogma**: Post-transcriptional regulation (gene silencing).
 
-### 7. Small Interfering RNA (siRNA)
+### 6. Small Interfering RNA (siRNA)
 - **Function**: Involved in RNA interference (RNAi), a process that leads to the degradation of specific mRNAs, thereby silencing gene expression. siRNAs are often exogenous double-stranded RNA molecules that are processed into short fragments.
 - **Structure**: Short double-stranded RNA molecules (about 20-25 nucleotides long).
 - **Role in Central Dogma**: Post-transcriptional regulation (gene silencing).
 
-### 8. Long Non-Coding RNA (lncRNA)
+### 7. Long Non-Coding RNA (lncRNA)
 - **Function**: Regulates gene expression at various levels, including chromatin modification, transcription, and post-transcriptional processing. The functions of many lncRNAs are still being elucidated.
 - **Structure**: Long RNA molecules (longer than 200 nucleotides) that do not code for proteins.
 - **Role in Central Dogma**: Regulation of gene expression (various roles).
 
-### 9. Piwi-Interacting RNA (piRNA)
+### 8. Piwi-Interacting RNA (piRNA)
 - **Function**: Protects the genome from transposable elements in germ cells by silencing transposons and other genetic elements.
 - **Structure**: Small RNA molecules (24-31 nucleotides long) that interact with Piwi proteins.
 - **Role in Central Dogma**: Regulation of genome integrity (transposon silencing).
 
-### 10. Circular RNA (circRNA)
+### 9. Circular RNA (circRNA)
 - **Function**: Involved in the regulation of gene expression by acting as microRNA sponges, modulating transcription, and interacting with RNA-binding proteins. The functions of many circRNAs are still being studied.
 - **Structure**: Covalently closed loop structures with no 5' or 3' ends.
 - **Role in Central Dogma**: Regulation of gene expression (various roles).
