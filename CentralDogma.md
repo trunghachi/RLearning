@@ -184,3 +184,6 @@ Nucleotides are the basic building blocks of nucleic acids (DNA and RNA). Each n
 3. **Complementary Base Pairing**:
    - DNA: Adenine pairs with Thymine (A-T), and Guanine pairs with Cytosine (G-C).
    - RNA: Adenine pairs with Uracil (A-U), and Guanine pairs with Cytosine (G-C).
+
+  ## Prakrithi
+  https://www.biorxiv.org/content/10.1101/2024.08.12.607523v1.full
