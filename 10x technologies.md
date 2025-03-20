@@ -1,5 +1,3 @@
----
-
 ### Giải thích chi tiết quy trình phân tích không gian và tế bào đơn từ mẫu mô FFPE
 
 Sơ đồ mô tả một quy trình tích hợp để phân tích biểu hiện gen từ một khối mô FFPE duy nhất, sử dụng ba công nghệ bổ sung của 10x Genomics: **Chromium Single Cell Gene Expression Flex (scFFPE-seq)**, **Visium CytAssist**, và **Xenium In Situ**. Quy trình này kết hợp phân tích tế bào đơn (single-cell RNA sequencing), phân tích không gian (spatial transcriptomics), và phân tích tại chỗ (in situ) để cung cấp cái nhìn toàn diện về biểu hiện gen và sự phân bố không gian của các loại tế bào trong mô. Dưới đây là các bước chi tiết:
