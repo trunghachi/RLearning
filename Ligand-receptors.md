@@ -107,16 +107,123 @@ Các receptor này hoạt động bằng cách gắn hormone và điều hòa bi
 
 ---
 
-## **💡 Kết luận**
-- **Ligand** là các phân tử tín hiệu, **receptor** là protein nhận tín hiệu.
-- Các cặp L-R quan trọng trong da bao gồm **EGF-EGFR (tăng sinh tế bào da), VEGF-VEGFR (hình thành mạch máu), IL6-IL6R (viêm da), Notch-Delta (biệt hóa tế bào), α-MSH-MC1R (sắc tố da)**.
-- **Tổng cộng có thể chia thành 5 nhóm lớn**: RTK, GPCR, Cytokine receptor, Notch-Delta, Hormone receptor.
+### 1. Nguồn gốc Ligands và Receptors
+
+#### 1.1. **Nguồn gốc của Ligands**
+- **Ligands** là các phân tử tín hiệu (signal molecules) được sản xuất bởi tế bào để truyền tín hiệu đến các tế bào khác hoặc chính nó. Chúng có thể là:
+  - **Protein hoặc peptide**: Ví dụ, cytokine (IL-6, TNF), growth factors (EGF, VEGF), hormone (insulin).
+  - **Hormone steroid hoặc lipid**: Ví dụ, estrogen, cortisol, S1P (sphingosine-1-phosphate).
+  - **Phân tử nhỏ**: Ví dụ, adrenaline, acetylcholine, nitric oxide (NO).
+- **Nguồn sản xuất**:
+  - Ligands thường được sản xuất bởi các tế bào chuyên biệt trong cơ thể:
+    - **Tế bào nội tiết (endocrine cells)**: Sản xuất hormone như insulin (từ tế bào beta của tuyến giáp), estrogen (từ buồng trứng), hoặc cortisol (từ tuyến thượng thận).
+    - **Tế bào miễn dịch**: Sản xuất cytokine như IL-6, TNF (từ macrophages, lymphocytes).
+    - **Tế bào thần kinh**: Sản xuất neurotransmitter như acetylcholine, dopamine.
+    - **Tế bào thông thường**: Sản xuất growth factors (như EGF từ nhiều loại tế bào) hoặc các phân tử tín hiệu cục bộ (như S1P từ tế bào nội mô).
+  - Một số ligands không được sản xuất bởi tế bào mà đến từ bên ngoài cơ thể:
+    - Ví dụ: LPS (lipopolysaccharide) từ vi khuẩn gram âm, được nhận diện bởi TLR4 (Toll-like receptor), là một ligand ngoại sinh.
+
+#### 1.2. **Nguồn gốc của Receptors**
+- **Receptors** là các protein (hoặc phức hợp protein) được tế bào sản xuất và biểu hiện trên màng tế bào, trong tế bào (như trong nhân), hoặc trên bề mặt tế bào.
+- **Nguồn sản xuất**:
+  - Receptors được tổng hợp bởi chính tế bào mục tiêu (target cell) thông qua quá trình phiên mã (transcription) và dịch mã (translation) từ DNA.
+  - Ví dụ:
+    - EGFR (epidermal growth factor receptor) được sản xuất bởi các tế bào biểu mô và biểu hiện trên màng tế bào.
+    - ER (estrogen receptor) được sản xuất bởi các tế bào nhạy với estrogen (như tế bào vú, tử cung) và nằm trong nhân.
+    - CXCR4 (receptor cho CXCL12) được sản xuất bởi tế bào miễn dịch và tế bào ung thư, biểu hiện trên màng tế bào.
+- **Điều hòa biểu hiện**:
+  - Sự biểu hiện của receptors được điều hòa bởi nhiều yếu tố, như trạng thái sinh lý của tế bào, tín hiệu từ môi trường, hoặc các yếu tố di truyền.
+  - Ví dụ: Trong viêm, tế bào miễn dịch có thể tăng biểu hiện IL6R để đáp ứng với IL-6.
 
 ---
 
-### 🚀 **Bạn có muốn phân tích các cặp L-R từ dataset không?**  
-Nếu bạn có dữ liệu biểu hiện gene (**scRNA-seq hoặc Visium**), có thể:
-✔️ **Dự đoán tương tác tế bào với CellPhoneDB, LIANA, hoặc NicheNet**  
-✔️ **Xây dựng mạng tương tác tế bào để trực quan hóa giao tiếp tế bào**  
+### 2. Cơ chế truyền của Ligands
 
-Mình có thể hỗ trợ bạn với các phân tích này nhé! 💡
+Khả năng truyền tín hiệu của ligands (gần hay xa) phụ thuộc vào **loại tín hiệu** (signaling mode) và **tính chất hóa học** của ligand. Dưới đây là phân tích chi tiết:
+
+#### 2.1. **Các loại tín hiệu tế bào**
+Tín hiệu tế bào được chia thành các loại chính dựa trên khoảng cách truyền tín hiệu:
+
+- **Endocrine signaling (Tín hiệu nội tiết)**:
+  - Ligands (thường là hormone) được tiết vào máu và truyền đi xa trong cơ thể, đến các mô hoặc cơ quan khác.
+  - **Ví dụ**:
+    - Insulin được tiết từ tuyến tụy, đi qua máu đến các mô như cơ và mỡ để điều hòa glucose.
+    - Estrogen được tiết từ buồng trứng, đi qua máu đến tử cung, vú, và các mô khác.
+  - **Phạm vi**: Xa (có thể đến bất kỳ mô nào trong cơ thể, miễn là mô đó có receptor tương ứng).
+  - **Nhóm liên quan**: Nhóm 5 (Nuclear Receptors) và một số GPCR (như adrenaline-βAR).
+
+- **Paracrine signaling (Tín hiệu cận tiết)**:
+  - Ligands được tiết ra và khuếch tán cục bộ, chỉ tác động đến các tế bào lân cận trong cùng một mô.
+  - **Ví dụ**:
+    - Growth factors như EGF (epidermal growth factor) được tiết từ một tế bào và tác động đến các tế bào biểu mô lân cận.
+    - Cytokine như IL-6 được tiết từ macrophages, tác động đến các tế bào miễn dịch lân cận trong phản ứng viêm.
+  - **Phạm vi**: Gần (chỉ trong phạm vi mô cục bộ, thường vài micromet đến vài milimet).
+  - **Nhóm liên quan**: Nhóm 1 (RTK), Nhóm 3 (Cytokine Receptors), và một số GPCR (như CXCL12-CXCR4).
+
+- **Autocrine signaling (Tín hiệu tự tiết)**:
+  - Tế bào tiết ligand và tự nhận tín hiệu qua receptor trên chính nó.
+  - **Ví dụ**:
+    - Một số tế bào ung thư tiết EGF và tự kích hoạt EGFR trên màng của chính chúng để thúc đẩy tăng sinh.
+    - Tế bào miễn dịch tiết IL-2 và tự kích hoạt IL2R để tăng sinh trong phản ứng miễn dịch.
+  - **Phạm vi**: Rất gần (chính tế bào đó).
+  - **Nhóm liên quan**: Có thể xảy ra ở nhiều nhóm, như Nhóm 1 (RTK) và Nhóm 3 (Cytokine Receptors).
+
+- **Juxtacrine signaling (Tín hiệu tiếp xúc trực tiếp)**:
+  - Ligands và receptors tương tác trực tiếp qua tiếp xúc giữa hai tế bào (không cần khuếch tán).
+  - **Ví dụ**:
+    - Notch-Delta: Ligand Delta trên một tế bào gắn vào receptor Notch trên tế bào lân cận, điều hòa biệt hóa.
+  - **Phạm vi**: Rất gần (chỉ giữa các tế bào tiếp xúc trực tiếp).
+  - **Nhóm liên quan**: Nhóm 4 (Notch-Delta).
+
+- **Synaptic signaling (Tín hiệu qua synap)**:
+  - Ligands (neurotransmitters) được tiết từ neuron, khuếch tán qua khe synap (rất nhỏ, khoảng 20-40 nm) để gắn vào receptor trên neuron hoặc tế bào đích khác.
+  - **Ví dụ**:
+    - Acetylcholine được tiết từ neuron vận động, gắn vào nAChR trên tế bào cơ để gây co cơ.
+    - Dopamine được tiết từ neuron dopaminergic, gắn vào D2R trên neuron mục tiêu.
+  - **Phạm vi**: Rất gần (chỉ qua khe synap).
+  - **Nhóm liên quan**: Nhóm 6 (Ion Channel Receptors) và một số GPCR (như Dopamine-D2R).
+
+#### 2.2. **Tính chất hóa học của Ligands ảnh hưởng đến phạm vi truyền tín hiệu**
+- **Ligands tan trong nước (hydrophilic)**:
+  - Ví dụ: Protein (IL-6, EGF), peptide (insulin), neurotransmitter (acetylcholine).
+  - **Phạm vi**: Thường giới hạn trong tín hiệu cận tiết (paracrine) hoặc tự tiết (autocrine), vì chúng không khuếch tán xa trong môi trường lipid (như màng tế bào). Tuy nhiên, nếu được tiết vào máu (như insulin), chúng có thể truyền xa (endocrine).
+  - **Cơ chế truyền xa**: Được vận chuyển qua máu, thường gắn với protein vận chuyển (carrier proteins) để tránh phân hủy.
+- **Ligands tan trong lipid (hydrophobic)**:
+  - Ví dụ: Hormone steroid (estrogen, cortisol), thyroid hormone.
+  - **Phạm vi**: Thường truyền xa (endocrine), vì chúng có thể khuếch tán qua màng tế bào và đi qua máu dễ dàng. Chúng cũng có thể khuếch tán cục bộ trong mô (paracrine).
+  - **Cơ chế truyền xa**: Gắn với protein vận chuyển trong máu (như sex hormone-binding globulin cho estrogen) để tăng độ ổn định và khả năng vận chuyển.
+- **Ligands khí (gasotransmitters)**:
+  - Ví dụ: Nitric oxide (NO).
+  - **Phạm vi**: Thường là tín hiệu cận tiết (paracrine), vì NO khuếch tán nhanh trong mô cục bộ nhưng có thời gian sống ngắn (vài giây).
+
+#### 2.3. **Phạm vi truyền tín hiệu theo từng nhóm**
+
+| **Nhóm** | **Phạm vi truyền tín hiệu** | **Giải thích** |
+|----------|-----------------------------|----------------|
+| **1️⃣ Nhóm RTK** | Thường là paracrine hoặc autocrine, một số trường hợp là endocrine (như insulin). | Growth factors (EGF, VEGF) thường khuếch tán cục bộ trong mô. Insulin là ngoại lệ, được tiết vào máu và truyền xa. |
+| **2️⃣ Nhóm GPCR** | Paracrine, autocrine, hoặc endocrine (như adrenaline). | CXCL12-CXCR4 (paracrine, hóa hướng động tế bào miễn dịch); Adrenaline-βAR (endocrine, truyền qua máu). |
+| **3️⃣ Nhóm Cytokine Receptors** | Thường là paracrine hoặc autocrine. | Cytokine (IL-6, TNF) khuếch tán cục bộ trong mô để điều hòa viêm và miễn dịch. |
+| **4️⃣ Nhóm Notch-Delta** | Juxtacrine (tiếp xúc trực tiếp). | Yêu cầu tiếp xúc trực tiếp giữa hai tế bào, không khuếch tán. |
+| **5️⃣ Nhóm Nuclear Receptors** | Endocrine (truyền xa). | Hormone steroid (estrogen, cortisol) và thyroid hormone được tiết vào máu, truyền đến các mô xa. |
+| **6️⃣ Nhóm Ion Channel Receptors** | Synaptic (rất gần). | Neurotransmitter (acetylcholine, GABA) chỉ khuếch tán qua khe synap (20-40 nm). |
+| **7️⃣ Nhóm Integrins** | Juxtacrine hoặc paracrine. | Tương tác trực tiếp với ECM hoặc khuếch tán cục bộ trong mô. |
+| **8️⃣ Nhóm TLRs** | Paracrine (nếu ligand nội sinh), hoặc tại chỗ (nếu ligand ngoại sinh). | DAMPs (nội sinh) khuếch tán cục bộ; PAMPs (như LPS) được nhận diện tại chỗ bởi tế bào miễn dịch. |
+
+---
+
+### 3. Kết luận
+
+#### 3.1. **Nguồn gốc**
+- **Ligands**: Được sản xuất bởi các tế bào chuyên biệt (như tế bào nội tiết, tế bào miễn dịch, neuron) hoặc đến từ bên ngoài (như LPS từ vi khuẩn).
+- **Receptors**: Được sản xuất bởi chính tế bào mục tiêu, thông qua phiên mã và dịch mã từ DNA.
+
+#### 3.2. **Phạm vi truyền tín hiệu**
+- **Truyền xa (Endocrine)**: Một số ligands (như hormone steroid, insulin, adrenaline) được tiết vào máu và truyền đến các mô xa trong cơ thể. Nhóm 5 (Nuclear Receptors) và một số GPCR (như adrenaline-βAR) thường thuộc loại này.
+- **Truyền gần (Paracrine/Autocrine - cận tiết/ tự tiết)**: Nhiều ligands (như cytokine, growth factors) chỉ khuếch tán cục bộ trong mô, tác động đến các tế bào lân cận hoặc chính tế bào tiết ra. Nhóm 1 (RTK), Nhóm 3 (Cytokine Receptors), và một số GPCR (như CXCL12-CXCR4) thuộc loại này.
+- **Tiếp xúc trực tiếp (Juxtacrine)**: Một số tín hiệu (như Notch-Delta, integrins) yêu cầu tiếp xúc trực tiếp giữa hai tế bào. Nhóm 4 (Notch-Delta) và Nhóm 7 (Integrins) thuộc loại này.
+- **Qua khe synap (Synaptic)**: Neurotransmitter (như acetylcholine) chỉ khuếch tán qua khe synap, rất gần. Nhóm 6 (Ion Channel Receptors) thuộc loại này.
+
+#### 3.3. **Tóm tắt**
+- Ligands có thể truyền xa (qua máu) hoặc chỉ tác động cục bộ (trong mô), tùy thuộc vào loại tín hiệu và tính chất hóa học của chúng.
+- Receptors được biểu hiện trên tế bào mục tiêu, và phạm vi tương tác phụ thuộc vào cách ligand được truyền đến (xa, gần, hoặc tiếp xúc trực tiếp).
+
