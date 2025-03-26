@@ -226,6 +226,8 @@ Tín hiệu tế bào được chia thành các loại chính dựa trên khoả
 
 ### 4. Cell-Cell Interaction
 
+https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41576-020-00292-x/MediaObjects/41576_2020_292_Fig1_HTML.png?as=webp
+
 **Cell-cell interaction** (tương tác tế bào-tế bào) là quá trình các tế bào giao tiếp với nhau để phối hợp hoạt động, điều hòa các quá trình sinh lý, và duy trì cân bằng nội môi trong cơ thể. Tương tác này có thể xảy ra:
 - **Trực tiếp**: Qua tiếp xúc vật lý giữa hai tế bào (ví dụ: qua các protein màng hoặc cấu trúc liên kết).
 - **Gián tiếp**: Qua các phân tử tín hiệu (như ligands) được tiết ra từ một tế bào và nhận bởi tế bào khác.
