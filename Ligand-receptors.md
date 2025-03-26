@@ -220,3 +220,49 @@ Tín hiệu tế bào được chia thành các loại chính dựa trên khoả
 - Ligands có thể truyền xa (qua máu) hoặc chỉ tác động cục bộ (trong mô), tùy thuộc vào loại tín hiệu và tính chất hóa học của chúng.
 - Receptors được biểu hiện trên tế bào mục tiêu, và phạm vi tương tác phụ thuộc vào cách ligand được truyền đến (xa, gần, hoặc tiếp xúc trực tiếp).
 
+
+
+---
+
+### 4. Cell-Cell Interaction
+
+**Cell-cell interaction** (tương tác tế bào-tế bào) là quá trình các tế bào giao tiếp với nhau để phối hợp hoạt động, điều hòa các quá trình sinh lý, và duy trì cân bằng nội môi trong cơ thể. Tương tác này có thể xảy ra:
+- **Trực tiếp**: Qua tiếp xúc vật lý giữa hai tế bào (ví dụ: qua các protein màng hoặc cấu trúc liên kết).
+- **Gián tiếp**: Qua các phân tử tín hiệu (như ligands) được tiết ra từ một tế bào và nhận bởi tế bào khác.
+
+Mục tiêu của nghiên cứu cell-cell interaction là hiểu cách các tế bào "nói chuyện" với nhau, từ đó ảnh hưởng đến các quá trình như:
+- Phát triển (development): Ví dụ, biệt hóa tế bào trong phôi thai.
+- Miễn dịch: Ví dụ, tế bào T tương tác với tế bào trình diện kháng nguyên (APC).
+- Sửa chữa mô: Ví dụ, tế bào nội mô tương tác với tế bào miễn dịch trong viêm.
+- Bệnh lý: Ví dụ, tế bào ung thư tương tác với vi môi trường khối u (tumor microenvironment).
+
+---
+
+
+### 4. các cơ chế trong Cell-Cell Interaction
+
+| **Cơ chế** | **Vai trò trong Cell-Cell Interaction** | **Phạm vi** | **Ví dụ** |
+|------------|-----------------------------------------|-------------|-----------|
+| **Ligand-Receptor (L-R)** | Cơ chế chính, Truyền tín hiệu hóa học qua ligands (khuếch tán hoặc tiếp xúc trực tiếp), kích hoạt con đường tín hiệu nội bào. | Xa (endocrine), gần (paracrine, autocrine), hoặc tiếp xúc trực tiếp (juxtacrine, synaptic). | IL6-IL6R (paracrine), Notch-Delta (juxtacrine), Estrogen-ER (endocrine). |
+| **Gap Junctions** | Trao đổi trực tiếp các phân tử nhỏ (ion, cAMP) giữa tế bào chất của hai tế bào. | Tiếp xúc trực tiếp. | Connexins trong tế bào cơ tim. |
+| **Tight/Adherens Junctions** | Duy trì cấu trúc mô, điều hòa tính thấm, và truyền tín hiệu qua protein màng. | Tiếp xúc trực tiếp. | Cadherins trong tế bào biểu mô. |
+| **Exosomes/Microvesicles** | Truyền tín hiệu qua các phân tử (protein, RNA) được đóng gói trong túi ngoại bào. | Thường là paracrine, có thể xa (qua máu). | Exosomes chứa miRNA từ tế bào ung thư. |
+| **Electrical Signaling** | Truyền tín hiệu điện qua gap junctions hoặc thay đổi điện thế màng. | Tiếp xúc trực tiếp. | Tín hiệu điện trong tế bào cơ tim. |
+| **Mechanical Signaling** | Cảm nhận lực cơ học từ tế bào lân cận hoặc môi trường, điều hòa tín hiệu nội bào. | Thường là cục bộ. | Mechanotransduction qua integrins. |
+
+#### 4.1. **Nghiên cứu L-R**
+- **Xác định cặp L-R**: Sử dụng dữ liệu transcriptomics (RNA-seq) hoặc proteomics để tìm các ligand và receptor được biểu hiện trong các loại tế bào.
+- **Phân tích tương tác**: Sử dụng các công cụ tính toán (như CellPhoneDB, NicheNet) để dự đoán cặp L-R nào có khả năng tương tác giữa các tế bào.
+- **Hậu quả sinh học**: Nghiên cứu con đường tín hiệu nội bào (như MAPK, JAK/STAT) và tác động của tín hiệu (tăng sinh, viêm, biệt hóa).
+
+#### 4.2. **Nghiên cứu các cơ chế khác**
+- **Gap Junctions**: Đo lường sự truyền ion (như Ca²⁺) giữa các tế bào bằng thuốc nhuộm huỳnh quang (fluorescent dyes).
+- **Exosomes**: Phân tích nội dung của exosomes (protein, RNA) và tác động của chúng lên tế bào nhận.
+- **Mechanical Signaling**: Sử dụng các kỹ thuật như traction force microscopy để đo lực cơ học giữa các tế bào.
+
+#### 4.3. **Ứng dụng**
+- **Miễn dịch**: Hiểu cách tế bào T tương tác với tế bào ung thư qua L-R (như PD-1/PD-L1) để phát triển liệu pháp miễn dịch.
+- **Ung thư**: Nghiên cứu vi môi trường khối u (tumor microenvironment), nơi tế bào ung thư tương tác với tế bào miễn dịch, tế bào nội mô qua L-R, exosomes, và ECM.
+- **Phát triển**: Hiểu cách tế bào phôi thai tương tác qua Notch-Delta để biệt hóa.
+
+---
