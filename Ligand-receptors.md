@@ -33,13 +33,6 @@ Mô da có nhiều loại tế bào tương tác với nhau, sử dụng các c�
 
 ---
 
-### **💡 Bạn muốn phân tích các cặp L-R trong dataset nào?**  
-Nếu bạn đang có dữ liệu về biểu hiện gene, có thể:  
-✔️ **Sử dụng CellPhoneDB, LIANA, hoặc NicheNet** để dự đoán các cặp L-R quan trọng trong mô da của bạn.  
-✔️ **Xây dựng mạng tương tác tế bào (cell-cell communication network)** để xem mối quan hệ giữa các loại tế bào.  
-
-Bạn có muốn hỗ trợ phân tích các cặp L-R từ dữ liệu không? 🚀
-
 ## **1️⃣ Nhóm receptor tyrosine kinase (RTK)**
 Các receptor tyrosine kinase (RTK) là nhóm thụ thể quan trọng, hoạt động bằng cách tự phosphoryl hóa khi ligand gắn vào.  
 
