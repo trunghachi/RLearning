@@ -4,15 +4,18 @@ Các cặp **ligand-receptor (L-R)** là các phân tử tín hiệu trong giao 
 ---
 
 ### **2️⃣ Các nhóm chính của cặp Ligand-Receptor**  
-Các cặp L-R có thể phân thành **5 nhóm chính** dựa trên cơ chế hoạt động:  
+Các cặp L-R có thể phân thành **8 nhóm chính** dựa trên cơ chế hoạt động:
 
 | **Nhóm** | **Cơ chế hoạt động** | **Ví dụ** |
-|---|---|---|
-| **1️⃣ Nhóm receptor tyrosine kinase (RTK)** | Ligand gắn vào receptor → tự phosphoryl hóa → kích hoạt con đường tín hiệu nội bào | EGF-EGFR, VEGF-VEGFR, FGF-FGFR |
-| **2️⃣ Nhóm receptor G-protein (GPCRs)** | Ligand kích hoạt receptor G-protein → điều hòa tín hiệu thứ cấp (cAMP, Ca²⁺, IP3) | Adrenaline-βAR, CXCL12-CXCR4, S1P-S1PR |
-| **3️⃣ Nhóm receptor cytokine** | Liên quan đến miễn dịch, điều hòa viêm, biệt hóa tế bào | IL6-IL6R, TNF-TNFR, IFNγ-IFNγR |
-| **4️⃣ Nhóm receptor Notch-Delta** | Liên kết trực tiếp giữa hai tế bào → kích hoạt tín hiệu biệt hóa | Notch-Delta, Jagged-Notch |
-| **5️⃣ Nhóm receptor nội tiết (hormone)** | Hormone khuếch tán qua màng → gắn receptor nội bào → điều hòa biểu hiện gene | Estrogen-ER, Cortisol-GR, Insulin-InsR |
+|----------|----------------------|-----------|
+| **1️⃣ Nhóm receptor tyrosine kinase (RTK)** | Ligand gắn vào receptor trên màng tế bào, gây tự phosphoryl hóa tyrosine, kích hoạt các con đường tín hiệu nội bào như MAPK, PI3K/AKT, điều hòa tăng trưởng và phát triển tế bào. | EGF-EGFR, VEGF-VEGFR, FGF-FGFR, Insulin-InsR |
+| **2️⃣ Nhóm receptor G-protein (GPCRs)** | Ligand gắn vào receptor, kích hoạt protein G, dẫn đến điều hòa các tín hiệu thứ cấp như cAMP, Ca²⁺, hoặc IP3, ảnh hưởng đến nhiều quá trình sinh lý (hệ thần kinh, miễn dịch, nội tiết). | Adrenaline-βAR, CXCL12-CXCR4, S1P-S1PR, Dopamine-D2R |
+| **3️⃣ Nhóm receptor cytokine** | Tham gia vào các quá trình miễn dịch, điều hòa viêm, và biệt hóa tế bào, thường thông qua kích hoạt con đường JAK/STAT hoặc NF-κB, đóng vai trò trong phản ứng viêm và miễn dịch. | IL6-IL6R, TNF-TNFR, IFNγ-IFNγR, IL2-IL2R |
+| **4️⃣ Nhóm receptor Notch-Delta** | Tín hiệu qua tiếp xúc trực tiếp giữa hai tế bào, kích hoạt con đường Notch, điều hòa biệt hóa tế bào và phát triển, thường gặp trong quá trình hình thành ranh giới tế bào. | Notch-Delta, Jagged-Notch |
+| **5️⃣ Nhóm nuclear receptors (receptor nhân)** | Hormone khuếch tán qua màng tế bào, gắn vào receptor nội bào (thường trong nhân), tương tác với DNA để điều hòa biểu hiện gene, liên quan đến nội tiết và chuyển hóa. | Estrogen-ER, Cortisol-GR, Thyroid hormone-TR, Retinoic acid-RAR |
+| **6️⃣ Nhóm ion channel receptors** | Ligand gắn vào receptor, gây mở hoặc đóng kênh ion (như Na⁺, K⁺, Ca²⁺), dẫn đến thay đổi điện thế màng, thường gặp trong tín hiệu thần kinh và co cơ. | Acetylcholine-nAChR, GABA-GABA_A receptor, Glutamate-NMDAR |
+| **7️⃣ Nhóm integrins** | Gắn vào ma trận ngoại bào (ECM), điều hòa bám dính tế bào và tín hiệu nội bào (như FAK pathway), đóng vai trò trong di chuyển tế bào, sửa chữa mô, và tương tác tế bào-ECM. | Integrin-Laminin, Integrin-Fibronectin, Integrin-Collagen |
+| **8️⃣ Nhóm Toll-like receptors (TLRs)** | Nhận diện các mẫu phân tử liên quan đến mầm bệnh (PAMPs) hoặc tổn thương (DAMPs), kích hoạt tín hiệu miễn dịch bẩm sinh qua con đường NF-κB hoặc IRF, khởi phát phản ứng viêm. | LPS-TLR4, CpG DNA-TLR9, ssRNA-TLR7 |
 
 ---
 
