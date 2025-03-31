@@ -1,7 +1,10 @@
-#Cells
-
+# Cells
 
 [List of human cell types](https://en.wikipedia.org/wiki/List_of_human_cell_types)
+
+---
+
+## Normal cells
 
 ---
 
@@ -85,4 +88,129 @@
    - **Leydig cells** – Sản xuất hormone testosterone.  
    - **Granulosa cells** – Bảo vệ và cung cấp dưỡng chất cho tế bào trứng.  
    - **Theca cells** – Tiết hormone hỗ trợ sự phát triển của nang trứng.  
-   - **Polar bodies** – Tế bào nhỏ được tạo ra trong quá trình phân bào của trứng nhưng không tham gia vào thụ tinh.  
+   - **Polar bodies** – Tế bào nhỏ được tạo ra trong quá trình phân bào của trứng nhưng không tham gia vào thụ tinh.
+
+---
+
+## Cancer cells
+
+Khi có biểu hiện **tăng sinh bất thường** hoặc **ung thư**, một số nhóm tế bào có thể trở thành nguồn gốc của các loại ung thư khác nhau. Dưới đây là danh sách các nhóm tế bào và các loại ung thư phổ biến liên quan đến chúng:
+
+---
+
+### **1. Tế bào biểu mô (Epithelial cells) → Ung thư biểu mô (Carcinoma)**
+   - **Keratinocytes** → **Ung thư biểu mô tế bào vảy (Squamous cell carcinoma)**  
+   - **Hepatocytes** → **Ung thư gan (Hepatocellular carcinoma, HCC)**  
+   - **Pancreatic acinar cells** → **Ung thư tụy (Pancreatic adenocarcinoma)**  
+   - **Alveolar epithelial cells** → **Ung thư phổi (Lung adenocarcinoma, squamous cell carcinoma)**  
+   - **Urothelial cells** → **Ung thư bàng quang (Urothelial carcinoma)**  
+   - **Mammary epithelial cells** → **Ung thư vú (Breast carcinoma)**  
+   - **Glandular epithelial cells (tuyến tiêu hóa)** → **Ung thư dạ dày, đại tràng (Gastric/Colorectal adenocarcinoma)**  
+   - **Prostate epithelial cells** → **Ung thư tuyến tiền liệt (Prostate carcinoma)**  
+   - **Endometrial epithelial cells** → **Ung thư nội mạc tử cung (Endometrial carcinoma)**  
+   - **Cervical epithelial cells** → **Ung thư cổ tử cung (Cervical squamous cell carcinoma)**  
+
+---
+
+### **2. Tế bào liên kết (Connective tissue cells) → Sarcoma**
+   - **Fibroblasts** → **Sarcoma sợi (Fibrosarcoma)**  
+   - **Adipocytes** → **Ung thư mỡ (Liposarcoma)**  
+   - **Osteoblasts/Osteocytes** → **Ung thư xương (Osteosarcoma)**  
+   - **Chondrocytes** → **Ung thư sụn (Chondrosarcoma)**  
+   - **Endothelial cells (tế bào mạch máu)** → **Sarcoma mạch máu (Angiosarcoma)**  
+   - **Mast cells** → **Bệnh mastocytosis ác tính**  
+   - **Pericytes (tế bào bao quanh mạch máu)** → **Hemangiopericytoma (ung thư liên quan đến mao mạch)**  
+   - **Mesenchymal stem cells** → **Sarcoma trung mô (Mesenchymal sarcoma)**  
+   - **Dendritic cells** → **Histiocytosis (rối loạn tế bào miễn dịch liên kết)**  
+   - **Macrophages** → **Lymphoma tế bào đại thực bào (Histiocytic lymphoma)**  
+
+---
+
+### **3. Tế bào máu (Blood cells) → Ung thư máu**
+   - **Erythrocytes (hồng cầu)** → **Bệnh đa hồng cầu (Polycythemia vera, PV)**  
+   - **Lymphocytes (T & B cells)** → **Ung thư bạch cầu lympho (Lymphocytic leukemia, Lymphoma)**  
+   - **Myeloid progenitor cells** → **Bạch cầu cấp dòng tủy (Acute myeloid leukemia, AML)**  
+   - **Plasma cells (biệt hóa từ B cells)** → **Đa u tủy xương (Multiple myeloma)**  
+   - **Neutrophils** → **Bạch cầu dòng tủy mãn tính (Chronic myeloid leukemia, CML)**  
+   - **Eosinophils** → **Hội chứng tăng bạch cầu ái toan ác tính (Hypereosinophilic syndrome, HES)**  
+   - **Basophils** → **Rối loạn tăng sinh bạch cầu ái kiềm**  
+   - **Megakaryocytes** → **Bệnh tăng tiểu cầu tiên phát (Essential thrombocythemia, ET)**  
+   - **Monocytes** → **Bạch cầu cấp dòng đơn nhân (Acute monocytic leukemia)**  
+   - **Dendritic cells** → **Langerhans Cell Histiocytosis (LCH, một dạng ung thư hiếm gặp của hệ miễn dịch)**  
+
+---
+
+### **4. Tế bào thần kinh (Neurons & glial cells) → Ung thư hệ thần kinh**
+   - **Astrocytes** → **U nguyên bào thần kinh đệm (Glioblastoma, Astrocytoma)**  
+   - **Oligodendrocytes** → **U oligodendroglioma**  
+   - **Schwann cells** → **U thần kinh bao Schwann (Schwannoma, Neurofibromatosis)**  
+   - **Ependymal cells** → **Ependymoma (u tế bào màng não thất)**  
+   - **Neuroblast cells** → **U nguyên bào thần kinh (Neuroblastoma, thường gặp ở trẻ em)**  
+   - **Retinal ganglion cells** → **Ung thư võng mạc (Retinoblastoma)**  
+   - **Pineal gland cells** → **Ung thư tuyến tùng (Pineoblastoma)**  
+   - **Medulloblast cells** → **U nguyên bào tiểu não (Medulloblastoma, phổ biến ở trẻ em)**  
+   - **Cerebellar neurons** → **Lymphoma thần kinh trung ương (Primary CNS Lymphoma)**  
+   - **Autonomic neurons** → **Paraganglioma (u của hệ thần kinh tự chủ)**  
+
+---
+
+### **5. Tế bào cơ (Muscle cells) → Sarcoma cơ**
+   - **Skeletal muscle cells** → **Ung thư cơ vân (Rhabdomyosarcoma, phổ biến ở trẻ em)**  
+   - **Smooth muscle cells** → **Ung thư cơ trơn (Leiomyosarcoma, phổ biến ở tử cung, tiêu hóa)**  
+   - **Cardiomyocytes** → **Rhabdomyoma (u lành tính tim)**  
+   - **Satellite cells** → **Rhabdomyosarcoma (dạng nguyên bào cơ vân)**  
+   - **Extraocular muscle cells** → **Sarcoma cơ mắt (Ocular rhabdomyosarcoma)**  
+   - **Myoblasts** → **U nguyên bào cơ (Myoblastoma, hiếm gặp)**  
+   - **Uterine smooth muscle cells** → **Leiomyosarcoma tử cung**  
+   - **Gastrointestinal smooth muscle cells** → **GIST (Gastrointestinal Stromal Tumor, ung thư mô đệm đường tiêu hóa)**  
+   - **Muscle spindle cells** → **Myxofibrosarcoma (ung thư mô mềm hỗn hợp có nguồn gốc từ cơ)**  
+   - **Ciliary muscle cells** → **Ung thư cơ mi mắt (Ciliary body melanoma)**  
+
+---
+
+### **6. Tế bào sinh sản (Germ cells) → Ung thư tế bào mầm (Germ cell tumors)**
+   - **Spermatogonia** → **Ung thư tinh hoàn (Seminoma, Non-seminoma)**  
+   - **Oocytes** → **Ung thư buồng trứng (Ovarian carcinoma, Teratoma)**  
+   - **Granulosa cells** → **U tế bào hạt buồng trứng (Granulosa cell tumor)**  
+   - **Theca cells** → **U tế bào vỏ (Thecoma, hiếm gặp)**  
+   - **Sertoli cells** → **Sertoli cell tumor (u tinh hoàn hiếm gặp)**  
+   - **Leydig cells** → **Leydig cell tumor (u tế bào Leydig, có thể tiết testosterone bất thường)**  
+   - **Embryonal germ cells** → **Ung thư phôi thai (Embryonal carcinoma, Choriocarcinoma)**  
+   - **Teratocytes** → **Teratoma (u tế bào mầm, có thể chứa nhiều loại mô khác nhau)**  
+   - **Yolk sac cells** → **Yolk sac tumor (ung thư túi noãn hoàng, phổ biến ở trẻ em)**  
+   - **Polar bodies** → **Không gây ung thư trực tiếp, nhưng có thể phản ánh đột biến di truyền**  
+
+---
+
+### Bảng tổng hợp:
+
+
+| **Nhóm tế bào**               | **Tế bào bình thường**                                   | **Tế bào tăng sinh**                                      | **Tế bào ung thư ác tính**                                | **Tế bào khối u lành tính**                              |
+|-------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Tế bào biểu mô (Epithelial cells)**  | Nguyên bào biểu mô (Epithelial progenitor cells)           | **Keratinocytes** → Tăng sinh tế bào biểu mô vảy (Squamous cell hyperplasia) | **Keratinocytes** → Ung thư biểu mô tế bào vảy (Squamous cell carcinoma) | **Mammary epithelial cells** → U tuyến vú lành tính (Fibroadenoma) |
+|                               | Tế bào gan (Hepatocytes)                                 | **Hepatocytes** → Tăng sinh tế bào gan (Hepatocellular hyperplasia) | **Hepatocytes** → Ung thư gan (Hepatocellular carcinoma) | **Pancreatic acinar cells** → U tuyến tụy lành tính (Pancreatic cysts) |
+|                               | Tế bào tuyến tiền liệt (Prostate epithelial cells)       | **Prostate epithelial cells** → Tăng sinh tế bào tuyến tiền liệt (Benign prostatic hyperplasia) | **Prostate epithelial cells** → Ung thư tuyến tiền liệt (Prostate carcinoma) | **Urothelial cells** → U bàng quang lành tính (Bladder papilloma) |
+|                               | Tế bào nội mạc tử cung (Endometrial epithelial cells)    | **Endometrial epithelial cells** → Tăng sinh nội mạc tử cung (Endometrial hyperplasia) | **Endometrial epithelial cells** → Ung thư nội mạc tử cung (Endometrial carcinoma) | **Cervical epithelial cells** → U cổ tử cung lành tính (Cervical polyps) |
+|                               | Tế bào niêm mạc phế nang (Alveolar epithelial cells)     | **Alveolar epithelial cells** → Tăng sinh tế bào phế nang (Alveolar hyperplasia) | **Alveolar epithelial cells** → Ung thư phổi (Lung adenocarcinoma) | **Urothelial cells** → U bàng quang lành tính (Bladder papilloma) |
+| **Tế bào liên kết (Connective tissue cells)** | Nguyên bào sợi (Fibroblast)                             | **Fibroblasts** → Tăng sinh tế bào sợi (Fibroblastic hyperplasia) | **Fibroblasts** → Sarcoma sợi (Fibrosarcoma)              | **Adipocytes** → U mỡ lành tính (Lipoma)                   |
+|                               | Tế bào mỡ (Adipocytes)                                  | **Adipocytes** → Tăng sinh tế bào mỡ (Adipocyte hyperplasia) | **Adipocytes** → Ung thư mỡ (Liposarcoma)                | **Osteoblasts** → U xương lành tính (Osteoid osteoma)       |
+|                               | Tế bào sụn (Chondrocytes)                               | **Chondrocytes** → Tăng sinh tế bào sụn (Chondroid hyperplasia) | **Chondrocytes** → Ung thư sụn (Chondrosarcoma)           | **Mesenchymal stem cells** → U trung mô lành tính (Benign fibrous histiocytoma) |
+|                               | Tế bào máu (Endothelial cells)                          | **Endothelial cells** → Tăng sinh tế bào mạch máu (Angiogenesis) | **Endothelial cells** → Sarcoma mạch máu (Angiosarcoma)  | **Mast cells** → U tế bào mast lành tính (Mastocytoma)       |
+|                               | Tế bào hạch (Lymphatic cells)                            | **Lymphatic cells** → Tăng sinh tế bào hạch (Lymphadenopathy) | **Lymphatic cells** → Lymphoma (Hodgkin’s/Non-Hodgkin’s lymphoma) | **Pericytes** → Hemangiopericytoma (u mao mạch)            |
+| **Tế bào máu (Blood cells)**   | Hồng cầu (Erythrocytes)                                | **Erythrocytes** → Tăng sinh hồng cầu (Polycythemia)       | **Erythrocytes** → Bệnh đa hồng cầu (Polycythemia vera)   | **Monocytes** → U máu lành tính (Benign monocytosis)        |
+|                               | Tế bào lympho (Lymphocytes)                             | **Lymphocytes** → Tăng sinh lympho (Lymphocytosis)         | **Lymphocytes** → Ung thư bạch cầu lympho (Lymphocytic leukemia) | **Neutrophils** → U bạch cầu lành tính (Neutrophilic leukemia) |
+|                               | Tế bào tủy (Myeloid progenitor cells)                   | **Myeloid progenitor cells** → Tăng sinh tủy (Myeloproliferative disorders) | **Myeloid progenitor cells** → Bạch cầu cấp dòng tủy (Acute myeloid leukemia) | **Basophils** → U bạch cầu ái kiềm lành tính (Basophilic leukemia) |
+|                               | Tế bào plasma (Plasma cells)                            | **Plasma cells** → Tăng sinh tế bào plasma (Plasmacytosis)  | **Plasma cells** → Đa u tủy xương (Multiple myeloma)      | **Megakaryocytes** → U tiểu cầu lành tính (Thrombocytosis) |
+|                               | Tế bào đơn nhân (Monocytes)                             | **Monocytes** → Tăng sinh đơn nhân (Monocytosis)           | **Monocytes** → Bạch cầu cấp dòng đơn nhân (Acute monocytic leukemia) | **Dendritic cells** → U tế bào Langerhans (Langerhans Cell Histiocytosis) |
+| **Tế bào thần kinh (Neurons & glial cells)** | Tế bào thần kinh (Neurons)                              | **Neurons** → Tăng sinh tế bào thần kinh (Neurogenesis)     | **Neurons** → U nguyên bào thần kinh (Neuroblastoma)       | **Schwann cells** → U thần kinh bao Schwann (Schwannoma)      |
+|                               | Tế bào đệm (Glial cells)                               | **Astrocytes** → Tăng sinh tế bào thần kinh đệm (Astrocytosis) | **Astrocytes** → Glioblastoma (U nguyên bào thần kinh đệm) | **Oligodendrocytes** → U oligodendroglioma (U tủy sống)       |
+|                               | Tế bào Schwann (Schwann cells)                          | **Schwann cells** → Tăng sinh tế bào Schwann (Schwann cell hyperplasia) | **Schwann cells** → Schwannoma (U thần kinh bao Schwann)   | **Pineal gland cells** → U tuyến tùng (Pineoblastoma)        |
+|                               | Tế bào màng não thất (Ependymal cells)                  | **Ependymal cells** → Tăng sinh tế bào màng não thất (Ependymosis) | **Ependymal cells** → Ependymoma                          | **Retinal ganglion cells** → U võng mạc (Retinoblastoma)      |
+| **Tế bào cơ (Muscle cells)**   | Tế bào cơ vân (Skeletal muscle cells)                   | **Skeletal muscle cells** → Tăng sinh cơ vân (Rhabdomyogenesis) | **Skeletal muscle cells** → Rhabdomyosarcoma               | **Cardiomyocytes** → Rhabdomyoma (U tim lành tính)           |
+|                               | Tế bào cơ trơn (Smooth muscle cells)                    | **Smooth muscle cells** → Tăng sinh cơ trơn (Leiomyogenesis) | **Smooth muscle cells** → Leiomyosarcoma                   | **Extraocular muscle cells** → U cơ mắt (Ocular rhabdomyosarcoma) |
+|                               | Tế bào cơ tim (Cardiomyocytes)                          | **Cardiomyocytes** → Tăng sinh cơ tim (Cardiomyogenesis)    | **Cardiomyocytes** → Rhabdomyoma                          | **Satellite cells** → Rhabdomyosarcoma                      |
+| **Tế bào sinh sản (Germ cells)** | Tinh trùng (Spermatogonia)                              | **Spermatogonia** → Tăng sinh tinh trùng (Spermatogenesis) | **Spermatogonia** → Ung thư tinh hoàn (Seminoma)           | **Oocytes** → U buồng trứng lành tính (Ovarian cysts)        |
+|                               | Tế bào hạt buồng trứng (Granulosa cells)               | **Granulosa cells** → Tăng sinh tế bào hạt (Granulosa cell hyperplasia) | **Granulosa cells** → U tế bào hạt buồng trứng (Granulosa cell tumor) | **Leydig cells** → U tế bào Leydig lành tính (Leydig cell tumor) |
+
+---
+
