@@ -214,3 +214,18 @@ Khi có biểu hiện **tăng sinh bất thường** hoặc **ung thư**, một 
 
 ---
 
+## Breast Cancers:
+
+| **Nhóm tế bào**               | **Tế bào bình thường**                                   | **Tế bào tăng sinh**                                      | **Tế bào ung thư ác tính**                                | **Tế bào khối u lành tính**                              |
+|-------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Tế bào biểu mô vú (Breast epithelial cells)**  | Nguyên bào biểu mô tuyến vú (Mammary epithelial progenitor cells) | **Tế bào biểu mô vú** → Tăng sinh tế bào tuyến vú (Ductal hyperplasia, Lobular hyperplasia) | **Tế bào biểu mô vú** → Ung thư biểu mô ống tuyến vú (Ductal carcinoma in situ, Invasive ductal carcinoma) | **Tế bào biểu mô tuyến vú** → U vú lành tính (Fibroadenoma) |
+|                               | Tế bào hạt tuyến vú (Mammary glandular cells)           | **Mammary glandular cells** → Tăng sinh tế bào vú (Atypical ductal hyperplasia) | **Mammary glandular cells** → Ung thư biểu mô ống tuyến vú (Invasive ductal carcinoma, Invasive lobular carcinoma) | **U tuyến vú lành tính (Fibroadenoma)**                   |
+| **Tế bào liên kết vú (Breast stromal cells)** | Nguyên bào sợi (Fibroblasts)                             | **Fibroblasts** → Tăng sinh tế bào sợi vú (Fibroblastic hyperplasia) | **Fibroblasts** → Sarcoma vú (Phyllodes tumor - sarcomatous type) | **Mast cells** → U vú lành tính (Fibrocystic changes)      |
+|                               | Tế bào mỡ vú (Adipocytes)                                | **Adipocytes** → Tăng sinh tế bào mỡ vú (Adipocyte hyperplasia) | **Adipocytes** → Ung thư mỡ vú (Liposarcoma)              | **Lipoma** → U mỡ lành tính vú (Lipoma)                   |
+|                               | Tế bào sợi (Fibroblasts)                                | **Fibroblasts** → Tăng sinh tế bào sợi (Fibroblastic changes) | **Fibroblasts** → U phyllodes ác tính (Malignant phyllodes tumor) | **Myoepithelial cells** → U tuyến vú lành tính (Benign phyllodes tumor) |
+| **Tế bào cơ vú (Breast muscle cells)** | Tế bào cơ trơn (Smooth muscle cells)                     | **Smooth muscle cells** → Tăng sinh cơ trơn vú (Leiomyogenesis) | **Smooth muscle cells** → Sarcoma cơ trơn vú (Leiomyosarcoma) | **U cơ trơn vú lành tính** (Leiomyoma)                   |
+| **Tế bào miễn dịch vú (Breast immune cells)** | Tế bào lympho (Lymphocytes)                             | **Lymphocytes** → Tăng sinh lympho (Lymphocytosis)         | **Lymphocytes** → Lymphoma vú (Non-Hodgkin lymphoma)       | **Macrophages** → U tế bào vú lành tính (Granulomas)      |
+| **Tế bào máu vú (Breast blood cells)**   | Hồng cầu (Erythrocytes)                                | **Erythrocytes** → Tăng sinh hồng cầu (Polycythemia)       | **Erythrocytes** → Bệnh đa hồng cầu (Polycythemia vera)   | **Monocytes** → U tế bào máu lành tính (Monocytosis)        |
+| **Tế bào thần kinh vú (Breast neuronal cells)** | Tế bào thần kinh (Neurons)                              | **Neurons** → Tăng sinh tế bào thần kinh (Neurogenesis)     | **Neurons** → U thần kinh vú (Neurofibromatosis)           | **Schwann cells** → U thần kinh bao Schwann (Schwannoma)      |
+
+---
