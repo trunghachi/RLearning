@@ -1,4 +1,13 @@
 # Cells - một câu chuyện cảm lạnh
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/780f32be-124d-4ace-8633-a4718e36bcca" alt="Cell"  style="width:100%; height:100%;">
+      <br>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
+    </td>
+  </tr>
+</table>
 
 Bên trong **cơ thể** bạn, có hàng tỷ nhà máy và dây chuyền sản xuất hoạt động không ngừng nghỉ, chúng đa dạng như nền sản xuất trên Trái đất vậy, đó chính là các **tế bào**. Mỗi tế bào là một tổ hợp phức tạp, một cơ chế sản xuất được thiết kế tinh vi để duy trì sự sống và sản xuất các sản phẩm thiết yếu cho cơ thể. Cùng bước vào bên trong một **nhà máy điển hình** để quan sát xem mọi thứ hoạt động như thế nào!
 
@@ -6,7 +15,7 @@ Nhân tế bào (**nucleous**), giống như phòng điều hành của nhà má
 
 Các "**ribosome**" trong **lưới nội sinh chất hạt** (**Rough Endoplasmic Reticulum**) bắt tay vào công việc ngay lập tức. Chúng là những robot chế tạo sản phẩm chủ yếu của nhà máy – **protein**. Ribosome đọc lệnh sản xuất từ mRNA và sử dụng nguyên liệu có sẵn trong bào tương (**cytoplasm**) là các (**amino acids**) để chế tạo ra các protein, chúng giống như công nhân trên dây chuyền sản xuất.
 
-Sau khi các sản phẩm protein hoàn thành, chúng cần được đóng gói và phân phối. Bộ Golgi (Golgi Apparatus), giống như bộ phận đóng gói và giao hàng của nhà máy, nhận các protein từ lưới nội sinh chất hạt, đóng gói chúng cẩn thận và gửi chúng đến nơi cần thiết trong tế bào hoặc xuất ra ngoài để phục vụ các bộ phận khác trong cơ thể.
+Sau khi các sản phẩm protein hoàn thành, chúng cần được đóng gói và phân phối. Thể Golgi (**Golgi Apparatus**) thường bố trí ở gần Rough ER, giống như bộ phận đóng gói và giao hàng của nhà máy, nhận các protein từ lưới nội sinh chất hạt, đóng gói chúng cẩn thận và gửi chúng đến nơi cần thiết trong tế bào hoặc xuất ra ngoài để phục vụ các bộ phận khác trong cơ thể.
 
 Trong khi đó, ti thể (**mitochondria**) đóng vai trò quan trọng như nhà máy năng lượng, cung cấp ATP – nguồn năng lượng chính cho tất cả các hoạt động trong tế bào. Không có năng lượng từ ti thể, nhà máy sẽ không thể hoạt động được. Ti thể hoạt động như các máy phát điện, cung cấp năng lượng cho quá trình chế tạo protein, tái tạo tế bào và duy trì các chức năng sống.
 
@@ -19,7 +28,7 @@ Khi nhà máy cần tạo ra các "nhân viên đặc biệt" để đảm bảo
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/780f32be-124d-4ace-8633-a4718e36bcca" alt="Cell"  style="width:100%; height:100%;">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib3NrapqzA-bH3orEclFkg6TM9BLzstwwL56d-lDfhwZTniFX3sM1CeC68BhdU4t4IJBQCUeGvLzS1jNNg3UxX3B0Shs5gw5JrgYAD05oMlbt9cRK_-NxlS9uEzd0euBjym8ZlpSyUOMz1XXIAWZuBFSTutPOPlz2iPJyGJW2884BRMmBrN3ODjbEIfA/s16000/Cell%20as%20Factory%20post.png" alt="Cell Factory"  style="width:100%; height:100%;">
       <br>
       <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
     </td>
