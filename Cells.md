@@ -1,10 +1,11 @@
 # Cells - một câu chuyện cảm lạnh
+
 <table>
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/780f32be-124d-4ace-8633-a4718e36bcca" alt="Cell"  style="width:100%; height:100%;">
       <br>
-      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Cấu trúc của tế bào </p>
     </td>
   </tr>
 </table>
@@ -17,20 +18,20 @@ Các "**ribosome**" trong **lưới nội sinh chất hạt** (**Rough Endoplasm
 
 Sau khi các sản phẩm protein hoàn thành, chúng cần được đóng gói và phân phối. Thể Golgi (**Golgi Apparatus**) thường bố trí ở gần Rough ER, giống như bộ phận đóng gói và giao hàng của nhà máy, nhận các protein từ lưới nội sinh chất hạt, đóng gói chúng cẩn thận và gửi chúng đến nơi cần thiết trong tế bào hoặc xuất ra ngoài để phục vụ các bộ phận khác trong cơ thể.
 
-Trong khi đó, ti thể (**mitochondria**) đóng vai trò quan trọng như nhà máy năng lượng, cung cấp ATP – nguồn năng lượng chính cho tất cả các hoạt động trong tế bào. Không có năng lượng từ ti thể, nhà máy sẽ không thể hoạt động được. Ti thể hoạt động như các máy phát điện, cung cấp năng lượng cho quá trình chế tạo protein, tái tạo tế bào và duy trì các chức năng sống.
+Trong khi đó, ti thể (**mitochondria**) đóng vai trò quan trọng như nhà máy năng lượng, cung cấp ATP (**ATP = Adenine + Ribose + 3 nhóm phosphate**) – nguồn năng lượng chính cho tất cả các hoạt động trong tế bào. Không có năng lượng từ ti thể, nhà máy sẽ không thể hoạt động được. Ti thể hoạt động như các máy phát điện, cung cấp năng lượng cho quá trình chế tạo protein, tái tạo tế bào và duy trì các chức năng sống.
 
-Bên cạnh đó, lysosome và peroxisome đảm nhận công việc tái chế và xử lý chất thải. Lysosome như những "kho chứa" lưu trữ và phân hủy các vật liệu cũ, trong khi peroxisome xử lý các chất độc và chuyển hóa chất béo, giúp bảo vệ nhà máy khỏi sự ô nhiễm.
+Bên cạnh đó, lysosome và peroxisome đảm nhận công việc Kho lưu trữ, tái chế và xử lý chất thải. Lysosome như những "kho chứa" lưu trữ và phân hủy các vật liệu cũ, trong khi peroxisome xử lý các chất độc và chuyển hóa chất béo, giúp bảo vệ nhà máy khỏi sự ô nhiễm.
 
-Khi nhà máy cần mở rộng hoặc cần tạo ra các chi nhánh mới, quá trình phân bào bắt đầu. Mitosis, giống như một buổi họp lớn, nơi tế bào mẹ tạo ra hai tế bào con hoàn chỉnh. Mỗi tế bào con nhận được bản sao đầy đủ các bản thiết kế (DNA), và nhà máy tiếp tục hoạt động như cũ. Đây là quá trình tái tạo tế bào, đảm bảo cơ thể luôn có đủ tế bào để duy trì chức năng.
+Khi nhà máy cần mở rộng hoặc cần tạo ra các chi nhánh mới, quá trình phân bào bắt đầu. **Mitosis** giúp tế bào mẹ tạo ra hai tế bào con hoàn chỉnh. Mỗi tế bào con nhận được bản sao đầy đủ các bản thiết kế (DNA), và nhà máy tiếp tục hoạt động như cũ. Đây là quá trình tái tạo tế bào, đảm bảo cơ thể luôn có đủ tế bào để duy trì chức năng.
 
-Khi nhà máy cần tạo ra các "nhân viên đặc biệt" để đảm bảo sự sinh sản và phát triển của thế hệ mới, quá trình meiosis bắt đầu. Đây là quá trình giảm phân, nơi tế bào sinh dục (tinh trùng và trứng) tạo ra bốn tế bào con, mỗi tế bào mang một bộ gen chỉ bằng một nửa tế bào ban đầu. Khi các tế bào sinh dục kết hợp trong quá trình thụ tinh, thế hệ mới ra đời với sự đa dạng di truyền.
+Khi nhà máy cần tạo ra các "nhân viên đặc biệt" để đảm bảo sự sinh sản và phát triển của thế hệ mới, Bộ giảm phân (**Meiosis**) trong tế bào sinh dục (tinh trùng và trứng) tạo ra bốn tế bào con, mỗi tế bào mang một bộ gen chỉ bằng một nửa tế bào ban đầu. Khi các tế bào sinh dục kết hợp trong quá trình thụ tinh, thế hệ mới ra đời với sự đa dạng di truyền.
 
 <table>
   <tr>
     <td align="center">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib3NrapqzA-bH3orEclFkg6TM9BLzstwwL56d-lDfhwZTniFX3sM1CeC68BhdU4t4IJBQCUeGvLzS1jNNg3UxX3B0Shs5gw5JrgYAD05oMlbt9cRK_-NxlS9uEzd0euBjym8ZlpSyUOMz1XXIAWZuBFSTutPOPlz2iPJyGJW2884BRMmBrN3ODjbEIfA/s16000/Cell%20as%20Factory%20post.png" alt="Cell Factory"  style="width:100%; height:100%;">
       <br>
-      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 2. Nhà máy tế bào</p>
     </td>
   </tr>
 </table>
