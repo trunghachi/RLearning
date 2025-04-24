@@ -1,5 +1,15 @@
 # Cells
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/780f32be-124d-4ace-8633-a4718e36bcca" alt="Cell"  style="width:100%; height:100%;">
+      <br>
+      <p style="font-family: Arial, sans-serif; font-size: smaller; font-style: italic; text-align: center;">Hình 1. Ung thư phổi tế bào không nhỏ</p>
+    </td>
+  </tr>
+</table>
+
 [List of human cell types](https://en.wikipedia.org/wiki/List_of_human_cell_types)
 
 ---
