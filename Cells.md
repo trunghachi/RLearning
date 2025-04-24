@@ -1,4 +1,20 @@
-# Cells
+# Cells - một câu chuyện cảm lạnh
+
+Bên trong **cơ thể** bạn, có hàng tỷ nhà máy và dây chuyền sản xuất hoạt động không ngừng nghỉ, chúng đa dạng như nền sản xuất trên Trái đất vậy, đó chính là các **tế bào**. Mỗi tế bào là một tổ hợp phức tạp, một cơ chế sản xuất được thiết kế tinh vi để duy trì sự sống và sản xuất các sản phẩm thiết yếu cho cơ thể. Cùng bước vào bên trong một **nhà máy điển hình** để quan sát xem mọi thứ hoạt động như thế nào!
+
+Nhân tế bào (**nucleous**), giống như phòng điều hành của nhà máy, giữ tất cả các bản thiết kế – mã di truyền (**DNA**). Những "nhà quản lý" này không chỉ quyết định kế hoạch sản xuất mà còn gửi lệnh sản xuất đến các bộ phận khác của nhà máy thông qua bản sao **mRNA**.
+
+Các "**ribosome**" trong **lưới nội sinh chất hạt** (**Rough Endoplasmic Reticulum**) bắt tay vào công việc ngay lập tức. Chúng là những robot chế tạo sản phẩm chủ yếu của nhà máy – **protein**. Ribosome đọc lệnh sản xuất từ mRNA và sử dụng nguyên liệu có sẵn trong bào tương (**cytoplasm**) là các (**amino acids**) để chế tạo ra các protein, chúng giống như công nhân trên dây chuyền sản xuất.
+
+Sau khi các sản phẩm protein hoàn thành, chúng cần được đóng gói và phân phối. Bộ Golgi (Golgi Apparatus), giống như bộ phận đóng gói và giao hàng của nhà máy, nhận các protein từ lưới nội sinh chất hạt, đóng gói chúng cẩn thận và gửi chúng đến nơi cần thiết trong tế bào hoặc xuất ra ngoài để phục vụ các bộ phận khác trong cơ thể.
+
+Trong khi đó, ti thể (**mitochondria**) đóng vai trò quan trọng như nhà máy năng lượng, cung cấp ATP – nguồn năng lượng chính cho tất cả các hoạt động trong tế bào. Không có năng lượng từ ti thể, nhà máy sẽ không thể hoạt động được. Ti thể hoạt động như các máy phát điện, cung cấp năng lượng cho quá trình chế tạo protein, tái tạo tế bào và duy trì các chức năng sống.
+
+Bên cạnh đó, lysosome và peroxisome đảm nhận công việc tái chế và xử lý chất thải. Lysosome như những "kho chứa" lưu trữ và phân hủy các vật liệu cũ, trong khi peroxisome xử lý các chất độc và chuyển hóa chất béo, giúp bảo vệ nhà máy khỏi sự ô nhiễm.
+
+Khi nhà máy cần mở rộng hoặc cần tạo ra các chi nhánh mới, quá trình phân bào bắt đầu. Mitosis, giống như một buổi họp lớn, nơi tế bào mẹ tạo ra hai tế bào con hoàn chỉnh. Mỗi tế bào con nhận được bản sao đầy đủ các bản thiết kế (DNA), và nhà máy tiếp tục hoạt động như cũ. Đây là quá trình tái tạo tế bào, đảm bảo cơ thể luôn có đủ tế bào để duy trì chức năng.
+
+Khi nhà máy cần tạo ra các "nhân viên đặc biệt" để đảm bảo sự sinh sản và phát triển của thế hệ mới, quá trình meiosis bắt đầu. Đây là quá trình giảm phân, nơi tế bào sinh dục (tinh trùng và trứng) tạo ra bốn tế bào con, mỗi tế bào mang một bộ gen chỉ bằng một nửa tế bào ban đầu. Khi các tế bào sinh dục kết hợp trong quá trình thụ tinh, thế hệ mới ra đời với sự đa dạng di truyền.
 
 <table>
   <tr>
