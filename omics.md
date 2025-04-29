@@ -1,29 +1,33 @@
-## Các lĩnh vực nghiên cứu
-Tên -omics | Đối tượng nghiên cứu | Mô tả
-Genomics | Bộ gene (DNA) toàn bộ | Giải trình tự, đột biến, biến thể gene.
-Epigenomics | Biến đổi epigenetic (methyl hóa DNA, histone modification) | Thay đổi chức năng gene mà không thay đổi DNA.
-Transcriptomics | RNA (mRNA, lncRNA, miRNA) toàn bộ | Phân tích biểu hiện gene qua RNA.
-Proteomics | Protein toàn bộ | Số lượng, loại, biến thể, tương tác protein.
-Phosphoproteomics | Protein bị phosphoryl hóa | Protein có chức năng điều chỉnh thông qua P-group.
-Glycomics | Glycan (các phân tử đường) | Vai trò của glycosyl hóa trong sinh học tế bào.
-Lipidomics | Lipid (chất béo) toàn bộ | Vai trò lipid trong cấu trúc và tín hiệu.
-Metabolomics | Chất chuyển hóa nhỏ (metabolite) | Sản phẩm của các quá trình trao đổi chất.
-Microbiomics | Hệ vi sinh vật (microbiome) | Các quần thể vi khuẩn sống cộng sinh.
-Viromics | Bộ virus trong một hệ sinh học | Virus trong cơ thể người, đất, biển.
-Exposomics | Tất cả yếu tố phơi nhiễm môi trường | Ô nhiễm, thực phẩm, hóa chất tiếp xúc.
-Interactomics | Mạng lưới tương tác phân tử (protein-protein, RNA-protein,...) | Mapping mạng lưới tương tác.
-Phenomics | Biểu hiện hình thái, hành vi toàn bộ | Mối liên hệ giữa genotype và phenotype.
-Cytomics | Các đặc tính tế bào | Cấu trúc, chức năng của tế bào.
-Immunomics | Hệ miễn dịch | Hồ sơ miễn dịch tổng thể (immune system profiling).
-Connectomics | Mạng lưới neuron (trong não) | Mô hình kết nối neuron ở não.
-Foodomics | Thực phẩm và sức khỏe | Ảnh hưởng của thực phẩm đến gen và trao đổi chất.
-Toxinomics | Ảnh hưởng của độc tố | Phản ứng của hệ thống sinh học với chất độc.
-Agingomics | Quá trình lão hóa | Các yếu tố sinh học liên quan đến tuổi tác.
-Paleogenomics | Bộ gene cổ đại | DNA cổ từ hóa thạch, khảo cổ học.
-Chronomics | Nhịp sinh học (circadian rhythms) | Ảnh hưởng của nhịp sinh học đến sinh lý.
-Single-cell Omics | Phân tích genomics, transcriptomics... ở cấp độ tế bào đơn | Độ chính xác siêu cao, hiểu dị biệt tế bào.
-Spatial Omics | Thông tin genomics/transcriptomics gắn với vị trí không gian tế bào | Bản đồ không gian các gene và RNA trong mô.
+## Các lĩnh vực nghiên cứu -omics
 
+
+| **Tên -omics**          | **Đối tượng nghiên cứu**                                         | **Mô tả**                                         |
+|--------------------------|------------------------------------------------------------------|---------------------------------------------------|
+| **Genomics**             | Bộ gene (DNA) toàn bộ                                            | Giải trình tự, đột biến, biến thể gene.           |
+| **Epigenomics**          | Biến đổi epigenetic (methyl hóa DNA, histone modification)       | Thay đổi chức năng gene mà không thay đổi DNA.    |
+| **Transcriptomics**      | RNA (mRNA, lncRNA, miRNA) toàn bộ                                | Phân tích biểu hiện gene qua RNA.                 |
+| **Proteomics**           | Protein toàn bộ                                                  | Số lượng, loại, biến thể, tương tác protein.      |
+| **Phosphoproteomics**    | Protein bị phosphoryl hóa                                        | Protein có chức năng điều chỉnh thông qua P-group.|
+| **Glycomics**            | Glycan (các phân tử đường)                                       | Vai trò của glycosyl hóa trong sinh học tế bào.   |
+| **Lipidomics**           | Lipid (chất béo) toàn bộ                                          | Vai trò lipid trong cấu trúc và tín hiệu.         |
+| **Metabolomics**         | Chất chuyển hóa nhỏ (metabolite)                                 | Sản phẩm của các quá trình trao đổi chất.         |
+| **Microbiomics**         | Hệ vi sinh vật (microbiome)                                      | Các quần thể vi khuẩn sống cộng sinh.             |
+| **Viromics**             | Bộ virus trong một hệ sinh học                                   | Virus trong cơ thể người, đất, biển.              |
+| **Exposomics**           | Tất cả yếu tố phơi nhiễm môi trường                              | Ô nhiễm, thực phẩm, hóa chất tiếp xúc.            |
+| **Interactomics**        | Mạng lưới tương tác phân tử (protein-protein, RNA-protein,...)   | Mapping mạng lưới tương tác.                     |
+| **Phenomics**            | Biểu hiện hình thái, hành vi toàn bộ                             | Mối liên hệ giữa genotype và phenotype.           |
+| **Cytomics**             | Các đặc tính tế bào                                               | Cấu trúc, chức năng của tế bào.                   |
+| **Immunomics**           | Hệ miễn dịch                                                     | Hồ sơ miễn dịch tổng thể (immune system profiling).|
+| **Connectomics**         | Mạng lưới neuron (trong não)                                     | Mô hình kết nối neuron ở não.                     |
+| **Foodomics**            | Thực phẩm và sức khỏe                                             | Ảnh hưởng của thực phẩm đến gen và trao đổi chất. |
+| **Toxinomics**           | Ảnh hưởng của độc tố                                              | Phản ứng của hệ thống sinh học với chất độc.      |
+| **Agingomics**           | Quá trình lão hóa                                                 | Các yếu tố sinh học liên quan đến tuổi tác.       |
+| **Paleogenomics**        | Bộ gene cổ đại                                                    | DNA cổ từ hóa thạch, khảo cổ học.                 |
+| **Chronomics**           | Nhịp sinh học (circadian rhythms)                                | Ảnh hưởng của nhịp sinh học đến sinh lý.          |
+| **Single-cell Omics**    | Phân tích genomics, transcriptomics... ở cấp độ **tế bào đơn**    | Độ chính xác siêu cao, hiểu dị biệt tế bào.       |
+| **Spatial Omics**        | Thông tin genomics/transcriptomics gắn với vị trí không gian tế bào | Bản đồ không gian các gene và RNA trong mô.      |
+
+---
 
 ## A brief history of sequencing
 ### First generation sequencing
