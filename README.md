@@ -1,7 +1,7 @@
 # Biology
 
 1. [Cells](Cells.md)
-2. [Omics](Omics.md)
+2. [Omics](omics.md)
 4. [Ligand-receptor](Ligand-receptors.md)
 1. [Skin and skin cancer](Melanoma.md)
 2. [Brain and brain cancer](Brain.md)
