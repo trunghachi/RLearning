@@ -108,3 +108,34 @@ Ung thư da xuất phát từ sự biến đổi gen trong tế bào da, gây ra
 5. **Yếu tố miễn dịch**: Hệ thống miễn dịch suy yếu có thể làm giảm khả năng của cơ thể chống lại tế bào ung thư, làm tăng nguy cơ mắc bệnh.
 
 6. **Thuốc gây tổn thương cho da**: Việc sử dụng tia cực tím nhân tạo (như tanning beds) hoặc thủy ngân trong các loại kem chống nắng không đúng cách cũng có thể gây tổn thương cho da và tăng nguy cơ mắc ung thư da.
+
+---
+# Mô bệnh học
+
+| STT | Kiểu Mô                   | Central Patches | Tiếng Việt               | Giải thích ngắn gọn                                                                 | Loại mô      | Phân loại nhóm chức năng          |
+|-----|---------------------------|------------------|--------------------------|-------------------------------------------------------------------------------------|--------------|-----------------------------------|
+| 1   | Actinic keratosis        | 4936             | Sừng hóa ánh sáng        | Tiền ung thư da do phơi nắng lâu dài.                                               | Tiền ung thư | Tổn thương tiền ung thư           |
+| 2   | Apocrine glands          | 6739             | Tuyến mồ hôi apocrine    | Tuyến mồ hôi lớn, tiết mồ hôi đặc.                                                  | Lành tính    | Cấu trúc tuyến                    |
+| 3   | Basal cell carcinoma     | 6446             | Ung thư tế bào đáy       | Ung thư da phổ biến nhất.                                                           | Ác tính      | Tổn thương ung thư                |
+| 4   | Carcinoma in situ        | 5478             | Ung thư biểu mô tại chỗ  | Ung thư chưa xâm lấn.                                                               | Ác tính      | Tổn thương ung thư                |
+| 5   | Collagen                 | 6262             | Collagen                 | Protein chính của mô liên kết.                                                      | Bình thường  | Mô liên kết                       |
+| 6   | Epidermis                | 7449             | Biểu bì                  | Lớp ngoài cùng của da.                                                              | Bình thường  | Cấu trúc da                       |
+| 7   | Fat                      | 6525             | Mỡ                       | Dự trữ năng lượng và cách nhiệt.                                                    | Bình thường  | Mô mỡ                             |
+| 8   | Follicle                 | 8343             | Nang lông                | Nơi sợi lông phát triển.                                                            | Bình thường  | Cấu trúc da                       |
+| 9   | Inflammation             | 5856             | Viêm                     | Phản ứng với tổn thương hoặc nhiễm trùng.                                           | Lành tính    | Phản ứng viêm                     |
+| 10  | Invasive melanoma        | 9101             | U hắc tố xâm lấn         | Ung thư da nguy hiểm, đã xâm lấn sâu.                                               | Ác tính      | Tổn thương ung thư                |
+| 11  | Kaposi’s sarcoma         | 4778             | Sarcoma Kaposi           | Ung thư mạch máu, liên quan HIV.                                                    | Ác tính      | Tổn thương ung thư                |
+| 12  | Keratin                  | 6418             | Keratin                  | Tạo độ cứng và bảo vệ da, tóc, móng.                                                | Bình thường  | Protein cấu trúc da               |
+| 13  | Melanoma in situ         | 4545             | U hắc tố tại chỗ         | U hắc tố chưa xâm lấn sâu.                                                          | Ác tính      | Tổn thương ung thư                |
+| 14  | Merkel cell carcinoma    | 5968             | Ung thư tế bào Merkel    | Ung thư da hiếm gặp, tiến triển nhanh.                                              | Ác tính      | Tổn thương ung thư                |
+| 15  | Muscle                   | 6051             | Cơ                       | Mô co rút tạo chuyển động.                                                          | Bình thường  | Mô cơ                             |
+| 16  | Necrosis                 | 6842             | Hoại tử                  | Tế bào chết do thiếu máu, nhiễm trùng, chấn thương.                                | Lành tính    | Tổn thương mô học                |
+| 17  | Nerves                   | 4735             | Thần kinh                | Dẫn truyền tín hiệu.                                                                | Bình thường  | Mô thần kinh                      |
+| 18  | Nevus                    | 8937             | Nốt ruồi                 | Tăng sinh lành tính của tế bào hắc tố.                                              | Lành tính    | Tổn thương sắc tố lành tính       |
+| 19  | Sebaceous gland          | 6639             | Tuyến bã nhờn            | Tuyến tiết bã nhờn để bôi trơn da và tóc.                                           | Bình thường  | Cấu trúc tuyến                    |
+| 20  | Seborrheic keratosis     | 10311            | U sừng tiết bã           | U da lành tính, thường gặp ở người già.                                             | Lành tính    | Tổn thương da lành tính           |
+| 21  | Solar elastosis          | 7613             | Thoái hóa đàn hồi do nắng| Thoái hóa sợi đàn hồi do ánh nắng.                                                  | Lành tính    | Tổn thương mô học do nắng        |
+| 22  | Squamous cell carcinoma  | 6051             | Ung thư tế bào vảy       | Ung thư da phổ biến thứ hai.                                                        | Ác tính      | Tổn thương ung thư                |
+| 23  | Vessels                  | 7673             | Mạch máu                 | Ống dẫn máu trong cơ thể.                                                           | Bình thường  | Mô mạch máu                       |
+| 24  | Wart                     | 6158             | Mụn cóc                  | Tăng sinh lành tính do virus HPV.                                                  | Lành tính    | Tổn thương virus lành tính       |
+
