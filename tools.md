@@ -1,5 +1,6 @@
 # Learning source:
 1. [Machine Learning for Genomics and Therapeutics Resources](https://github.com/kexinhuang12345/ml-genomics-resources)
+2. [Bering: joint cell segmentation and annotation for spatial transcriptomics with transferred graph embeddings](https://bering.readthedocs.io/en/latest/index.html)
 # Plot and tools:
 3. [circlize](https://github.com/jokergoo/circlize): circular visualization in R: 
 4. [PyGWalker](https://kanaries.net/pygwalker): turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
