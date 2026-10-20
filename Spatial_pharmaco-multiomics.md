@@ -236,3 +236,39 @@ Tế bào muốn phân chia phải được "bật đèn xanh" ở cuối G1. T�
 * **Đặc trưng của vùng rìa kháng thuốc (Tumour-brain interface):** Trong các nghiên cứu về không gian khối u (như công nghệ giải mã chuyển hóa không gian - spatial metabolomics), người ta phát hiện các loại sphingolipid phức tạp (như *ganglioside GM2* hay *sphingomyelin*) thường tập trung dày đặc ở **vùng rìa khối u** (vùng tiếp giáp giữa u và mô não lành).
 * **"Áo giáp" chống chịu thuốc:** Vùng giàu sphingolipid này thường là những "ổ chứa" giúp tế bào ung thư dung nạp thuốc, tạo ra rào cản vật lý và hóa sinh giúp tế bào ung thư lẩn trốn tác dụng của các thuốc điều trị đích (như chất ức chế CDK4/6).
 * **Chỉ dấu sinh học (Biomarker):** Thay đổi trong hàm lượng các sphingolipid phản ánh mức độ tiến triển của khối u, khả năng xâm lấn sang mô não lành, cũng như mức độ kháng trị của tế bào ung thư.
+
+
+---
+
+### **1. HMGB2 (High Mobility Group Box 2)**
+
+* **Bản chất:** Là một protein gắn kết DNA (DNA-binding protein) thuộc nhóm họ HMG. Nó hoạt động như một yếu tố kiến trúc hạt nhân (nuclear architectural factor), giúp uốn cong DNA để hỗ trợ các quá trình phiên mã, tái bản và sửa chữa DNA.
+* **Vai trò trong ung thư:**
+* HMGB2 thường bị **biểu hiện quá mức trong nhiều loại ung thư** (bao gồm u não và u hắc tố).
+* Nó đóng vai trò thúc đẩy sự tăng sinh tế bào, tính di động, khả năng xâm lấn và di căn của tế bào khối u.
+* Trong một số ngữ cảnh điều trị, việc duy trì mức cao của HMGB2 giúp tế bào ung thư chống lại các tín hiệu gây chết hoặc kìm hãm chu kỳ tế bào.
+
+---
+
+### **2. NNAT (Neuronatin)**
+
+* **Bản chất:** Là một gen mã hóa cho protein màng liên quan đến sự phát triển của hệ thần kinh (neurodevelopment) và quá trình biệt hóa tế bào não.
+* **Vai trò trong ung thư:**
+* NNAT có vai trò hai mặt tùy thuộc vào loại ung thư (có thể đóng vai trò ức chế khối u ở một số mô, nhưng lại thúc đẩy tính ác tính hoặc kháng thuốc ở các khối u thần kinh/u nguyên bào tủy).
+* Trong các nghiên cứu về tế bào thần kinh và khối u não, NNAT thường liên quan đến các chương trình điều hòa trạng thái tế bào (cell state), quá trình biệt hóa (differentiation) hoặc thích nghi của tế bào u khi nằm trong vi môi trường mô não.
+
+---
+
+### **3. TUBA1B (Tubulin Alpha 1b)**
+
+* **Bản chất:** Là một gen mã hóa cho protein **alpha-tubulin**, thành phần cấu tạo nên các **vi ống (microtubules)** — một cấu trúc dạng ống cực kỳ quan trọng trong bộ xương tế bào (cytoskeleton).
+* **Vai trò trong ung thư:**
+* Vì vi ống đóng vai trò cốt lõi trong việc hình thành thoi vô sắc để phân chia tế bào (nguyên phân - mitosis) và vận chuyển nội bào, TUBA1B thường được **biểu hiện rất cao ở các tế bào ung thư đang tăng sinh mạnh**.
+* Sự gia tăng của TUBA1B phản ánh tốc độ phân chia tế bào cao và nhu cầu tái cấu trúc bộ khung tế bào để di chuyển, xâm lấn. Do đó, nó thường đi song song với các dấu ấn tăng sinh (như Mki67 hoặc các gene chu kỳ tế bào).
+
+
+---
+
+### **Tóm tắt ý nghĩa chung trong nghiên cứu không gian khối u (Spatial Transcriptomics):**
+
+Khi các gene này xuất hiện cùng nhau trong các biểu đồ không gian (Spatial Feature Plots) so sánh giữa nhóm đối chứng (Control) và nhóm điều trị/can thiệp, chúng đại diện cho **trạng thái hoạt động của tế bào ung thư** (tăng sinh, cấu trúc bộ khung, và đặc tính biệt hóa). Sự biến đổi không gian của chúng giúp các nhà khoa học xác định xem các vùng khác nhau của khối u (lõi hay rìa) đang phản ứng thế nào với thuốc điều trị đích.
