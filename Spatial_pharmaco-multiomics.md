@@ -213,4 +213,26 @@ Nhóm "spot" hiếm trong abstract (có thuốc nhưng vẫn E2F-high, kèm dấ
 
 Tế bào muốn phân chia phải được "bật đèn xanh" ở cuối G1. Tín hiệu tăng trưởng tạo cyclin D, cyclin D kích hoạt CDK4/6, CDK4/6 (cùng CDK2 về sau) gắn phosphate vào RB, RB nhả E2F, E2F bật các gene nhân đôi DNA và tế bào đi vào pha S. Palbociclib chặn CDK4/6 nên RB giữ E2F, tế bào dừng ở G1. Khối u kháng thuốc khi tìm được cách bật E2F mà không cần CDK4/6, hoặc khi thích nghi để sống sót dù đang bị thuốc ức chế.
 
-Nếu muốn, tôi có thể vẽ sơ đồ trực quan con đường này, hoặc giải thích tiếp về cách đọc dữ liệu spatial transcriptomics trong bài báo.
+
+---
+
+### **1. Sphingolipid là gì?**
+
+* **Bản chất hóa học:** Sphingolipid là một nhóm các phân tử chất béo (lipid) phức tạp, đặc trưng bởi phần khung cấu trúc là amino alcohol có chuỗi hydrocarbon dài (được gọi là sphingoid base, ví dụ như *sphingosine*).
+* **Vị trí tồn tại:** Chúng là thành phần cấu tạo quan trọng nằm ở **màng tế bào**, đặc biệt tập trung rất nhiều ở màng của các tế bào hệ thần kinh (như tế bào não, tủy sống).
+
+---
+
+### **2. Vai trò sinh học của Sphingolipid**
+
+* **Xây dựng màng tế bào và cấu trúc:** Chúng tạo nên độ bền vững, tính lưu động và đặc tính vật lý của màng tế bào.
+* **Truyền tín hiệu nội bào (Cell Signaling):** Các dẫn xuất của sphingolipid (như *ceramide*, *sphingosine-1-phosphate - S1P*) đóng vai trò như các phân tử truyền tín hiệu nội bào cực kỳ quan trọng, quyết định số phận tế bào: kích thích tế bào tăng sinh, biệt hóa, hoặc ra lệnh cho tế bào đi vào chu trình chết theo chương trình (apoptosis).
+* **Tương tác tế bào và giao tiếp:** Chúng giúp các tế bào (đặc biệt là tế bào thần kinh và tế bào miễn dịch) nhận diện lẫn nhau, bám dính và giao tiếp với môi trường xung quanh.
+
+---
+
+### **3. Ý nghĩa của Sphingolipid trong nghiên cứu ung thư và mô hình nghiên cứu (như trong bài báo u não SHH-MB / Melanoma)**
+
+* **Đặc trưng của vùng rìa kháng thuốc (Tumour-brain interface):** Trong các nghiên cứu về không gian khối u (như công nghệ giải mã chuyển hóa không gian - spatial metabolomics), người ta phát hiện các loại sphingolipid phức tạp (như *ganglioside GM2* hay *sphingomyelin*) thường tập trung dày đặc ở **vùng rìa khối u** (vùng tiếp giáp giữa u và mô não lành).
+* **"Áo giáp" chống chịu thuốc:** Vùng giàu sphingolipid này thường là những "ổ chứa" giúp tế bào ung thư dung nạp thuốc, tạo ra rào cản vật lý và hóa sinh giúp tế bào ung thư lẩn trốn tác dụng của các thuốc điều trị đích (như chất ức chế CDK4/6).
+* **Chỉ dấu sinh học (Biomarker):** Thay đổi trong hàm lượng các sphingolipid phản ánh mức độ tiến triển của khối u, khả năng xâm lấn sang mô não lành, cũng như mức độ kháng trị của tế bào ung thư.
